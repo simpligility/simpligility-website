@@ -16,9 +16,9 @@ it has **no** `<html>`, `<head>`, or `<body>` wrapper. Never add one.
 ## Target file
 
 - **Path (from repo root):** `event-log/event-log.html`
-- It is a standalone fragment: a lead comment, a `<!-- Last updated -->`
-  comment, an intro `<p>`, a one-line "Check out specific years" navigation
-  `<p>`, then one `<h2>` + `<dl>` block per year.
+- It is a standalone fragment: a lead comment, a repo-management comment, a
+  `<!-- Last updated -->` comment, an intro `<p>`, a one-line "Check out
+  specific years" navigation `<p>`, then one `<h2>` + `<dl>` block per year.
 
 ## Deferred work: `event-log/STATUS.md`
 
@@ -38,6 +38,7 @@ git repo. Commit each completed change as its own focused commit and push it to
 
 ```html
 <!-- Event Log for simpligility.ca/event-log/ -->
+<!-- Managed in the simpligility-website repo; edit there, then copy this into the WordPress page code view -->
 <!-- Last updated: YYYY-MM-DD -->
 
 <p>Many of my presentations, classes, and other events are public. ...</p>
