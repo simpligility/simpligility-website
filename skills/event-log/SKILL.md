@@ -28,6 +28,12 @@ finished, **remove it** from the file rather than marking it done. Check it at
 the start of a maintenance session, keep it current as work is deferred or
 completed, and bump its "Last updated" date when you edit it.
 
+## Committing changes
+
+The event log, this skill, and `STATUS.md` live in the `simpligility-website`
+git repo. Commit each completed change as its own focused commit and push it to
+`main`. Fold any `STATUS.md` update into the same commit as the work it covers.
+
 ## File structure
 
 ```html
