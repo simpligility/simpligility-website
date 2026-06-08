@@ -51,4 +51,21 @@ whatever details (talk, date, location, links) the posts provide.
 Create a copy of this event-log setup (page fragment + skill + STATUS) for a
 **write log** that collects all of Manfred's old blog posts across the various
 websites he has written for. Reuse the structure and conventions established
-here.
+here. This should maybe be the first task so we can use all the research for
+both pages.
+
+## 7. Cyberedge webinar video
+
+End of 2025 and beginning of 2026 two events used a prerecorded video that I
+still have at
+https://drive.google.com/file/d/14X56nGBzAOEPd-pZ38njcps6PBNXtC4d/view and
+locally.  I want to ask permission to upload it or see if it is already uploaded
+on Chainguard youtube and then link to it.
+
+## 8. Youtube search
+
+Do a general search on youtube for Manfred Moser and related terms to find
+videos of events I have not yet added. There should be a devopsdays Vancouver
+one and a bunch of Sonatype ones. For the Sonatype ones there is also a hidden
+page on the simpligility site that has a lot of these already. We could harvest
+these and move them over.
