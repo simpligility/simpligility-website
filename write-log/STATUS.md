@@ -44,3 +44,12 @@ Fest recap posts (see event-log STATUS) are written content and belong here too.
 Check for guest posts and articles on other sites and outlets (e.g. DZone,
 InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
 that are found.
+
+## 6. Fill in the stubbed Sonatype posts from the initial import
+
+`initial-data.html` listed a few Sonatype posts with no title or link yet — one
+or two more in **2016** (one tagged Feb 2016), at least one in **2015**, and a
+couple untagged. Track down their titles, dates, and URLs and add entries. The
+2015 year block does not exist yet; create it in descending-year position
+(between 2016 and 2014) with its `<h2 id="2015">` and a matching navigation
+link. Once these are recovered, `initial-data.html` can be deleted.
