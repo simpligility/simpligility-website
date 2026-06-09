@@ -28,24 +28,18 @@ Manfred wrote a number of posts on the Sonatype blog. There is also a hidden
 page on the simpligility site that already collects many Sonatype items (noted
 in the event-log STATUS) — harvest from there and from the Sonatype blog itself.
 
-## 3. Harvest Chainguard posts
-
-Collect Manfred's posts and articles on the Chainguard blog
-(`chainguard.dev/unchained/...`) content. Some are already referenced from the
-event log (e.g. the kaniko fork post) and can be cross-linked.
-
-## 4. Harvest Trino and Starburst posts
+## 3. Harvest Trino and Starburst posts
 
 Collect posts on `trino.io` and the Starburst blog. The Trino Summit / Trino
 Fest recap posts (see event-log STATUS) are written content and belong here too.
 
-## 5. Track down other publications
+## 4. Track down other publications
 
 Check for guest posts and articles on other sites and outlets (e.g. DZone,
 InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
 that are found.
 
-## 6. Fill in the stubbed Sonatype posts from the initial import
+## 5. Fill in the stubbed Sonatype posts from the initial import
 
 The initial import (the now-deleted `initial-data.html`) listed a few Sonatype
 posts with no title or link yet — one or two more in **2016** (one tagged Feb
@@ -54,7 +48,7 @@ dates, and URLs and add entries. The 2015 year block does not exist yet; create
 it in descending-year position (between 2016 and 2014) with its
 `<h2 id="2015">` and a matching navigation link.
 
-## 7. Find better URLs for the imported posts
+## 6. Find better URLs for the imported posts
 
 Many imported entries point at old `blog.sonatype.com` URLs (and other early
 links) that are dead or will rot over time. Go through them and, for each, try
