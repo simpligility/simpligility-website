@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-07
+Last updated: 2026-06-08
 
 The conventions for this file are documented in
 [`../skills/event-log/SKILL.md`](../skills/event-log/SKILL.md). Read that first.
@@ -46,15 +46,7 @@ appearances that are not yet in the log. Known ones to look for include OSCON,
 AnDevCon, JavaOne, DevOpsDays, and the Jenkins conference; add entries with
 whatever details (talk, date, location, links) the posts provide.
 
-## 6. Set up a companion "write log" of past blog posts
-
-Create a copy of this event-log setup (page fragment + skill + STATUS) for a
-**write log** that collects all of Manfred's old blog posts across the various
-websites he has written for. Reuse the structure and conventions established
-here. This should maybe be the first task so we can use all the research for
-both pages.
-
-## 7. Cyberedge webinar video
+## 6. Cyberedge webinar video
 
 End of 2025 and beginning of 2026 two events used a prerecorded video that I
 still have at
@@ -62,7 +54,7 @@ https://drive.google.com/file/d/14X56nGBzAOEPd-pZ38njcps6PBNXtC4d/view and
 locally.  I want to ask permission to upload it or see if it is already uploaded
 on Chainguard youtube and then link to it.
 
-## 8. Youtube search
+## 7. Youtube search
 
 Do a general search on youtube for Manfred Moser and related terms to find
 videos of events I have not yet added. There should be a devopsdays Vancouver
