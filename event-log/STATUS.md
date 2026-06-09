@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-08
+Last updated: 2026-06-09
 
 The conventions for this file are documented in
 [`../skills/event-log/SKILL.md`](../skills/event-log/SKILL.md). Read that first.
@@ -19,34 +19,27 @@ permission to use it. For now the entry notes that the video is available to
 devm.io members. Once a usable recording and permission are in hand, add it as
 the first link (`Video`, ahead of the `Slide deck`).
 
-## 2. Add or confirm co-hosts for Trino Community Broadcast episodes above 37
-
-Episodes 1-37 are credited with Brian Olsen as co-host. For episodes **above
-37**, go through each one and add or confirm the co-host. Many are expected to
-have **Cole Bowden** as co-host, but every episode must be checked individually
-against its `trino.io/episodes/N` show notes rather than assumed.
-
-## 3. Add Trino Summit and Trino Fest events
+## 2. Add Trino Summit and Trino Fest events
 
 There is a blog post on trino.io covering the Trino Summit and Trino Fest
 events. Manfred hosted all of them, and each has a recap blog post with a
 video. Pull these out and add entries linking the recap (`Details`) and the
 recording (`Video`).
 
-## 4. Find other past Starburst and Trino public events
+## 3. Find other past Starburst and Trino public events
 
 Track down other public events Manfred did for Starburst and Trino by checking
 his calendar, the Starburst blog, and the Starburst website. Add entries for
 any that are missing.
 
-## 5. Look up older conferences from simpligility.ca blog posts
+## 4. Look up older conferences from simpligility.ca blog posts
 
 Review the old blog posts on the simpligility website to recover conference
 appearances that are not yet in the log. Known ones to look for include OSCON,
 AnDevCon, JavaOne, DevOpsDays, and the Jenkins conference; add entries with
 whatever details (talk, date, location, links) the posts provide.
 
-## 6. Cyberedge webinar video
+## 5. Cyberedge webinar video
 
 End of 2025 and beginning of 2026 two events used a prerecorded video that I
 still have at
@@ -54,7 +47,7 @@ https://drive.google.com/file/d/14X56nGBzAOEPd-pZ38njcps6PBNXtC4d/view and
 locally.  I want to ask permission to upload it or see if it is already uploaded
 on Chainguard youtube and then link to it.
 
-## 7. Youtube search
+## 6. Youtube search
 
 Do a general search on youtube for Manfred Moser and related terms to find
 videos of events I have not yet added. There should be a devopsdays Vancouver
