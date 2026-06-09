@@ -178,6 +178,28 @@ and never hard-code a domain.
 External links (Chainguard, Sonatype, Trino, DZone, YouTube, etc.) keep their
 full `https://` URLs.
 
+## Broken and dead links
+
+Many entries are old posts whose links rot over time — for example the imported
+`blog.sonatype.com` URLs. The standing rules:
+
+- **Never delete an entry, and never silently strip its link, just because a URL
+  no longer resolves.** The post still happened; the record stays. A dead link
+  is a per-entry decision for Manfred, not a cleanup to make automatically.
+- When you notice or suspect a broken link, **try to find a better URL first**:
+  the post at the site's current location, a republished copy, or an archived
+  snapshot (e.g. the Wayback Machine, `web.archive.org`). Prefer a live link;
+  fall back to an archive link when that is all that survives.
+- If no working URL can be found, **flag the entry for Manfred and leave it as
+  is** — do not remove the link or the entry on your own. Surface it and let him
+  decide how to proceed for that specific entry.
+- We may later formalize a convention for an entry whose link is unrecoverable
+  (e.g. dropping the broken `href` but keeping the title, publication, date, and
+  a note of where it used to point, so the entry stays on the page). Until that
+  convention is written here, do not invent one — ask.
+
+See write-log STATUS item on finding better URLs for the tracked follow-up work.
+
 ## HTML entity conventions
 
 Use named entities, matching the event log:

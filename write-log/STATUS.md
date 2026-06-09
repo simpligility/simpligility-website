@@ -9,9 +9,10 @@ Last updated: 2026-06-08
 The conventions for this file are documented in
 [`../skills/write-log/SKILL.md`](../skills/write-log/SKILL.md). Read that first.
 
-The page is currently scaffolding only — no posts have been added yet. Much of
-the research overlaps with the [event log](../event-log/STATUS.md); do it with
-both pages in mind so a single pass through a site feeds both.
+An initial set of older posts (2011–2016) has been imported; much more remains
+to be added. Much of the research overlaps with the
+[event log](../event-log/STATUS.md); do it with both pages in mind so a single
+pass through a site feeds both.
 
 ---
 
@@ -53,3 +54,19 @@ couple untagged. Track down their titles, dates, and URLs and add entries. The
 2015 year block does not exist yet; create it in descending-year position
 (between 2016 and 2014) with its `<h2 id="2015">` and a matching navigation
 link. Once these are recovered, `initial-data.html` can be deleted.
+
+## 7. Find better URLs for the imported posts
+
+Many imported entries point at old `blog.sonatype.com` URLs (and other early
+links) that are dead or will rot over time. Go through them and, for each, try
+to locate a still-working URL: the post on the site's current location, a
+republished copy, or an archived snapshot (e.g. the Wayback Machine,
+`web.archive.org`). Replace the link when a better one is found.
+
+**Do not delete any entry, and do not strip its link, just because a URL no
+longer resolves.** Each broken link is a per-entry decision for Manfred — flag
+it and leave it in place until he decides how to proceed. See the "Broken and
+dead links" rule in [`../skills/write-log/SKILL.md`](../skills/write-log/SKILL.md);
+as more links rot over time we will likely formalize a convention for dropping
+an unrecoverable link while keeping the entry (and a record of where it pointed)
+on the page.
