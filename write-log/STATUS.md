@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-08
+Last updated: 2026-06-09
 
 The conventions for this file are documented in
 [`../skills/write-log/SKILL.md`](../skills/write-log/SKILL.md). Read that first.
@@ -31,9 +31,8 @@ in the event-log STATUS) — harvest from there and from the Sonatype blog itsel
 ## 3. Harvest Chainguard posts
 
 Collect Manfred's posts and articles on the Chainguard blog
-(`chainguard.dev/unchained/...`) and Chainguard Academy/Education content. Some
-are already referenced from the event log (e.g. the kaniko fork post) and can be
-cross-linked.
+(`chainguard.dev/unchained/...`) content. Some are already referenced from the
+event log (e.g. the kaniko fork post) and can be cross-linked.
 
 ## 4. Harvest Trino and Starburst posts
 
@@ -48,12 +47,12 @@ that are found.
 
 ## 6. Fill in the stubbed Sonatype posts from the initial import
 
-`initial-data.html` listed a few Sonatype posts with no title or link yet — one
-or two more in **2016** (one tagged Feb 2016), at least one in **2015**, and a
-couple untagged. Track down their titles, dates, and URLs and add entries. The
-2015 year block does not exist yet; create it in descending-year position
-(between 2016 and 2014) with its `<h2 id="2015">` and a matching navigation
-link. Once these are recovered, `initial-data.html` can be deleted.
+The initial import (the now-deleted `initial-data.html`) listed a few Sonatype
+posts with no title or link yet — one or two more in **2016** (one tagged Feb
+2016), at least one in **2015**, and a couple untagged. Track down their titles,
+dates, and URLs and add entries. The 2015 year block does not exist yet; create
+it in descending-year position (between 2016 and 2014) with its
+`<h2 id="2015">` and a matching navigation link.
 
 ## 7. Find better URLs for the imported posts
 
