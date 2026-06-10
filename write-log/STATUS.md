@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-09
+Last updated: 2026-06-10
 
 The conventions for this file are documented in
 [`../skills/write-log/SKILL.md`](../skills/write-log/SKILL.md). Read that first.
@@ -28,10 +28,9 @@ Manfred wrote a number of posts on the Sonatype blog. There is also a hidden
 page on the simpligility site that already collects many Sonatype items (noted
 in the event-log STATUS) — harvest from there and from the Sonatype blog itself.
 
-## 3. Harvest Trino and Starburst posts
+## 3. Harvest Starburst posts
 
-Collect posts on `trino.io` and the Starburst blog. The Trino Summit / Trino
-Fest recap posts (see event-log STATUS) are written content and belong here too.
+Collect posts on the Starburst blog.
 
 ## 4. Track down other publications
 
