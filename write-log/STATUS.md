@@ -32,13 +32,19 @@ in the event-log STATUS) — harvest from there and from the Sonatype blog itsel
 
 Collect posts on the Starburst blog.
 
-## 4. Track down other publications
+## 4. Harvest OneOps blog posts
+
+Manfred wrote posts for the OneOps project (the Walmart open source cloud
+management platform). Harvest his posts from the OneOps blog at
+<https://www.oneops.com/blog/index.html> and add an entry for each.
+
+## 5. Track down other publications
 
 Check for guest posts and articles on other sites and outlets (e.g. DZone,
 InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
 that are found.
 
-## 5. Fill in the stubbed Sonatype posts from the initial import
+## 6. Fill in the stubbed Sonatype posts from the initial import
 
 The initial import (the now-deleted `initial-data.html`) listed a few Sonatype
 posts with no title or link yet — one or two more in **2016** (one tagged Feb
@@ -47,7 +53,7 @@ dates, and URLs and add entries. The 2015 year block does not exist yet; create
 it in descending-year position (between 2016 and 2014) with its
 `<h2 id="2015">` and a matching navigation link.
 
-## 6. Find better URLs for the imported posts
+## 7. Find better URLs for the imported posts
 
 Many imported entries point at old `blog.sonatype.com` URLs (and other early
 links) that are dead or will rot over time. Go through them and, for each, try
