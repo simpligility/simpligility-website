@@ -47,3 +47,11 @@ videos of events I have not yet added. There should be a devopsdays Vancouver
 one and a bunch of Sonatype ones. For the Sonatype ones there is also a hidden
 page on the simpligility site that has a lot of these already. We could harvest
 these and move them over.
+
+## 6. Harvest videos from the Walmart Labs Community YouTube channel
+
+The Walmart Labs Community channel
+(<https://www.youtube.com/@walmartlabscommunity4382/videos>) has videos
+Manfred created, including four OneOps user training videos. Go through the
+channel's full video list, pull out the ones presented or created by Manfred,
+and add entries with the recording (`Video`) and any related details.
