@@ -7,7 +7,7 @@ later with Claude Code or any other tool. Delete items as they are completed.
 Last updated: 2026-06-10
 
 The conventions for this file are documented in
-[`../skills/write-log/SKILL.md`](../skills/write-log/SKILL.md). Read that first.
+[`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
 
 An initial set of older posts (2011–2016) has been imported; much more remains
 to be added. Much of the research overlaps with the
@@ -63,7 +63,7 @@ republished copy, or an archived snapshot (e.g. the Wayback Machine,
 **Do not delete any entry, and do not strip its link, just because a URL no
 longer resolves.** Each broken link is a per-entry decision for Manfred — flag
 it and leave it in place until he decides how to proceed. See the "Broken and
-dead links" rule in [`../skills/write-log/SKILL.md`](../skills/write-log/SKILL.md);
+dead links" rule in [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md);
 as more links rot over time we will likely formalize a convention for dropping
 an unrecoverable link while keeping the entry (and a record of where it pointed)
 on the page.

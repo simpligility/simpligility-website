@@ -7,7 +7,7 @@ Claude Code or any other tool. Delete items as they are completed.
 Last updated: 2026-06-10
 
 The conventions for this file are documented in
-[`../skills/event-log/SKILL.md`](../skills/event-log/SKILL.md). Read that first.
+[`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
 
 ---
 
