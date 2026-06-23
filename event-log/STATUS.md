@@ -51,3 +51,12 @@ these and move them over.
 The OneOps user training video series, which previously lived here, has been
 moved to the [video log](../video-log/) as a standalone video series, along with
 the other OneOps feature videos from the same channel.
+
+## 6. Add the Nexus Live events
+
+The former `/video/` page had a **Nexus Live** section — these were live
+streamed events and belong here in the event log, not the video log. There is a
+playlist at
+<https://www.youtube.com/playlist?list=PLGB2s-U5FSWPHJd4EEEFgmcLJUc-_1Pcs>;
+Manfred to dig out the individual events (title, date, video link) so each can be
+added as its own event-log entry.
