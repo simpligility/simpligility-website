@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-10
+Last updated: 2026-06-23
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -48,17 +48,7 @@ one and a bunch of Sonatype ones. For the Sonatype ones there is also a hidden
 page on the simpligility site that has a lot of these already. We could harvest
 these and move them over.
 
-## 6. Add remaining Walmart Labs Community YouTube videos
-
-The OneOps user training video series (Level 1 - Beginner, the recorded
-beginner class) has been added to the 2017 block, linking the training
-playlist. Notes on the rest of the channel
-(<https://www.youtube.com/@walmartlabscommunity4382/videos>):
-
-- Level 2 - Advanced and Level 3 - Advanced Examples exist only as slide
-  decks; no recordings were found to link.
-- "Case Study: OpenStack at Walmart" is presented by Andrew Mitry and Kire
-  Filipovski, not Manfred, so it was left out.
-- The channel page is JavaScript-rendered and could not be enumerated via
-  search, so any other videos of Manfred's there are not yet found. Manfred
-  to provide the specific video URLs so they can be added.
+The OneOps user training video series, which previously lived here, has been
+moved to the [video log](../video-log/) as a standalone video series; its
+remaining-channel follow-up now lives in the
+[video-log STATUS](../video-log/STATUS.md).
