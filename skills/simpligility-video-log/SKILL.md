@@ -58,12 +58,43 @@ When unsure which shape applies, ask: *does this title name one finished thing,
 or an ongoing line of separate videos?* The first is one entry; the second is
 one entry per video.
 
+## Legacy archive collections
+
+Older collections (for example the Sonatype Nexus how-to series harvested from
+the site's former `/video/` page) come organized **per playlist/session**, often
+with many videos no longer available and uncertain dates. Handle these specially:
+
+- **One entry per session/series** (the finished-series rule), with the series
+  name as the `<dt>` title in sentence case and the publisher in the
+  series/channel slot (e.g. `Sonatype`).
+- **List the session's videos in the `<dd>`**, one per line separated by `<br>`,
+  after a short description followed by a lone `<br>`. A **live** video is linked
+  by its title (`<a href="...">Title</a>`); a **dead/unavailable** video keeps
+  its title as plain text with the original URL preserved in an HTML comment, so
+  the reference is not lost: `Title <!-- https://www.youtube.com/watch?v=... -->`.
+- **Preserve the original episode titles verbatim** in the list (only converting
+  `–`/`—` to `&ndash;`/`&mdash;` and any `&` to `&amp;`) — this is a faithful
+  archive of what each video was called. The session entry title still uses
+  sentence case.
+- **Undated archives go in a year-range section** rather than being forced into a
+  single year: add one `<h2 id="YYYY-YYYY">YYYY&ndash;YYYY</h2>` block (e.g.
+  `2010&ndash;2016`) in the correct descending position with a matching
+  `<a href="#YYYY-YYYY">` navigation link, and place the session entries inside it
+  without a per-entry date (the heading carries the era). Keep them in the source
+  collection's curated order.
+
+Check liveness before linking: a removed or private video fails a YouTube oEmbed
+request (`https://www.youtube.com/oembed?url=<watch-url>&format=json`); link only
+the ones that pass, and comment out the rest as above.
+
 ## Target file
 
 - **Path (from repo root):** `video-log/video-log.html`
 - It is a standalone fragment: a lead comment, a repo-management comment, a
   `<!-- Last updated -->` comment, an intro `<p>`, a one-line "Check out specific
-  years" navigation `<p>`, then one `<h2>` + `<dl>` block per year.
+  years" navigation `<p>`, then one `<h2>` + `<dl>` block per year (plus, at the
+  bottom, an optional year-range block such as `2010&ndash;2016` for undated
+  archive collections — see "Legacy archive collections").
 
 ## Deferred work: `video-log/STATUS.md`
 

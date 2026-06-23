@@ -14,8 +14,8 @@ video**. Much of the research overlaps with the
 [write log](../write-log/STATUS.md); do it with all three pages in mind so a
 single pass through a source feeds them all.
 
-The page holds the OneOps videos and the Manfred mentors episodes; much more
-remains to be added.
+The page holds the OneOps videos, the Manfred mentors episodes, and the Sonatype
+video archive; much more remains to be added.
 
 ---
 
@@ -28,13 +28,15 @@ live show (YouTube, LinkedIn, Twitch), so add new episodes as they are published
 The episode playlist for finding them is
 <https://www.youtube.com/playlist?list=PLHdo8mJLIMWALFrGgA6-wWcWgyZmjAex->.
 
-## 2. Harvest older Sonatype videos
+## 2. Recover the Apache Maven Hangouts titles
 
-Manfred recorded a number of standalone how-to and explainer videos for Sonatype
-(Maven, Nexus, security, and related topics). Track them down and add an entry
-for each, with `Sonatype` in the series/channel slot. A video that is a
-recording of a Sonatype *talk* or a *companion to a Sonatype post* stays a link
-on its event-log/write-log entry instead — only standalone videos belong here.
+The Sonatype video archive (Nexus how-to series, Central Repository publishing,
+Staging Suite, the 2 Minute Challenge, Smart Proxy) has been harvested from the
+former `/video/` page into the `2010&ndash;2016` section. The one section left
+behind is **Apache Maven Hangouts**, which is empty on that page — no titles or
+links survive. If Manfred can recover the episode titles (and any links), add
+them as their own session entry following the legacy-archive convention in the
+skill. Until then there is nothing to harvest for it.
 
 ## 3. Sweep the event log for other standalone videos to migrate
 
