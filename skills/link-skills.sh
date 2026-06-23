@@ -22,6 +22,7 @@ cd "$REPO_ROOT"
 SKILLS=(
   simpligility-event-log
   simpligility-write-log
+  simpligility-video-log
 )
 
 # Discovery roots to populate (relative to the repo root).
