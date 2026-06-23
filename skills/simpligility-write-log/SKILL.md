@@ -1,5 +1,5 @@
 ---
-name: write-log
+name: simpligility-write-log
 description: >-
   Maintain the write log HTML fragment at write-log/write-log.html for
   simpligility.ca/write-log/. Use when adding newly discovered blog posts or

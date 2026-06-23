@@ -1,5 +1,5 @@
 ---
-name: event-log
+name: simpligility-event-log
 description: >-
   Maintain the event log HTML fragment at event-log/event-log.html for
   simpligility.ca/event-log/. Use when adding newly discovered past events,
