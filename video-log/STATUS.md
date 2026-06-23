@@ -14,17 +14,19 @@ video**. Much of the research overlaps with the
 [write log](../write-log/STATUS.md); do it with all three pages in mind so a
 single pass through a source feeds them all.
 
-The page holds the OneOps training series and OneOps feature videos; much more
+The page holds the OneOps videos and the Manfred mentors episodes; much more
 remains to be added.
 
 ---
 
-## 1. Harvest the Manfred mentors videos
+## 1. Keep the Manfred mentors episodes up to date
 
-*Manfred mentors* is an open-ended category, not a finished series, so each
-video gets **its own dated entry** with `Manfred mentors` in the series/channel
-slot (see the skill's "one entry vs one entry per video" rule). Find every video
-in the series, with its title, date, and link, and add an entry for each.
+The initial 12 episodes are on the page, each as its own dated entry under the
+`Manfred mentors` series (an open-ended category, not a finished series — see the
+skill's "one entry vs one entry per video" rule). *Manfred mentors* is an ongoing
+live show (YouTube, LinkedIn, Twitch), so add new episodes as they are published.
+The episode playlist for finding them is
+<https://www.youtube.com/playlist?list=PLHdo8mJLIMWALFrGgA6-wWcWgyZmjAex->.
 
 ## 2. Harvest older Sonatype videos
 
