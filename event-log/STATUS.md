@@ -49,6 +49,5 @@ page on the simpligility site that has a lot of these already. We could harvest
 these and move them over.
 
 The OneOps user training video series, which previously lived here, has been
-moved to the [video log](../video-log/) as a standalone video series; its
-remaining-channel follow-up now lives in the
-[video-log STATUS](../video-log/STATUS.md).
+moved to the [video log](../video-log/) as a standalone video series, along with
+the other OneOps feature videos from the same channel.

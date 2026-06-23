@@ -14,8 +14,8 @@ video**. Much of the research overlaps with the
 [write log](../write-log/STATUS.md); do it with all three pages in mind so a
 single pass through a source feeds them all.
 
-The page currently holds only the migrated OneOps user training series; much
-more remains to be added.
+The page holds the OneOps training series and OneOps feature videos; much more
+remains to be added.
 
 ---
 
@@ -43,22 +43,7 @@ confirm before moving. When moving one, remove it from the event log (and its
 year-navigation link if it was the only entry in that year) in the same commit
 that adds it here.
 
-## 4. Add remaining Walmart Labs Community / OneOps videos
-
-The OneOps user training series (Level 1 — beginner, the recorded beginner
-class) is on the page, linking the training playlist. It was moved here from the
-event log. Notes on the rest of the channel
-(<https://www.youtube.com/@walmartlabscommunity4382/videos>):
-
-- Level 2 — Advanced and Level 3 — Advanced Examples exist only as slide decks;
-  no recordings were found to link.
-- "Case Study: OpenStack at Walmart" is presented by Andrew Mitry and Kire
-  Filipovski, not Manfred, so it was left out.
-- The channel page is JavaScript-rendered and could not be enumerated via
-  search, so any other videos of Manfred's there are not yet found. Manfred to
-  provide the specific video URLs so they can be added.
-
-## 5. Track down other video channels and series
+## 4. Track down other video channels and series
 
 Check for standalone videos on other channels, project sites, and outlets
 (e.g. older simpligility.ca screencasts, conference channel uploads that are not
