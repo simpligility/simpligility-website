@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-23
+Last updated: 2026-06-26
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -32,15 +32,7 @@ appearances that are not yet in the log. Known ones to look for include OSCON,
 AnDevCon, JavaOne, DevOpsDays, and the Jenkins conference; add entries with
 whatever details (talk, date, location, links) the posts provide.
 
-## 4. Cyberedge webinar video
-
-End of 2025 and beginning of 2026 two events used a prerecorded video that I
-still have at
-https://drive.google.com/file/d/14X56nGBzAOEPd-pZ38njcps6PBNXtC4d/view and
-locally.  I want to ask permission to upload it or see if it is already uploaded
-on Chainguard youtube and then link to it.
-
-## 5. Youtube search
+## 4. Youtube search
 
 Do a general search on youtube for Manfred Moser and related terms to find
 videos of events I have not yet added. There should be a devopsdays Vancouver
@@ -52,7 +44,7 @@ The OneOps user training video series, which previously lived here, has been
 moved to the [video log](../video-log/) as a standalone video series, along with
 the other OneOps feature videos from the same channel.
 
-## 6. Add the Nexus Live events
+## 5. Add the Nexus Live events
 
 The former `/video/` page had a **Nexus Live** section — these were live
 streamed events and belong here in the event log, not the video log. There is a
