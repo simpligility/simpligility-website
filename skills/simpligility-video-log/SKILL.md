@@ -87,11 +87,17 @@ Check liveness before linking: a removed or private video fails a YouTube oEmbed
 request (`https://www.youtube.com/oembed?url=<watch-url>&format=json`); link only
 the ones that pass, and comment out the rest as above.
 
+Because these archives leave some titles as plain (unlinked) text, the intro
+carries a second `<p>` explaining that those titles are videos no longer
+available online, kept as a record. Keep that note in place.
+
 ## Target file
 
 - **Path (from repo root):** `video-log/video-log.html`
 - It is a standalone fragment: a lead comment, a repo-management comment, a
-  `<!-- Last updated -->` comment, an intro `<p>`, a one-line "Check out specific
+  `<!-- Last updated -->` comment, an intro `<p>`, a second `<p>` noting that
+  some titles are shown as plain text because those videos are no longer
+  available online, a one-line "Check out specific
   years" navigation `<p>`, then one `<h2>` + `<dl>` block per year (plus, at the
   bottom, an optional year-range block such as `2010&ndash;2016` for undated
   archive collections — see "Legacy archive collections").
