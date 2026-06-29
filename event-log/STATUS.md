@@ -29,7 +29,7 @@ any that are missing.
 
 Review the old blog posts on the simpligility website to recover conference
 appearances that are not yet in the log. Known ones to look for include OSCON,
-AnDevCon, JavaOne, DevOpsDays, and the Jenkins conference; add entries with
+ JavaOne, DevOpsDays, and the Jenkins conference; add entries with
 whatever details (talk, date, location, links) the posts provide.
 
 ## 4. Youtube search
@@ -52,3 +52,10 @@ playlist at
 <https://www.youtube.com/playlist?list=PLGB2s-U5FSWPHJd4EEEFgmcLJUc-_1Pcs>;
 Manfred to dig out the individual events (title, date, video link) so each can be
 added as its own event-log entry.
+
+## 6. Add AnDevCon
+
+Linked to these teaser videos maybe -
+https://www.youtube.com/playlist?list=PLB9250394EA1B2676, but also find other
+details, look in my calendar, the simpligility website (blog posts?) and also I
+think there are slides on the simpligility github org
