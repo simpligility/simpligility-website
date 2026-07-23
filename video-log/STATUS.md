@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-23
+Last updated: 2026-07-22
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -52,3 +52,10 @@ that adds it here.
 Check for standalone videos on other channels, project sites, and outlets
 (e.g. older simpligility.ca screencasts, conference channel uploads that are not
 event recordings, partner channels). Add any that are found.
+
+## 5. Add the Presto and Trino SQL training videos
+
+Find the Presto SQL training videos and the newer Trino SQL training videos
+created with Martin, Dain, and David. Determine whether each series is a
+standalone video-log entry or belongs in the event log. Add the video links,
+available slide decks, and related blog posts to the appropriate log entries.
