@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-06-10
+Last updated: 2026-07-24 (added simpligility.ca blog harvest, item 1)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -18,9 +18,24 @@ pass through a site feeds both.
 
 ## 1. Harvest blog posts from simpligility.ca
 
-Go through the old blog posts on the simpligility website itself and add an
-entry for each. These are the most personal/oldest posts (Maven, Android, Java,
-open source) and several are referenced by event-log work as well.
+**Discovery done** (2026-07-24): every post on the simpligility.ca blog
+(2010–2025) has been inventoried in
+[`simpligility-harvest.md`](simpligility-harvest.md), one bullet per post with
+URL, date, summary, and `EVENT →` / `VIDEO →` cross-references. What remains is
+turning that inventory into write-log entries.
+
+Before writing entries, resolve the scope decisions noted at the top of the
+harvest file:
+
+- Whether to **exclude the ~60 "Twitter Weekly Updates" digests** (auto-generated
+  tweet roundups; recommended exclude — they are not enumerated in the harvest).
+- Whether each **version-bump release post** gets its own entry or a single
+  consolidated per-project entry.
+- **Dedupe** duplicate slug pairs (`.../` vs `.../…-2/`) to the canonical URL.
+
+The `EVENT →` and `VIDEO →` items in the harvest have already been extracted into
+the [event-log](../event-log/STATUS.md) (item 3) and
+[video-log](../video-log/STATUS.md) (item 6) STATUS files.
 
 ## 2. Harvest Sonatype blog posts
 
