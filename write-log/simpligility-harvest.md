@@ -34,8 +34,11 @@ Harvested: 2026-07-24. Source: https://simpligility.ca/page/N/ (N = 30 → 1).
    canonical (non-`-2`) URL.
 
 These rules are recorded in the write-log skill under "Which posts to include".
-One open question remains for the entry-writing phase: whether the write log
-should list simpligility.ca's own posts at all (self-referencing the site).
+
+**Resolved (2026-07-24):** the write log lists **external writing only**, so the
+self-hosted simpligility.ca posts below are **not** added as entries — the
+write-log intro links to the blog for those. This harvest stays as the reference
+for the `EVENT →`, `VIDEO →`, and other-site items already routed out of it.
 
 ---
 

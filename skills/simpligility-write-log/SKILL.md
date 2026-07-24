@@ -43,6 +43,12 @@ git repo. Commit each completed change as its own focused commit and push it to
 
 Not every URL on a site is a write-log entry. When harvesting:
 
+- **External writing only.** The write log lists writing published on **other**
+  sites (Chainguard, Trino, Sonatype, DZone, Java Magazine, books, and so on). Do
+  **not** add simpligility.ca's own self-hosted blog posts as entries — the page
+  intro links visitors to the blog for those. A cross-posted copy hosted here may
+  still appear as a secondary `Also at simpligility.ca` link on an external
+  entry, but simpligility.ca is never the primary publication of an entry.
 - **Skip auto-generated digests.** The old simpligility.ca blog auto-published
   weekly "Twitter Weekly Updates for YYYY-MM-DD" posts (roundups of Manfred's
   tweets). These are not authored articles — **exclude them**. Treat any similar

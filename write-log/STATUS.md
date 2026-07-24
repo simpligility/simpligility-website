@@ -16,28 +16,17 @@ pass through a site feeds both.
 
 ---
 
-## 1. Harvest blog posts from simpligility.ca
+## 1. simpligility.ca blog — harvested; self-hosted posts not listed
 
-**Discovery done** (2026-07-24): every post on the simpligility.ca blog
-(2010–2025) is inventoried in
-[`simpligility-harvest.md`](simpligility-harvest.md), one bullet per post with
-URL, date, summary, and `EVENT →` / `VIDEO →` cross-references. What remains is
-turning that inventory into write-log entries, following the scope rules now
-recorded in the skill ("Which posts to include"):
-
-- **Exclude** the auto-generated "Twitter Weekly Updates" digests (not
-  enumerated in the harvest).
-- Give **each** substantive post its own entry, including short release posts.
-- **Dedupe** duplicate slug pairs (`.../` vs `.../…-2/`) to the canonical URL.
-
-The `EVENT →` and `VIDEO →` items from the harvest have already been handled: the
-discovered events are added to the
-[event log](../event-log/event-log.html), and the remaining videos are tracked
-in the [video-log STATUS](../video-log/STATUS.md).
-
-**Open first:** whether the write log should list simpligility.ca's own posts at
-all — linking the site to itself makes for a more complete record but dilutes the
-visibility of the external writing. Resolve this before writing these entries.
+The full simpligility.ca blog (2010–2025) is inventoried in
+[`simpligility-harvest.md`](simpligility-harvest.md). **Decision (2026-07-24):**
+the write log lists **external writing only**, so simpligility.ca's own
+self-hosted posts are **not** added as entries — the page intro now links to the
+blog for those (rule recorded in the skill under "Which posts to include"). The
+harvest is kept as the reference from which the `EVENT →` items were added to the
+[event log](../event-log/event-log.html), the `VIDEO →` items were routed to the
+[video log](../video-log/STATUS.md), and the other-site writing it surfaced
+(e.g. the SD Times Honeycomb interview) feeds item 5 below.
 
 ## 2. Harvest Sonatype blog posts
 
