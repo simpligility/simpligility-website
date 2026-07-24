@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-07-22
+Last updated: 2026-07-24
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -60,8 +60,12 @@ https://www.youtube.com/playlist?list=PLB9250394EA1B2676, but also find other
 details, look in my calendar, the simpligility website (blog posts?) and also I
 think there are slides on the simpligility github org
 
-## 7. Add the July 2026 Chainguard events
+## 7. Add the Learning Lab video and recap once live
 
-Add the APAC Chainguard Libraries webinar from 22 July 2026 and the Learning
-Lab from 23 July 2026 to the event log. Upload the slide decks for both events
-and link them from their entries.
+The Learning Lab entry (23 July 2026, "Learning Lab: Chainguard Libraries for
+Java — CVE remediation, fallback, and policies") currently has only its slide
+deck. Once they go live, add:
+
+- the `Video` link (YouTube), as the first link ahead of the slide deck, and
+- a `Details` link to the recap at
+  <https://edu.chainguard.dev/software-security/learning-labs/ll202607/>.
