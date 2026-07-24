@@ -70,10 +70,6 @@ deck. Once they go live, add:
 The events discovered in the simpligility.ca blog (2010–2024) have been added.
 Loose ends:
 
-- **DevOpsDays Vancouver 2016** links only the `Video`. A published Google Slides
-  deck exists
-  (`docs.google.com/presentation/d/12o1JhRxBaNTP5HLFz7M6YuxZwZNd0nZYmRqYM36bEFI/pub`);
-  add it as a `Slide deck` if it should be public.
 - The **OSCON 2015** and **JavaOne 2015** decks are served from Manfred's own
   forks with GitHub Pages enabled — `simpligility/nexus-presentations` (gh-pages
   branch) and `simpligility/javaone2015` (master branch). Keep these repos; the
