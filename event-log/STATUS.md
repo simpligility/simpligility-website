@@ -46,16 +46,7 @@ playlist at
 Manfred to dig out the individual events (title, date, video link) so each can be
 added as its own event-log entry.
 
-## 5. Add the AnDevCon teaser videos
-
-The AnDevCon conference talks and fireside chats (AnDevCon 2011, AnDevCon II
-2011, AnDevCon III 2012, AnDevCon 5 2013) have been added to the event log from
-the simpligility.ca blog discovery. What remains is the AnDevCon **teaser
-videos** playlist
-(<https://www.youtube.com/playlist?list=PLB9250394EA1B2676>) — likely video-log
-material rather than events. Evaluate and add there if worthwhile.
-
-## 6. Add the Learning Lab video and recap once live
+## 5. Add the Learning Lab video and recap once live
 
 The Learning Lab entry (23 July 2026, "Learning Lab: Chainguard Libraries for
 Java — CVE remediation, fallback, and policies") currently has only its slide
@@ -65,7 +56,7 @@ deck. Once they go live, add:
 - a `Details` link to the recap at
   <https://edu.chainguard.dev/software-security/learning-labs/ll202607/>.
 
-## 7. Follow-ups from the blog-discovery event additions
+## 6. Follow-ups from the blog-discovery event additions
 
 The events discovered in the simpligility.ca blog (2010–2024) have been added.
 Loose ends:
@@ -75,5 +66,5 @@ Loose ends:
   branch) and `simpligility/javaone2015` (master branch). Keep these repos; the
   entries link to `simpligility.github.io/...`. The original `takari/javaone2015`
   is gone, so the fork is the only surviving copy of that deck.
-- **AnDevCon locations** are set to San Jose, CA per Manfred; the source posts did
-  not state a venue, so confirm if a more precise venue/city is wanted.
+- **AnDevCon locations** are set to San Jose, CA per Manfred (the source posts did
+  not state a venue).

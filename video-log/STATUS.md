@@ -53,6 +53,11 @@ Check for standalone videos on other channels, project sites, and outlets
 (e.g. older simpligility.ca screencasts, conference channel uploads that are not
 event recordings, partner channels). Add any that are found.
 
+Decided against: the **AnDevCon teaser videos** playlist
+(<https://www.youtube.com/playlist?list=PLB9250394EA1B2676>) is **not wanted**.
+The AnDevCon conference talks are already in the event log, and these teasers are
+not worth adding — do not re-propose them.
+
 ## 5. Add the Presto and Trino SQL training videos
 
 Find the Presto SQL training videos and the newer Trino SQL training videos
