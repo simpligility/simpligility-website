@@ -74,10 +74,8 @@ Already present (no action): the 8-part **Easy publishing to the Central
 Repository** series (linked from the 26 Apr 2016 post) is already in the
 `2010–2016` section.
 
-Cross-log, decide placement (video log vs event log), not standalone tutorials:
+Cross-log items now placed in the event log (no video-log action needed):
 
-- **FLOSS Weekly Episode 577** (Presto/Trino, 6 May 2020) — a podcast appearance,
-  likely an event-log entry; flagged in the event-log STATUS.
+- **FLOSS Weekly Episode 577** (Presto/Trino, 6 May 2020) — added as a 2020 event.
+- **DevOpsDays Vancouver 2016 Ignite talk** recording — added as a 2016 event.
 - **SiliconANGLE theCUBE interview** (2023) — already in the event log.
-- **DevOpsDays Vancouver 2016 Ignite talk** recording — an event recording,
-  flagged in the event-log STATUS.

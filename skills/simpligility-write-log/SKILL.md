@@ -39,6 +39,22 @@ The write log, this skill, and `STATUS.md` live in the `simpligility-website`
 git repo. Commit each completed change as its own focused commit and push it to
 `main`. Fold any `STATUS.md` update into the same commit as the work it covers.
 
+## Which posts to include
+
+Not every URL on a site is a write-log entry. When harvesting:
+
+- **Skip auto-generated digests.** The old simpligility.ca blog auto-published
+  weekly "Twitter Weekly Updates for YYYY-MM-DD" posts (roundups of Manfred's
+  tweets). These are not authored articles — **exclude them**. Treat any similar
+  auto-posted content the same way.
+- **One entry per post.** Each substantive post gets its **own** entry, including
+  short release or version-announcement posts (e.g. "Android Maven Plugin 4.4.2
+  Released"). Do **not** consolidate several releases of one project into a single
+  entry.
+- **Dedupe double-publishes.** WordPress sometimes produced duplicate slug pairs
+  (`.../slug/` and `.../slug-2/`) for the same post. Add the post once, using the
+  canonical (non-`-2`) URL.
+
 ## File structure
 
 ```html

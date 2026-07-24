@@ -19,21 +19,23 @@ Harvested: 2026-07-24. Source: https://simpligility.ca/page/N/ (N = 30 → 1).
   domain; on the current site those live under `/wp-content/uploads/...` and
   links must be made **root-relative** per the log skills.
 
-## Scope decisions still open (for the entry-writing phase)
+## Scope decisions (resolved 2026-07-24)
 
-These are **captured here but not yet resolved** — decide before writing entries:
+1. **Twitter Weekly Updates digests — excluded.** From late 2010 through 2012 the
+   blog auto-published ~60 "Twitter Weekly Updates for YYYY-MM-DD" posts (weekly
+   tweet roundups). They are auto-generated, not authored articles, so they are
+   **not** write-log entries and are not enumerated below (recoverable by paging
+   the blog if ever wanted).
+2. **Release-only posts — one entry each.** Every substantive post, including
+   short version-announcement posts (e.g. "Android Maven Plugin 4.4.2 Released"),
+   gets its own entry; do not consolidate per project.
+3. **Duplicate posts — dedupe.** Several posts have duplicate slug pairs (`.../`
+   and `.../…-2/`) from a WordPress double-publish; add each once, using the
+   canonical (non-`-2`) URL.
 
-1. **Twitter Weekly Updates digests.** From late 2010 through 2012 the blog
-   auto-published ~60 "Twitter Weekly Updates for YYYY-MM-DD" posts (weekly
-   roundups of Manfred's tweets). They are auto-generated, not authored articles,
-   and many appear as duplicate slug pairs (`.../` and `.../…-2/`). **Recommended:
-   exclude from the write log.** They are not enumerated individually below; they
-   are recoverable by paging the blog if ever wanted.
-2. **Trivial release-only posts.** Many entries are one-paragraph version-bump
-   announcements (e.g. "Android Maven Plugin 4.4.2 Released"). Decide whether the
-   write log lists each release or a single consolidated entry per project.
-3. **Duplicate posts.** Several non-Twitter posts also have duplicate slug pairs
-   from a WordPress double-publish; dedupe to the canonical URL when adding.
+These rules are recorded in the write-log skill under "Which posts to include".
+One open question remains for the entry-writing phase: whether the write log
+should list simpligility.ca's own posts at all (self-referencing the site).
 
 ---
 
