@@ -28,10 +28,13 @@ any that are missing.
 ## 3. Youtube search
 
 Do a general search on youtube for Manfred Moser and related terms to find
-videos of events I have not yet added. There should be a devopsdays Vancouver
-one and a bunch of Sonatype ones. For the Sonatype ones there is also a hidden
-page on the simpligility site that has a lot of these already. We could harvest
-these and move them over.
+videos of events I have not yet added. Both DevOpsDays Vancouver Ignite talks
+(2013 and 2016) are already in, so what remains is a bunch of Sonatype event
+videos to track down and add as event-log entries.
+
+The hidden simpligility page that once collected many of these was the former
+`/video/` page, already harvested into the [video log](../video-log/) &mdash;
+nothing left to harvest there.
 
 The OneOps user training video series, which previously lived here, has been
 moved to the [video log](../video-log/) as a standalone video series, along with

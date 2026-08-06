@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (implemented the sticky year navigation)
+Last updated: 2026-08-06 (expanded the Sonatype harvest: authored posts, mentions, and Nexus Live routing)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -30,9 +30,20 @@ harvest is kept as the reference from which the `EVENT →` items were added to 
 
 ## 2. Harvest Sonatype blog posts
 
-Manfred wrote a number of posts on the Sonatype blog. There is also a hidden
-page on the simpligility site that already collects many Sonatype items (noted
-in the event-log STATUS) — harvest from there and from the Sonatype blog itself.
+Manfred wrote a number of posts on the Sonatype blog. Harvest them from the
+Sonatype site itself, now at `www.sonatype.com/blog`, including the author
+archive at `www.sonatype.com/blog/author/manfred-moser`. Check for two things:
+posts authored by Manfred, and posts by others that reference or mention him.
+Add a write-log entry for each post he authored.
+
+Some of what turns up will be **Nexus Live** references rather than blog posts
+&mdash; Nexus Live was a Sonatype live-streamed broadcast series. Those are
+events, not writing, so any newly found episode that involved Manfred goes in
+the [event log](../event-log/STATUS.md) under the Nexus Live item, not here.
+
+The hidden simpligility page once noted here was the former `/video/` page
+&mdash; it holds videos, not blog posts, so there is nothing to harvest from it
+for the write log.
 
 ## 3. Harvest Starburst posts
 
