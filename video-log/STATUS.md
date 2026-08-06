@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-07-24 (added simpligility.ca blog discovery, item 6)
+Last updated: 2026-08-06 (added the Chainguard PSA video from item 6)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -69,11 +69,7 @@ available slide decks, and related blog posts to the appropriate log entries.
 
 The blog discovery pass is captured in
 [`../write-log/simpligility-harvest.md`](../write-log/simpligility-harvest.md)
-with `VIDEO →` notes. From it, to add here:
-
-- **Chainguard "PSA" video on joining Chainguard** — 2025 — a short fun video
-  Manfred made about joining Chainguard: <https://www.youtube.com/watch?v=OA9EpeBnwrA>.
-  Standalone video → add a 2025 entry.
+with `VIDEO →` notes. Nothing outstanding to add here from it.
 
 Already present (no action): the 8-part **Easy publishing to the Central
 Repository** series (linked from the 26 Apr 2016 post) is already in the
