@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (Trino SQL training routed to the event log; item 5)
+Last updated: 2026-08-06 (moved Manfred mentors off the video log to its dedicated page)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -14,18 +14,22 @@ video**. Much of the research overlaps with the
 [write log](../write-log/STATUS.md); do it with all three pages in mind so a
 single pass through a source feeds them all.
 
-The page holds the OneOps videos, the Manfred mentors episodes, and the Sonatype
-video archive; much more remains to be added.
+The page holds the OneOps videos, the Sonatype video archive, and assorted
+standalone videos; much more remains to be added.
 
 ---
 
-## 1. Keep the Manfred mentors episodes up to date
+## 1. Manfred mentors lives on its own page
 
-The initial 12 episodes are on the page, each as its own dated entry under the
-`Manfred mentors` series (an open-ended category, not a finished series — see the
-skill's "one entry vs one entry per video" rule). *Manfred mentors* is an ongoing
-live show (YouTube, LinkedIn, Twitch), so add new episodes as they are published.
-The episode playlist for finding them is
+The *Manfred mentors* episodes are **no longer listed in the video log**. The
+show is an ongoing live stream (YouTube, LinkedIn, Twitch) with its own home at
+<https://simpligility.ca/manfred-mentors/>, and the video-log intro now points
+there instead of repeating the episodes &mdash; the same way the write log points
+to the blog for self-hosted posts.
+
+Future: Manfred will expand the Manfred mentors WordPress page into a proper
+episode archive, possibly managed here as its own fragment (like the three logs)
+later. The episode playlist for reference is
 <https://www.youtube.com/playlist?list=PLHdo8mJLIMWALFrGgA6-wWcWgyZmjAex->.
 
 ## 2. Recover the Apache Maven Hangouts titles
@@ -87,16 +91,7 @@ Cross-log items now placed in the event log (no video-log action needed):
 - **DevOpsDays Vancouver 2016 Ignite talk** recording — added as a 2016 event.
 - **SiliconANGLE theCUBE interview** (2023) — already in the event log.
 
-## 7. Give the Manfred mentors episodes first-class, blog-style treatment
-
-There is a dedicated page for the show at
-<https://simpligility.ca/manfred-mentors/>. Manfred wants the mentors episodes
-treated the way blog posts are treated elsewhere, tied to that page, rather than
-only living as individual entries in the video log. Needs scoping and discussion
-before implementation: decide how the video-log entries, the dedicated page, and
-any per-episode write-up relate, and what the generated output should be.
-
-## 8. Sticky year navigation (shared feature across all three logs)
+## 7. Sticky year navigation (shared feature across all three logs)
 
 Build a floating/sticky year-navigation list into the generated HTML so it stays
 visible while scrolling the live page (see e.g.
