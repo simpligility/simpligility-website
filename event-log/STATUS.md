@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (implemented the sticky year navigation)
+Last updated: 2026-08-06 (added four 2013 Nexus Live episodes; narrowed the YouTube search)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -42,12 +42,20 @@ the other OneOps feature videos from the same channel.
 
 ## 4. Add the Nexus Live events
 
-The former `/video/` page had a **Nexus Live** section — these were live
-streamed events and belong here in the event log, not the video log. There is a
-playlist at
-<https://www.youtube.com/playlist?list=PLGB2s-U5FSWPHJd4EEEFgmcLJUc-_1Pcs>;
-Manfred to dig out the individual events (title, date, video link) so each can be
-added as its own event-log entry.
+Nexus Live was a Sonatype live-streamed broadcast series and each episode
+belongs here in the event log, not the video log. Added so far, each as its own
+entry: the **April 2014** Engineering Summit episode (Nexus 2.8), and the 2013
+episodes for **March**, **April**, **June**, and **September**, all from the
+official Sonatype YouTube channel.
+
+Still to do: track down the remaining episodes that involved Manfred. This needs
+the full series enumerated, which the tooling here could not do — the playlist at
+<https://www.youtube.com/playlist?list=PLGB2s-U5FSWPHJd4EEEFgmcLJUc-_1Pcs>, the
+Sonatype channel search, and the Wayback copy of the former `/video/` page are
+all JS-rendered, moved, or unarchived. Manfred to paste the playlist contents or
+more watch URLs, and each can then be added. The entries added so far also carry
+only month-precision dates and general descriptions; exact broadcast dates and
+per-episode topics can be filled in when available.
 
 ## 5. Follow-ups from the blog-discovery event additions
 
