@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (added the Chainguard PSA video from item 6)
+Last updated: 2026-08-06 (recorded the mentors dedicated-page and sticky-nav tasks)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -80,3 +80,24 @@ Cross-log items now placed in the event log (no video-log action needed):
 - **FLOSS Weekly Episode 577** (Presto/Trino, 6 May 2020) — added as a 2020 event.
 - **DevOpsDays Vancouver 2016 Ignite talk** recording — added as a 2016 event.
 - **SiliconANGLE theCUBE interview** (2023) — already in the event log.
+
+## 7. Give the Manfred mentors episodes first-class, blog-style treatment
+
+There is a dedicated page for the show at
+<https://simpligility.ca/manfred-mentors/>. Manfred wants the mentors episodes
+treated the way blog posts are treated elsewhere, tied to that page, rather than
+only living as individual entries in the video log. Needs scoping and discussion
+before implementation: decide how the video-log entries, the dedicated page, and
+any per-episode write-up relate, and what the generated output should be.
+
+## 8. Sticky year navigation (shared feature across all three logs)
+
+Build a floating/sticky year-navigation list into the generated HTML so it stays
+visible while scrolling the live page (see e.g.
+<https://simpligility.ca/video-log/>), highlights the year currently in view, and
+lets the reader jump to any year without scrolling back to the top. Implement it
+separately for each of the three logs (event, video, write) but design it once so
+the three stay consistent. Embedding constraint: the fragment has no
+`<html>`/`<head>`/`<body>` wrapper (it is pasted into a WordPress page), so any
+CSS/JS must live inline within the fragment. The same item is recorded in the
+event-log and write-log STATUS files.
