@@ -1089,3 +1089,47 @@ Check out specific years:
   </dd>
 
 </dl>
+
+<!-- Sticky year navigation: a floating, scroll-aware jump list built from the year headings above. Self-contained inline CSS and JS for the WordPress embed; if the script does not run it simply does not appear and the inline "Check out specific years" list still works. Hidden on narrow screens. Keep this block identical across the event, video, and write logs. -->
+<style>
+#year-jump-nav{position:fixed;right:8px;top:50%;transform:translateY(-50%);z-index:9999;display:flex;flex-direction:column;gap:2px;max-height:80vh;overflow-y:auto;padding:8px 6px;background:rgba(255,255,255,.94);border:1px solid #ddd;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,.15);font-size:13px;line-height:1.2}
+#year-jump-nav a{display:block;padding:2px 8px;border-radius:6px;text-decoration:none;color:#555;white-space:nowrap}
+#year-jump-nav a:hover{background:#f0f0f0;color:#000}
+#year-jump-nav a.active{background:#333;color:#fff;font-weight:700}
+@media (max-width:1024px){#year-jump-nav{display:none}}
+</style>
+<script>
+(function(){
+  function init(){
+    if(document.getElementById('year-jump-nav'))return;
+    var heads=[].slice.call(document.querySelectorAll('h2[id]')).filter(function(h){return /^\d{4}(-\d{4})?$/.test(h.id);});
+    if(heads.length<2)return;
+    var nav=document.createElement('nav');
+    nav.id='year-jump-nav';
+    nav.setAttribute('aria-label','Jump to year');
+    var links={};
+    heads.forEach(function(h){
+      var a=document.createElement('a');
+      a.href='#'+h.id;
+      a.textContent=h.textContent.trim();
+      nav.appendChild(a);
+      links[h.id]=a;
+    });
+    document.body.appendChild(nav);
+    var ticking=false;
+    function update(){
+      ticking=false;
+      var current=heads[0].id;
+      for(var i=0;i<heads.length;i++){
+        if(heads[i].getBoundingClientRect().top<=120){current=heads[i].id;}else{break;}
+      }
+      Object.keys(links).forEach(function(id){links[id].classList.toggle('active',id===current);});
+    }
+    function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(update);}}
+    window.addEventListener('scroll',onScroll,{passive:true});
+    window.addEventListener('resize',onScroll,{passive:true});
+    update();
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>

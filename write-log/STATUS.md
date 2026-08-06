@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (recorded the shared sticky-nav task)
+Last updated: 2026-08-06 (implemented the sticky year navigation)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -73,14 +73,3 @@ dead links" rule in [`../skills/simpligility-write-log/SKILL.md`](../skills/simp
 as more links rot over time we will likely formalize a convention for dropping
 an unrecoverable link while keeping the entry (and a record of where it pointed)
 on the page.
-
-## 8. Sticky year navigation (shared feature across all three logs)
-
-Build a floating/sticky year-navigation list into the generated HTML so it stays
-visible while scrolling the live page (see <https://simpligility.ca/write-log/>),
-highlights the year currently in view, and lets the reader jump to any year
-without scrolling back to the top. Implement it separately for each of the three
-logs (event, video, write) but design it once so the three stay consistent.
-Embedding constraint: the fragment has no `<html>`/`<head>`/`<body>` wrapper (it
-is pasted into a WordPress page), so any CSS/JS must live inline within the
-fragment. The same item is recorded in the event-log and video-log STATUS files.

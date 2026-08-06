@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (added the recovered Presto training decks to the events)
+Last updated: 2026-08-06 (implemented the sticky year navigation)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -58,14 +58,3 @@ Loose ends:
   is gone, so the fork is the only surviving copy of that deck.
 - **AnDevCon locations** are set to San Jose, CA per Manfred (the source posts did
   not state a venue).
-
-## 6. Sticky year navigation (shared feature across all three logs)
-
-Build a floating/sticky year-navigation list into the generated HTML so it stays
-visible while scrolling the live page (see <https://simpligility.ca/event-log/>),
-highlights the year currently in view, and lets the reader jump to any year
-without scrolling back to the top. Implement it separately for each of the three
-logs (event, video, write) but design it once so the three stay consistent.
-Embedding constraint: the fragment has no `<html>`/`<head>`/`<body>` wrapper (it
-is pasted into a WordPress page), so any CSS/JS must live inline within the
-fragment. The same item is recorded in the video-log and write-log STATUS files.
