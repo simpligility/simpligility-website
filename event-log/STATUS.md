@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (Presto training decks recovered; item 7)
+Last updated: 2026-08-06 (added the recovered Presto training decks to the events)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -58,23 +58,6 @@ Loose ends:
   is gone, so the fork is the only surviving copy of that deck.
 - **AnDevCon locations** are set to San Jose, CA per Manfred (the source posts did
   not state a venue).
-
-## 7. Add the archived Presto training slide decks
-
-The four 2020 Presto training sessions (now event-log entries, and write-log
-posts) had Starburst-hosted slide decks. Those are dead on starburst.io but
-survive on the Wayback Machine and have been downloaded to `wayback-presto-decks/`
-in the repo working tree (untracked, not committed):
-
-- `presto-training-advanced-sql.pdf` (29 July 2020 &mdash; Advanced SQL in Presto)
-- `presto-training-query-processing.pdf` (12 August 2020 &mdash; Understanding and tuning Presto query processing)
-- `presto-training-securing-presto.pdf` (26 August 2020 &mdash; Securing Presto)
-- `presto-training-performance.pdf` (9 September 2020 &mdash; Configuring and tuning Presto performance)
-
-Next steps: Manfred uploads them to simpligility.ca under
-`/wp-content/uploads/...`, then add a root-relative `Slide deck` link to each of
-the four event-log entries (canonical order Video, Slide deck, Details). Delete
-the local `wayback-presto-decks/` folder once they are uploaded.
 
 ## 6. Sticky year navigation (shared feature across all three logs)
 
