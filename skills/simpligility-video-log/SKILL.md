@@ -47,16 +47,23 @@ This is the key decision when adding videos. Two shapes:
    class). Add it as **one entry** that links the playlist. The series has a
    single date (when it was released).
 2. **An open-ended category or brand** — a recurring title that is really an
-   umbrella for many separate videos that accrue over time and can span years
-   (for example *Manfred mentors*). Add **one entry per video**, each with its
-   own title, its own date, and the category name in the series/channel slot of
-   the `<dt>`. This mirrors how each Trino Community Broadcast episode is its own
-   event-log entry: separate dated entries let the category sort correctly and
-   span multiple year blocks.
+   umbrella for many separate videos that accrue over time and can span years,
+   such as an ongoing show or a rolling explainer series. Add **one entry per
+   video**, each with its own title, its own date, and the category name in the
+   series/channel slot of the `<dt>`. This mirrors how each Trino Community
+   Broadcast episode is its own event-log entry: separate dated entries let the
+   category sort correctly and span multiple year blocks.
 
 When unsure which shape applies, ask: *does this title name one finished thing,
 or an ongoing line of separate videos?* The first is one entry; the second is
 one entry per video.
+
+**Exception — *Manfred mentors*.** *Manfred mentors* is exactly this
+open-ended shape, but it is **not** listed in the video log. The show is an
+ongoing live stream with its own home at
+<https://simpligility.ca/manfred-mentors/>, and the video-log intro points
+there instead — the same way the write log points to the blog for self-hosted
+posts. Do not add its episodes here.
 
 ## Legacy archive collections
 
@@ -196,10 +203,10 @@ between entries.
   ` &mdash; ` (em dash with a space on each side).
 - **Series/channel** sits where the event log puts location and the write log
   puts publication. Use a clean, human name for the series the video belongs to
-  or the channel it lives on: `Manfred mentors`, `OneOps`, `Sonatype`,
-  `simpligility.ca`. Omit it only when a video genuinely belongs to no series or
-  channel; in that case the date follows the title directly with ` &mdash; `.
-  The full URL goes in the link below, not here.
+  or the channel it lives on: `OneOps`, `Sonatype`, `simpligility.ca`. Omit it
+  only when a video genuinely belongs to no series or channel; in that case the
+  date follows the title directly with ` &mdash; `. The full URL goes in the
+  link below, not here.
 - **Date** is the last segment. Use the most precise form known:
   - Full date: `5 June 2025` (day month year, no comma, no ordinal suffix).
   - Month only: `January 2017`.

@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (implemented the sticky year navigation)
+Last updated: 2026-08-06 (removed the Manfred-mentors item; the rule now lives in the skill)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -19,18 +19,7 @@ standalone videos; much more remains to be added.
 
 ---
 
-## 1. Manfred mentors lives on its own page
-
-The *Manfred mentors* episodes are **no longer listed in the video log**. The
-show is an ongoing live stream (YouTube, LinkedIn, Twitch) with its own home at
-<https://simpligility.ca/manfred-mentors/>, and the video-log intro now points
-there instead of repeating the episodes &mdash; the same way the write log points
-to the blog for self-hosted posts.
-
-Building that page out into an episode archive (and setting a regular streaming
-cadence) is tracked in the top-level [`STATUS.md`](../STATUS.md).
-
-## 2. Recover the Apache Maven Hangouts titles
+## 1. Recover the Apache Maven Hangouts titles
 
 The Sonatype video archive (Nexus how-to series, Central Repository publishing,
 Staging Suite, the 2 Minute Challenge, Smart Proxy) has been harvested from the
@@ -40,7 +29,7 @@ links survive. If Manfred can recover the episode titles (and any links), add
 them as their own session entry following the legacy-archive convention in the
 skill. Until then there is nothing to harvest for it.
 
-## 3. Sweep the event log for other standalone videos to migrate
+## 2. Sweep the event log for other standalone videos to migrate
 
 Go through `event-log.html` and find entries that are really standalone videos
 rather than events (the OneOps training series was the first such case, now
@@ -49,7 +38,7 @@ confirm before moving. When moving one, remove it from the event log (and its
 year-navigation link if it was the only entry in that year) in the same commit
 that adds it here.
 
-## 4. Track down other video channels and series
+## 3. Track down other video channels and series
 
 Check for standalone videos on other channels, project sites, and outlets
 (e.g. older simpligility.ca screencasts, conference channel uploads that are not
@@ -60,7 +49,7 @@ Decided against: the **AnDevCon teaser videos** playlist
 The AnDevCon conference talks are already in the event log, and these teasers are
 not worth adding — do not re-propose them.
 
-## 5. Add the Presto SQL training videos
+## 4. Add the Presto SQL training videos
 
 The **Trino** SQL training series (2023, *Learning SQL with Trino from the
 experts* &mdash; four sessions with Martin Traverso, Dain Sundstrom, and David
@@ -73,7 +62,7 @@ way, whether each is a standalone video-log entry or a live event for the event
 log. Add the video links, available slide decks, and related blog posts to the
 appropriate log.
 
-## 6. Add videos found in the simpligility.ca blog discovery
+## 5. Add videos found in the simpligility.ca blog discovery
 
 The blog discovery pass is captured in
 [`../write-log/simpligility-harvest.md`](../write-log/simpligility-harvest.md)

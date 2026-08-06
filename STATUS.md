@@ -9,7 +9,7 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-08-06 (created; added the Manfred mentors tasks)
+Last updated: 2026-08-06 (repointed the Manfred-mentors cross-reference to the skill)
 
 ---
 
@@ -18,8 +18,9 @@ Last updated: 2026-08-06 (created; added the Manfred mentors tasks)
 The *Manfred mentors* show has a dedicated page at
 <https://simpligility.ca/manfred-mentors/>, currently a promo landing page
 (intro, streaming-platform links, sponsor call-to-action) with no episode list.
-The video log no longer lists the episodes and points here instead (see
-[`video-log/STATUS.md`](video-log/STATUS.md) item 1).
+The video log no longer lists the episodes and points here instead; that rule
+is recorded in
+[`skills/simpligility-video-log/SKILL.md`](skills/simpligility-video-log/SKILL.md).
 
 Next: expand the WordPress page into a proper episode archive &mdash; a
 blog-style, reverse-chronological list of episodes with titles, dates, and watch
