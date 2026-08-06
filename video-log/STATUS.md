@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (moved Manfred mentors off the video log to its dedicated page)
+Last updated: 2026-08-06 (Manfred mentors page build-out moved to the top-level STATUS)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -27,10 +27,8 @@ show is an ongoing live stream (YouTube, LinkedIn, Twitch) with its own home at
 there instead of repeating the episodes &mdash; the same way the write log points
 to the blog for self-hosted posts.
 
-Future: Manfred will expand the Manfred mentors WordPress page into a proper
-episode archive, possibly managed here as its own fragment (like the three logs)
-later. The episode playlist for reference is
-<https://www.youtube.com/playlist?list=PLHdo8mJLIMWALFrGgA6-wWcWgyZmjAex->.
+Building that page out into an episode archive (and setting a regular streaming
+cadence) is tracked in the top-level [`STATUS.md`](../STATUS.md).
 
 ## 2. Recover the Apache Maven Hangouts titles
 
