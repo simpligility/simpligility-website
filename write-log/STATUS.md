@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (recovered the TheServerSide URLs via Wayback; removed the completed better-URLs task)
+Last updated: 2026-08-07 (added the About-page books-section link task)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -76,3 +76,14 @@ posts with no title or link yet — one or two more in **2016** (one tagged Feb
 dates, and URLs and add entries. The 2015 year block does not exist yet; create
 it in descending-year position (between 2016 and 2014) with its
 `<h2 id="2015">` and a matching navigation link.
+
+## 6. Link the write log from the About page books section
+
+The site's About page has a section on the books Manfred has co-authored
+(*Trino: The Definitive Guide* and *Presto: The Definitive Guide*). Add a link
+from there to the write log (root-relative `/write-log/`,
+<https://simpligility.ca/write-log/>) so readers who arrive via the books can
+find the rest of his writing. The About page is a WordPress page, not managed in
+this repo, so the edit is made in the WordPress admin. This is the
+write-log-specific part of the broader About-page log-linking task in the
+[top-level STATUS](../STATUS.md).

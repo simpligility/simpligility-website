@@ -9,7 +9,7 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-08-06 (repointed the Manfred-mentors cross-reference to the skill)
+Last updated: 2026-08-07 (added the About-page log-linking task)
 
 ---
 
@@ -36,3 +36,18 @@ example a fixed weekly or biweekly day and time &mdash; and commit to it rather
 than streaming ad hoc. Decide the interval, announce the schedule on the
 dedicated page and the streaming platforms (YouTube, LinkedIn, Twitch), and then
 run with it consistently.
+
+## 3. Link the log pages better from the About pages
+
+The event, write, and video logs
+(<https://simpligility.ca/event-log/>, <https://simpligility.ca/write-log/>,
+<https://simpligility.ca/video-log/>) are not well surfaced from the site's
+About page(s). Add clear links to all three logs there so visitors reading
+Manfred's background can find his talks, writing, and videos. Keep the links
+root-relative (`/event-log/`, `/write-log/`, `/video-log/`) so they work under
+both simpligility.ca and simpligility.com. The About pages are WordPress pages,
+not managed in this repo, so the edit is made in the WordPress admin.
+
+The write-log-specific facet of this &mdash; linking the write log from the
+books section of the About page &mdash; is tracked in
+[`write-log/STATUS.md`](write-log/STATUS.md).
