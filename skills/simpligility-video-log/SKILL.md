@@ -62,6 +62,22 @@ commit that adds it here. The event log has been reviewed end to end and holds
 no such misfiled videos, so this is a check to run on new additions rather than
 a backlog to work through.
 
+### Channels already swept
+
+The known channels and playlists have been reviewed for standalone videos, so
+treat finding more as a watch-for-new check rather than a backlog to work
+through:
+
+- The @ManfredMoser personal YouTube channel holds only personal and family
+  clips apart from the Public service announcement already listed, so nothing
+  else there belongs in the video log.
+- The [AnDevCon teaser videos playlist](https://www.youtube.com/playlist?list=PLB9250394EA1B2676)
+  is not wanted. The AnDevCon conference talks are already in the event log, and
+  the teasers are not worth adding.
+- The OneOps videos, the Sonatype video archive, and the standalone Chainguard
+  demos are already captured. Chainguard Learning Labs and other webinars are
+  live events and live in the event log, not here.
+
 ## One entry vs one entry per video
 
 This is the key decision when adding videos. Two shapes:
