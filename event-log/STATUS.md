@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (added Cinco de Trino 2022 from the Starburst blog sweep)
+Last updated: 2026-08-07 (enumerated the full Nexus Live catalog; added May 2013)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -40,20 +40,33 @@ the other OneOps feature videos from the same channel.
 
 ## 3. Add the Nexus Live events
 
-Nexus Live was a Sonatype live-streamed broadcast series and each episode
-belongs here in the event log, not the video log. Added so far, each as its own
-entry: the **April 2014** Engineering Summit episode (Nexus 2.8), and the 2013
-episodes for **March**, **April**, **June**, and **September**, all from the
-official Sonatype YouTube channel.
+Nexus Live (originally *Nexus Office Hours*, monthly on the last Friday) was a
+Sonatype live-streamed broadcast series and each episode belongs here in the
+event log, not the video log. The full catalog was enumerated by scraping the
+`ytInitialData` JSON from the Sonatype channel search
+(<https://www.youtube.com/@Sonatypeinc>) — the playlist and channel pages are
+JS-rendered, but the initial HTML payload carries the video IDs and titles.
 
-Still to do: track down the remaining episodes that involved Manfred. This needs
-the full series enumerated, which the tooling here could not do — the playlist at
-<https://www.youtube.com/playlist?list=PLGB2s-U5FSWPHJd4EEEFgmcLJUc-_1Pcs>, the
-Sonatype channel search, and the Wayback copy of the former `/video/` page are
-all JS-rendered, moved, or unarchived. Manfred to paste the playlist contents or
-more watch URLs, and each can then be added. The entries added so far also carry
-only month-precision dates and general descriptions; exact broadcast dates and
-per-episode topics can be filled in when available.
+**Added, each its own entry:** March, April, **May**, June, and September 2013,
+plus the April 2014 Engineering Summit episode (Nexus 2.8). May 2013 was the most
+recent addition (`wCfEbGTmJao`); its title names Manfred, so it was unambiguous.
+
+**Pending Manfred's confirmation — did he host/appear in these?** Their titles
+name only the guest, so involvement needs confirming before they are added. All
+are live on the Sonatype channel:
+
+- July 2013 with Jason van Zyl, creator of Maven &mdash; `ivUg9jZK0MA`
+- October 2013 with John Nagro and Tom McLaughlin from Hubspot &mdash; `21cbI2hwQSI`
+- November 2013 with Kyle Allan from Riot Games &mdash; `sLIQH8TKPas`
+- December 2013 with Tyler Jewell, CEO of Codenvy &mdash; `mgTvdIAqsnk`
+- March 2014 &mdash; The First 2 Minute Challenge &mdash; `HFssIdUoA4Q`
+- June 2014 with Alex Honor and Damon Edwards from RunDeck &mdash; `eHaEEBEMRA8`
+- July 31, 2014 &mdash; The Atlassian Story &mdash; `hkd7cCifYV4`
+- October 2014 with Gene Kim and Josh Corman &mdash; `tJGdjtVLqYI`
+
+No August 2013 or early-2014 episodes exist on the channel; this is the complete
+list. Entries carry month-precision dates matching the existing Nexus Live
+entries; exact broadcast dates and per-episode topics can be filled in later.
 
 ## 4. Follow-ups from the blog-discovery event additions
 
