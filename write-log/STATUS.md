@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (finished the Starburst harvest; trino.io confirmed complete)
+Last updated: 2026-08-07 (harvested the Sonatype author archive and repointed all Sonatype links to the live site)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -28,22 +28,26 @@ harvest is kept as the reference from which the `EVENT →` items were added to 
 [video log](../video-log/STATUS.md), and the other-site writing it surfaced
 (e.g. the SD Times Honeycomb interview) feeds item 5 below.
 
-## 2. Harvest Sonatype blog posts
+## 2. Harvest Sonatype blog posts &mdash; done for 2013&ndash;2016
 
-Manfred wrote a number of posts on the Sonatype blog. Harvest them from the
-Sonatype site itself, now at `www.sonatype.com/blog`, including the author
-archive at `www.sonatype.com/blog/author/manfred-moser`. Check for two things:
-posts authored by Manfred, and posts by others that reference or mention him.
-Add a write-log entry for each post he authored.
+The Sonatype author archive was harvested. The live site
+(`www.sonatype.com/blog/author/manfred-moser`) is a JS-rendered SPA that the
+tooling here cannot read, so the listing was recovered from Wayback snapshots of
+the old `blog.sonatype.com/author/manfred-moser` pages (which now 301 to the
+live site). Pages 1&ndash;2 (2013&ndash;2016) were captured cleanly; the only
+authored post not already listed was **How-to video training: Open source
+component management and intelligence** (18 July 2016), now added. Posts by
+others that merely reference him (e.g. Mark Miller&#39;s *TheNexus: A community
+project*) are correctly not added.
 
-Some of what turns up will be **Nexus Live** references rather than blog posts
-&mdash; Nexus Live was a Sonatype live-streamed broadcast series. Those are
-events, not writing, so any newly found episode that involved Manfred goes in
-the [event log](../event-log/STATUS.md) under the Nexus Live item, not here.
+**Small remaining gap:** author-archive **page 3** (the oldest posts,
+2011&ndash;2012) could not be re-fetched from Wayback (snapshots 504/absent). All
+known posts from that era are already in the log (three 2012 Nexus/Insight/Maven
+posts and the Nov 2011 community spotlight), so this is likely complete &mdash;
+but if Manfred recalls other early Sonatype posts, add them.
 
-The hidden simpligility page once noted here was the former `/video/` page
-&mdash; it holds videos, not blog posts, so there is nothing to harvest from it
-for the write log.
+Nexus Live references are handled in the [event log](../event-log/STATUS.md), not
+here.
 
 ## 3. Harvest old technology posts from mosabuam.com
 
@@ -67,9 +71,15 @@ it in descending-year position (between 2016 and 2014) with its
 
 ## 6. Find better URLs for the imported posts
 
-Many imported entries point at old `blog.sonatype.com` URLs (and other early
-links) that are dead or will rot over time. Go through them and, for each, try
-to locate a still-working URL: the post on the site's current location, a
+**Sonatype done:** every `blog.sonatype.com` link now 301s to the same path
+under `www.sonatype.com/blog`, and all 20 imported Sonatype entries were verified
+live (HTTP 200) and repointed there, with the read label changed to
+`Read on sonatype.com`.
+
+What remains are the other early links: the two **TheServerSide** posts
+(`theserverside.com`, 2011) and the **Hudson CI blog**
+(`hudsoncentral.wordpress.com`, 2011). Go through these and, for each, try to
+locate a still-working URL: the post on the site's current location, a
 republished copy, or an archived snapshot (e.g. the Wayback Machine,
 `web.archive.org`). Replace the link when a better one is found.
 
