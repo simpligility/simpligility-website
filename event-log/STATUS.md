@@ -38,7 +38,7 @@ The OneOps user training video series, which previously lived here, has been
 moved to the [video log](../video-log/) as a standalone video series, along with
 the other OneOps feature videos from the same channel.
 
-## 3. Add the Nexus Live events
+## 3. Add the Nexus Live events &mdash; done
 
 Nexus Live (originally *Nexus Office Hours*, monthly on the last Friday) was a
 Sonatype live-streamed broadcast series and each episode belongs here in the
@@ -47,26 +47,15 @@ event log, not the video log. The full catalog was enumerated by scraping the
 (<https://www.youtube.com/@Sonatypeinc>) — the playlist and channel pages are
 JS-rendered, but the initial HTML payload carries the video IDs and titles.
 
-**Added, each its own entry:** March, April, **May**, June, and September 2013,
-plus the April 2014 Engineering Summit episode (Nexus 2.8). May 2013 was the most
-recent addition (`wCfEbGTmJao`); its title names Manfred, so it was unambiguous.
-
-**Pending Manfred's confirmation — did he host/appear in these?** Their titles
-name only the guest, so involvement needs confirming before they are added. All
-are live on the Sonatype channel:
-
-- July 2013 with Jason van Zyl, creator of Maven &mdash; `ivUg9jZK0MA`
-- October 2013 with John Nagro and Tom McLaughlin from Hubspot &mdash; `21cbI2hwQSI`
-- November 2013 with Kyle Allan from Riot Games &mdash; `sLIQH8TKPas`
-- December 2013 with Tyler Jewell, CEO of Codenvy &mdash; `mgTvdIAqsnk`
-- March 2014 &mdash; The First 2 Minute Challenge &mdash; `HFssIdUoA4Q`
-- June 2014 with Alex Honor and Damon Edwards from RunDeck &mdash; `eHaEEBEMRA8`
-- July 31, 2014 &mdash; The Atlassian Story &mdash; `hkd7cCifYV4`
-- October 2014 with Gene Kim and Josh Corman &mdash; `tJGdjtVLqYI`
-
-No August 2013 or early-2014 episodes exist on the channel; this is the complete
-list. Entries carry month-precision dates matching the existing Nexus Live
-entries; exact broadcast dates and per-episode topics can be filled in later.
+All fourteen episodes on the channel are now in the log. Manfred confirmed he was
+organizer, co-host, or main host across the series, so the episodes whose titles
+name only the guest were added on that basis: 2013 for March, April, May, June,
+July (Jason van Zyl), September, October (HubSpot), November (Riot Games), and
+December (Codenvy); 2014 for March (first 2 Minute Challenge), April (Engineering
+Summit, Nexus 2.8), June (RunDeck), July (The Atlassian story), and October (Gene
+Kim and Josh Corman). No August 2013 or other early-2014 episodes exist on the
+channel. Entries carry month-precision dates (except the day-dated July 2014 and
+April 2014); exact broadcast dates and per-episode topics can be refined later.
 
 ## 4. Follow-ups from the blog-discovery event additions
 
