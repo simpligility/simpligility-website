@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (checked the Takari blog &mdash; no Manfred-authored posts to add)
+Last updated: 2026-08-07 (recovered the TheServerSide URLs via Wayback; removed the completed better-URLs task)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -76,25 +76,3 @@ posts with no title or link yet — one or two more in **2016** (one tagged Feb
 dates, and URLs and add entries. The 2015 year block does not exist yet; create
 it in descending-year position (between 2016 and 2014) with its
 `<h2 id="2015">` and a matching navigation link.
-
-## 6. Find better URLs for the imported posts
-
-**Sonatype done:** every `blog.sonatype.com` link now 301s to the same path
-under `www.sonatype.com/blog`, and all 20 imported Sonatype entries were verified
-live (HTTP 200) and repointed there, with the read label changed to
-`Read on sonatype.com`.
-
-What remains are the other early links: the two **TheServerSide** posts
-(`theserverside.com`, 2011) and the **Hudson CI blog**
-(`hudsoncentral.wordpress.com`, 2011). Go through these and, for each, try to
-locate a still-working URL: the post on the site's current location, a
-republished copy, or an archived snapshot (e.g. the Wayback Machine,
-`web.archive.org`). Replace the link when a better one is found.
-
-**Do not delete any entry, and do not strip its link, just because a URL no
-longer resolves.** Each broken link is a per-entry decision for Manfred — flag
-it and leave it in place until he decides how to proceed. See the "Broken and
-dead links" rule in [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md);
-as more links rot over time we will likely formalize a convention for dropping
-an unrecoverable link while keeping the entry (and a record of where it pointed)
-on the page.
