@@ -63,8 +63,30 @@ Also skipped deliberately: the **We moved** post (6 April 2023), a two-line
 notice that the developer blog had moved. Its content is folded into the last
 sentence of the 2023 summary entry instead.
 
-Still to collect: the main Starburst technical blog at
-<https://www.starburst.io/blog/>, where the developer blog moved in April 2023.
+The main Starburst blog at <https://www.starburst.io/blog/> is also harvested.
+The live author page at <https://www.starburst.io/blog/author/manfred-moser/>
+is empty and the site search does not find the name, but the **Wayback captures
+of that author page do list the posts** &mdash; eight snapshots between July 2022
+and October 2024 (`web.archive.org/cdx/search/cdx?url=www.starburst.io/blog/author/manfred-moser`).
+Two page templates are in play: the author's own posts sit in
+`blog-recent-posts-item` blocks (pre-2023) or `blog-card cell` blocks (2023 on);
+anything in `blog-single-sidebar` is unrelated site content, not his. Individual
+post pages **do** still carry the byline, so each one can be confirmed directly.
+That union yielded nine substantive posts (2020, 2022, 2023), all added.
+
+Loose ends on that blog:
+
+- Two posts have been removed and now redirect to `/blog/`: **Free Presto book
+  to support the community** (14 April 2020) and **Learning SQL with the Trino
+  experts from Starburst** (4 October 2023). Both entries link a Wayback
+  snapshot and say so in the description.
+- The `batch-processing-iceberg-delta-lake` slug once held the migrated copy of
+  the Starburst Galaxy batch-processing post, but it now serves an unrelated
+  2024 post by another author. No entry was added for it; the developer-blog
+  original is still live and is the one linked.
+- The listing caps at 12 posts with no pagination, so the 2023 window relies on
+  overlapping snapshots. They overlap enough to be complete, but if a gap ever
+  turns up, more snapshot timestamps are available from the CDX query above.
 
 ## 4. Harvest old technology posts from mosabuam.com
 
