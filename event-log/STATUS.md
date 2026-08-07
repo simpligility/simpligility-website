@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (added the DevOpsCon keynote video; renumbered sections)
+Last updated: 2026-08-07 (added Cinco de Trino 2022 from the Starburst blog sweep)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -16,6 +16,12 @@ The conventions for this file are documented in
 Track down other public events Manfred did for Starburst and Trino by checking
 his calendar, the Starburst blog, and the Starburst website. Add entries for
 any that are missing.
+
+The Starburst blogs have been swept as part of the write-log harvest and
+yielded one event: **Cinco de Trino 2022**, now added. Both the recap post and
+the on-demand session page have been removed from starburst.io, so that entry
+links a Wayback copy. What remains here is the calendar and the rest of the
+Starburst website; the blogs themselves are done.
 
 ## 2. Youtube search
 
