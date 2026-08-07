@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (harvested the Starburst developer blog archive)
+Last updated: 2026-08-07 (finished the Starburst harvest; trino.io confirmed complete)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -45,61 +45,18 @@ The hidden simpligility page once noted here was the former `/video/` page
 &mdash; it holds videos, not blog posts, so there is nothing to harvest from it
 for the write log.
 
-## 3. Harvest Starburst posts
-
-The Starburst **developer** blog archive at
-<https://docs.starburst.io/blog/archive.html> is **fully harvested** &mdash; it
-only ran from December 2021 to April 2023 and nothing there is missing. Nine
-substantive posts were added as individual entries.
-
-The Starburst Enterprise release and LTS backport announcements are **not** one
-entry per post: they are collapsed into a **single summary entry per year**
-(2021, 2022, 2023), each linking the archive page. This is a deliberate
-exception to the "one entry per post" rule in the skill, because the series ran
-to dozens of near-identical posts that were directed and managed rather than
-individually written. Keep this shape if more of the series turns up.
-
-Also skipped deliberately: the **We moved** post (6 April 2023), a two-line
-notice that the developer blog had moved. Its content is folded into the last
-sentence of the 2023 summary entry instead.
-
-The main Starburst blog at <https://www.starburst.io/blog/> is also harvested.
-The live author page at <https://www.starburst.io/blog/author/manfred-moser/>
-is empty and the site search does not find the name, but the **Wayback captures
-of that author page do list the posts** &mdash; eight snapshots between July 2022
-and October 2024 (`web.archive.org/cdx/search/cdx?url=www.starburst.io/blog/author/manfred-moser`).
-Two page templates are in play: the author's own posts sit in
-`blog-recent-posts-item` blocks (pre-2023) or `blog-card cell` blocks (2023 on);
-anything in `blog-single-sidebar` is unrelated site content, not his. Individual
-post pages **do** still carry the byline, so each one can be confirmed directly.
-That union yielded nine substantive posts (2020, 2022, 2023), all added.
-
-Loose ends on that blog:
-
-- Two posts have been removed and now redirect to `/blog/`: **Free Presto book
-  to support the community** (14 April 2020) and **Learning SQL with the Trino
-  experts from Starburst** (4 October 2023). Both entries link a Wayback
-  snapshot and say so in the description.
-- The `batch-processing-iceberg-delta-lake` slug once held the migrated copy of
-  the Starburst Galaxy batch-processing post, but it now serves an unrelated
-  2024 post by another author. No entry was added for it; the developer-blog
-  original is still live and is the one linked.
-- The listing caps at 12 posts with no pagination, so the 2023 window relies on
-  overlapping snapshots. They overlap enough to be complete, but if a gap ever
-  turns up, more snapshot timestamps are available from the CDX query above.
-
-## 4. Harvest old technology posts from mosabuam.com
+## 3. Harvest old technology posts from mosabuam.com
 
 Manfred has older technology-related blog posts on `mosabuam.com`. Go through
 them and add an entry for each.
 
-## 5. Track down other publications
+## 4. Track down other publications
 
 Check for guest posts and articles on other sites and outlets (e.g. DZone,
 InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
 that are found.
 
-## 6. Fill in the stubbed Sonatype posts from the initial import
+## 5. Fill in the stubbed Sonatype posts from the initial import
 
 The initial import (the now-deleted `initial-data.html`) listed a few Sonatype
 posts with no title or link yet — one or two more in **2016** (one tagged Feb
@@ -108,7 +65,7 @@ dates, and URLs and add entries. The 2015 year block does not exist yet; create
 it in descending-year position (between 2016 and 2014) with its
 `<h2 id="2015">` and a matching navigation link.
 
-## 7. Find better URLs for the imported posts
+## 6. Find better URLs for the imported posts
 
 Many imported entries point at old `blog.sonatype.com` URLs (and other early
 links) that are dead or will rot over time. Go through them and, for each, try
