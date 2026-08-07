@@ -26,7 +26,7 @@ blog for those (rule recorded in the skill under "Which posts to include"). The
 harvest is kept as the reference from which the `EVENT →` items were added to the
 [event log](../event-log/event-log.html), the `VIDEO →` items were routed to the
 [video log](../video-log/STATUS.md), and the other-site writing it surfaced
-(e.g. the SD Times Honeycomb interview) feeds item 5 below.
+(e.g. the SD Times Honeycomb interview) feeds item 4 below.
 
 ## 2. Harvest Sonatype blog posts &mdash; done for 2013&ndash;2016
 
