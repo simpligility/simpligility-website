@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (added the About-page books-section link task)
+Last updated: 2026-08-07 (confirmed no 2015 Sonatype posts; closed the stubbed-posts task)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -40,6 +40,10 @@ component management and intelligence** (18 July 2016), now added. Posts by
 others that merely reference him (e.g. Mark Miller&#39;s *TheNexus: A community
 project*) are correctly not added.
 
+**No 2015 posts.** The archive listing runs from the December 2014 posts
+straight to February 2016, so Manfred published nothing on the Sonatype blog in
+2015. There is no 2015 write-log block and none is expected.
+
 **Small remaining gap:** author-archive **page 3** (the oldest posts,
 2011&ndash;2012) could not be re-fetched from Wayback (snapshots 504/absent). All
 known posts from that era are already in the log (three 2012 Nexus/Insight/Maven
@@ -68,16 +72,7 @@ there is nothing to add here. The weekly Maven developer hangouts announced on
 that blog are events, already in the [event log](../event-log/) as the two
 per-year aggregate entries.
 
-## 5. Fill in the stubbed Sonatype posts from the initial import
-
-The initial import (the now-deleted `initial-data.html`) listed a few Sonatype
-posts with no title or link yet — one or two more in **2016** (one tagged Feb
-2016), at least one in **2015**, and a couple untagged. Track down their titles,
-dates, and URLs and add entries. The 2015 year block does not exist yet; create
-it in descending-year position (between 2016 and 2014) with its
-`<h2 id="2015">` and a matching navigation link.
-
-## 6. Link the write log from the About page books section
+## 5. Link the write log from the About page books section
 
 The site's About page has a section on the books Manfred has co-authored
 (*Trino: The Definitive Guide* and *Presto: The Definitive Guide*). Add a link
