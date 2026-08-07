@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (harvested the Sonatype author archive and repointed all Sonatype links to the live site)
+Last updated: 2026-08-07 (checked the Takari blog &mdash; no Manfred-authored posts to add)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -59,6 +59,14 @@ them and add an entry for each.
 Check for guest posts and articles on other sites and outlets (e.g. DZone,
 InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
 that are found.
+
+**Takari blog &mdash; checked, nothing to add.** The Takari blog
+(`takari.io/blog.html`, 2014&ndash;2015, now offline &mdash; read via Wayback)
+was swept. Every post is authored by Jason van Zyl or other Takari/Maven
+contributors; the string "Manfred Moser" appears in none of the ~28 posts, so
+there is nothing to add here. The weekly Maven developer hangouts announced on
+that blog are events, already in the [event log](../event-log/) as the two
+per-year aggregate entries.
 
 ## 5. Fill in the stubbed Sonatype posts from the initial import
 
