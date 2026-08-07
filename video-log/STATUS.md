@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (removed the Manfred-mentors item; the rule now lives in the skill)
+Last updated: 2026-08-07 (Maven developer hangouts resolved and routed to the event log)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -19,15 +19,16 @@ standalone videos; much more remains to be added.
 
 ---
 
-## 1. Recover the Apache Maven Hangouts titles
+## 1. Apache Maven developer hangouts &mdash; moved to the event log
 
-The Sonatype video archive (Nexus how-to series, Central Repository publishing,
-Staging Suite, the 2 Minute Challenge, Smart Proxy) has been harvested from the
-former `/video/` page into the `2010&ndash;2016` section. The one section left
-behind is **Apache Maven Hangouts**, which is empty on that page — no titles or
-links survive. If Manfred can recover the episode titles (and any links), add
-them as their own session entry following the legacy-archive convention in the
-skill. Until then there is nothing to harvest for it.
+Resolved. These turned out to be the weekly Takari **Maven developer hangouts**
+(Google+ Hangouts on Air, ~September 2014 to April 2015) that Manfred organized
+and co-hosted with Jason van Zyl and the Maven community. Since they are
+recordings of live events he hosted &mdash; not standalone tutorials &mdash; the
+video-log rule sends them to the [event log](../event-log/), where they now live
+as two per-year aggregate entries (2014 and 2015) linking the archived
+`takari.io/events.html` page. All recordings are offline, so there are no video
+links. Nothing left to do here.
 
 ## 2. Sweep the event log for other standalone videos to migrate
 
