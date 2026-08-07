@@ -4,28 +4,20 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (added four 2013 Nexus Live episodes; narrowed the YouTube search)
+Last updated: 2026-08-07 (added the DevOpsCon keynote video; renumbered sections)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
 
 ---
 
-## 1. Add the DevOpsCon keynote video once cleared
-
-The "Is DevOps doomed?" entry (DevOpsCon San Diego, 3 June 2026) has no `Video`
-link yet. Manfred is working with the organizers to obtain a recording and
-permission to use it. For now the entry notes that the video is available to
-devm.io members. Once a usable recording and permission are in hand, add it as
-the first link (`Video`, ahead of the `Slide deck`).
-
-## 2. Find other past Starburst and Trino public events
+## 1. Find other past Starburst and Trino public events
 
 Track down other public events Manfred did for Starburst and Trino by checking
 his calendar, the Starburst blog, and the Starburst website. Add entries for
 any that are missing.
 
-## 3. Youtube search
+## 2. Youtube search
 
 Do a general search on youtube for Manfred Moser and related terms to find
 videos of events I have not yet added. Both DevOpsDays Vancouver Ignite talks
@@ -40,7 +32,7 @@ The OneOps user training video series, which previously lived here, has been
 moved to the [video log](../video-log/) as a standalone video series, along with
 the other OneOps feature videos from the same channel.
 
-## 4. Add the Nexus Live events
+## 3. Add the Nexus Live events
 
 Nexus Live was a Sonatype live-streamed broadcast series and each episode
 belongs here in the event log, not the video log. Added so far, each as its own
@@ -57,7 +49,7 @@ more watch URLs, and each can then be added. The entries added so far also carry
 only month-precision dates and general descriptions; exact broadcast dates and
 per-episode topics can be filled in when available.
 
-## 5. Follow-ups from the blog-discovery event additions
+## 4. Follow-ups from the blog-discovery event additions
 
 The events discovered in the simpligility.ca blog (2010–2024) have been added.
 Loose ends:
