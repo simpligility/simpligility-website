@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-06 (expanded the Sonatype harvest: authored posts, mentions, and Nexus Live routing)
+Last updated: 2026-08-07 (harvested the Starburst developer blog archive)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
@@ -47,7 +47,24 @@ for the write log.
 
 ## 3. Harvest Starburst posts
 
-Collect posts on the Starburst blog.
+The Starburst **developer** blog archive at
+<https://docs.starburst.io/blog/archive.html> is **fully harvested** &mdash; it
+only ran from December 2021 to April 2023 and nothing there is missing. Nine
+substantive posts were added as individual entries.
+
+The Starburst Enterprise release and LTS backport announcements are **not** one
+entry per post: they are collapsed into a **single summary entry per year**
+(2021, 2022, 2023), each linking the archive page. This is a deliberate
+exception to the "one entry per post" rule in the skill, because the series ran
+to dozens of near-identical posts that were directed and managed rather than
+individually written. Keep this shape if more of the series turns up.
+
+Also skipped deliberately: the **We moved** post (6 April 2023), a two-line
+notice that the developer blog had moved. Its content is folded into the last
+sentence of the 2023 summary entry instead.
+
+Still to collect: the main Starburst technical blog at
+<https://www.starburst.io/blog/>, where the developer blog moved in April 2023.
 
 ## 4. Harvest old technology posts from mosabuam.com
 
