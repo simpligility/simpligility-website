@@ -38,6 +38,19 @@ article. The dividing line with the other two logs:
 If a video could plausibly belong to an event or post, prefer linking it there
 and leave it out of the video log, to avoid double-listing the same artifact.
 
+### Videos already handled — do not re-add
+
+The simpligility.ca blog-discovery pass surfaced a few videos that are already
+in the right place. They are recorded here so they are not re-proposed as new
+video-log entries:
+
+- The eight-part *Easy publishing to the Central Repository* series, linked from
+  the 26 April 2016 blog post, is already a video-log entry in the `2010–2016`
+  section.
+- FLOSS Weekly episode 577 from 2020, the DevOpsDays Vancouver 2016 Ignite talk
+  recording, and the SiliconANGLE theCUBE interview from 2023 are event
+  recordings and live in the event log, not here.
+
 ## One entry vs one entry per video
 
 This is the key decision when adding videos. Two shapes:
