@@ -51,6 +51,17 @@ video-log entries:
   recording, and the SiliconANGLE theCUBE interview from 2023 are event
   recordings and live in the event log, not here.
 
+### Migrating a misfiled video out of the event log
+
+A standalone video with no event or article behind it belongs here even when it
+currently sits in the event log, as the OneOps training series once did. Treat
+moving one as a per-entry judgment: flag the candidate and confirm with Manfred
+before moving it. When you do move it, delete the event-log entry, along with
+that year's navigation link if it was the only entry in the year, in the same
+commit that adds it here. The event log has been reviewed end to end and holds
+no such misfiled videos, so this is a check to run on new additions rather than
+a backlog to work through.
+
 ## One entry vs one entry per video
 
 This is the key decision when adding videos. Two shapes:

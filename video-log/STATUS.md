@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (moved the blog-discovery guards into the skill)
+Last updated: 2026-08-07 (swept the event log for standalone videos &mdash; none found; moved the rule into the skill)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -19,16 +19,7 @@ standalone videos; much more remains to be added.
 
 ---
 
-## 1. Sweep the event log for other standalone videos to migrate
-
-Go through `event-log.html` and find entries that are really standalone videos
-rather than events (the OneOps training series was the first such case, now
-moved here). Each is a per-entry judgment for Manfred — flag candidates and
-confirm before moving. When moving one, remove it from the event log (and its
-year-navigation link if it was the only entry in that year) in the same commit
-that adds it here.
-
-## 2. Track down other video channels and series
+## 1. Track down other video channels and series
 
 Check for standalone videos on other channels, project sites, and outlets
 (e.g. older simpligility.ca screencasts, conference channel uploads that are not
