@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (Maven developer hangouts resolved and routed to the event log)
+Last updated: 2026-08-07 (removed the completed Maven-hangouts task; trimmed the blog-discovery item)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
@@ -19,18 +19,7 @@ standalone videos; much more remains to be added.
 
 ---
 
-## 1. Apache Maven developer hangouts &mdash; moved to the event log
-
-Resolved. These turned out to be the weekly Takari **Maven developer hangouts**
-(Google+ Hangouts on Air, ~September 2014 to April 2015) that Manfred organized
-and co-hosted with Jason van Zyl and the Maven community. Since they are
-recordings of live events he hosted &mdash; not standalone tutorials &mdash; the
-video-log rule sends them to the [event log](../event-log/), where they now live
-as two per-year aggregate entries (2014 and 2015) linking the archived
-`takari.io/events.html` page. All recordings are offline, so there are no video
-links. Nothing left to do here.
-
-## 2. Sweep the event log for other standalone videos to migrate
+## 1. Sweep the event log for other standalone videos to migrate
 
 Go through `event-log.html` and find entries that are really standalone videos
 rather than events (the OneOps training series was the first such case, now
@@ -39,7 +28,7 @@ confirm before moving. When moving one, remove it from the event log (and its
 year-navigation link if it was the only entry in that year) in the same commit
 that adds it here.
 
-## 3. Track down other video channels and series
+## 2. Track down other video channels and series
 
 Check for standalone videos on other channels, project sites, and outlets
 (e.g. older simpligility.ca screencasts, conference channel uploads that are not
@@ -50,7 +39,7 @@ Decided against: the **AnDevCon teaser videos** playlist
 The AnDevCon conference talks are already in the event log, and these teasers are
 not worth adding — do not re-propose them.
 
-## 4. Add the Presto SQL training videos
+## 3. Add the Presto SQL training videos
 
 The **Trino** SQL training series (2023, *Learning SQL with Trino from the
 experts* &mdash; four sessions with Martin Traverso, Dain Sundstrom, and David
@@ -63,18 +52,15 @@ way, whether each is a standalone video-log entry or a live event for the event
 log. Add the video links, available slide decks, and related blog posts to the
 appropriate log.
 
-## 5. Add videos found in the simpligility.ca blog discovery
+## 4. Blog-discovery videos &mdash; don't re-propose these
 
-The blog discovery pass is captured in
-[`../write-log/simpligility-harvest.md`](../write-log/simpligility-harvest.md)
-with `VIDEO →` notes. Nothing outstanding to add here from it.
+The simpligility.ca blog-discovery pass
+([`../write-log/simpligility-harvest.md`](../write-log/simpligility-harvest.md),
+`VIDEO →` notes) is done; nothing outstanding. Standing guards so these are not
+re-added as video-log entries:
 
-Already present (no action): the 8-part **Easy publishing to the Central
-Repository** series (linked from the 26 Apr 2016 post) is already in the
-`2010–2016` section.
-
-Cross-log items now placed in the event log (no video-log action needed):
-
-- **FLOSS Weekly Episode 577** (Presto/Trino, 6 May 2020) — added as a 2020 event.
-- **DevOpsDays Vancouver 2016 Ignite talk** recording — added as a 2016 event.
-- **SiliconANGLE theCUBE interview** (2023) — already in the event log.
+- The 8-part **Easy publishing to the Central Repository** series (from the
+  26 Apr 2016 post) is already in the `2010–2016` section.
+- **FLOSS Weekly Episode 577** (2020), the **DevOpsDays Vancouver 2016 Ignite
+  talk** recording, and the **SiliconANGLE theCUBE interview** (2023) are event
+  recordings and live in the [event log](../event-log/), not here.
