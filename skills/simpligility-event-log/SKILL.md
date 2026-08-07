@@ -34,6 +34,23 @@ The event log, this skill, and `STATUS.md` live in the `simpligility-website`
 git repo. Commit each completed change as its own focused commit and push it to
 `main`. Fold any `STATUS.md` update into the same commit as the work it covers.
 
+## Sources already swept
+
+These sources have been reviewed for past events and are complete, so treat
+finding more as a watch-for-new check rather than a backlog:
+
+- Starburst and Trino events. The Starburst blogs were swept as part of the
+  write-log harvest and yielded Cinco de Trino 2022, whose recap and session
+  pages are gone from starburst.io, so that entry links a Wayback copy. Manfred
+  confirmed his calendar and the rest of the Starburst site hold nothing
+  further.
+- Sonatype event videos on YouTube. The full Nexus Live catalog and the former
+  simpligility /video/ page are captured, and both DevOpsDays Vancouver Ignite
+  talks from 2013 and 2016 are in. Manfred confirmed the Sonatype event catalog
+  is complete.
+- The OneOps user training series and the other OneOps feature videos moved to
+  the video log as standalone videos, so they are not event-log entries.
+
 ## File structure
 
 ```html
