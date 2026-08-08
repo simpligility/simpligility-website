@@ -51,6 +51,20 @@ finding more as a watch-for-new check rather than a backlog:
 - The OneOps user training series and the other OneOps feature videos moved to
   the video log as standalone videos, so they are not event-log entries.
 
+## Standing decisions
+
+Settled calls from earlier work on the log. Follow them rather than
+re-litigating them:
+
+- **The OSCON 2015 and JavaOne 2015 decks** are served from Manfred's own forks
+  with GitHub Pages enabled &mdash; `simpligility/nexus-presentations` (gh-pages
+  branch) and `simpligility/javaone2015` (master branch) &mdash; and those
+  entries link `simpligility.github.io/...` rather than an upstream URL. Keep
+  both repos: the original `takari/javaone2015` is gone, so the fork is the only
+  surviving copy of that deck.
+- **AnDevCon locations** are San Jose, CA per Manfred. The source posts did not
+  state a venue, so do not "correct" these from the posts.
+
 ## File structure
 
 ```html
