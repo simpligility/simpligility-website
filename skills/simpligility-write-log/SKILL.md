@@ -39,6 +39,44 @@ The write log, this skill, and `STATUS.md` live in the `simpligility-website`
 git repo. Commit each completed change as its own focused commit and push it to
 `main`. Fold any `STATUS.md` update into the same commit as the work it covers.
 
+## Sources already swept
+
+These sources have been harvested and are complete, so treat finding more as a
+watch-for-new check rather than a backlog:
+
+- The **simpligility.ca blog** (2010&ndash;2025) is fully inventoried in
+  [`../../write-log/simpligility-harvest.md`](../../write-log/simpligility-harvest.md).
+  Its own self-hosted posts are not write-log entries (see *Which posts to
+  include* below), so the harvest is kept as a reference rather than a backlog:
+  the `EVENT →` items in it were added to the event log, the `VIDEO →` items
+  were routed to the video log, and the other-site writing it surfaced (e.g. the
+  SD Times Honeycomb interview) feeds the *Track down other publications* task
+  in `write-log/STATUS.md`.
+- The **Starburst blogs** were harvested in full &mdash; both the main
+  `starburst.io` blog and the separate developer blog archive. The events they
+  surfaced went to the event log (see that skill's *Sources already swept*).
+- The **Sonatype author archive** was harvested for 2013&ndash;2016. The live
+  site (`www.sonatype.com/blog/author/manfred-moser`) is a JS-rendered SPA the
+  tooling here cannot read, so the listing was recovered from Wayback snapshots
+  of the old `blog.sonatype.com/author/manfred-moser` pages. **No 2015 posts
+  exist** &mdash; the archive runs from December 2014 straight to February 2016,
+  so there is no 2015 block and none is expected. Author-archive **page 3** (the
+  oldest posts, 2011&ndash;2012) could not be re-fetched from Wayback (snapshots
+  504/absent), but all known posts from that era are already in the log (three
+  2012 Nexus/Insight/Maven posts and the Nov 2011 community spotlight), so it is
+  treated as complete &mdash; add more only if Manfred recalls them. Posts by
+  others that merely reference him (e.g. Mark Miller&#39;s *TheNexus: A
+  community project*) are correctly excluded. Nexus Live is handled in the event
+  log, not here.
+- The **Trino and Presto blogs** (`trino.io`, and the Presto-era posts) were
+  harvested into the log.
+- The **Takari blog** (`takari.io/blog.html`, 2014&ndash;2015, now offline
+  &mdash; read via Wayback) was swept and holds nothing to add. Every post is
+  authored by Jason van Zyl or other Takari/Maven contributors; the string
+  "Manfred Moser" appears in none of the ~28 posts. The weekly Maven developer
+  hangouts announced there are events, already in the event log as the two
+  per-year aggregate entries.
+
 ## Which posts to include
 
 Not every URL on a site is a write-log entry. When harvesting:

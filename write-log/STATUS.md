@@ -4,10 +4,12 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (confirmed no 2015 Sonatype posts; closed the stubbed-posts task)
+Last updated: 2026-08-07 (moved the completed harvests into the skill; added the Chainguard harvest task)
 
 The conventions for this file are documented in
-[`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first.
+[`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first,
+in particular **Sources already swept** — the sites that are done and should not
+be re-harvested.
 
 An initial set of older posts (2011–2016) has been imported; much more remains
 to be added. Much of the research overlaps with the
@@ -16,63 +18,31 @@ pass through a site feeds both.
 
 ---
 
-## 1. simpligility.ca blog — harvested; self-hosted posts not listed
+## 1. Harvest Chainguard blog posts
 
-The full simpligility.ca blog (2010–2025) is inventoried in
-[`simpligility-harvest.md`](simpligility-harvest.md). **Decision (2026-07-24):**
-the write log lists **external writing only**, so simpligility.ca's own
-self-hosted posts are **not** added as entries — the page intro now links to the
-blog for those (rule recorded in the skill under "Which posts to include"). The
-harvest is kept as the reference from which the `EVENT →` items were added to the
-[event log](../event-log/event-log.html), the `VIDEO →` items were routed to the
-[video log](../video-log/STATUS.md), and the other-site writing it surfaced
-(e.g. the SD Times Honeycomb interview) feeds item 4 below.
+The log holds eight Chainguard posts from the initial harvest, all on the
+Unchained blog (`chainguard.dev/unchained/...`), but the set is **not complete**
+— more of Manfred's posts are unlisted, and new ones keep appearing.
 
-## 2. Harvest Sonatype blog posts &mdash; done for 2013&ndash;2016
+**Consider waiting.** Chainguard is building an author page that is expected to
+go live soon. Once it does, it collects Manfred's posts in one place and makes
+this harvest far easier and more reliable than sweeping the Unchained blog by
+hand. Check whether the author page is live before starting; only fall back to a
+manual sweep of the blog if it is still not up when this becomes urgent.
 
-The Sonatype author archive was harvested. The live site
-(`www.sonatype.com/blog/author/manfred-moser`) is a JS-rendered SPA that the
-tooling here cannot read, so the listing was recovered from Wayback snapshots of
-the old `blog.sonatype.com/author/manfred-moser` pages (which now 301 to the
-live site). Pages 1&ndash;2 (2013&ndash;2016) were captured cleanly; the only
-authored post not already listed was **How-to video training: Open source
-component management and intelligence** (18 July 2016), now added. Posts by
-others that merely reference him (e.g. Mark Miller&#39;s *TheNexus: A community
-project*) are correctly not added.
-
-**No 2015 posts.** The archive listing runs from the December 2014 posts
-straight to February 2016, so Manfred published nothing on the Sonatype blog in
-2015. There is no 2015 write-log block and none is expected.
-
-**Small remaining gap:** author-archive **page 3** (the oldest posts,
-2011&ndash;2012) could not be re-fetched from Wayback (snapshots 504/absent). All
-known posts from that era are already in the log (three 2012 Nexus/Insight/Maven
-posts and the Nov 2011 community spotlight), so this is likely complete &mdash;
-but if Manfred recalls other early Sonatype posts, add them.
-
-Nexus Live references are handled in the [event log](../event-log/STATUS.md), not
-here.
-
-## 3. Harvest old technology posts from mosabuam.com
+## 2. Harvest old technology posts from mosabuam.com
 
 Manfred has older technology-related blog posts on `mosabuam.com`. Go through
 them and add an entry for each.
 
-## 4. Track down other publications
+## 3. Track down other publications
 
 Check for guest posts and articles on other sites and outlets (e.g. DZone,
 InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
-that are found.
+that are found. The simpligility.ca blog harvest surfaced leads for this (e.g.
+the SD Times Honeycomb interview) — see **Sources already swept** in the skill.
 
-**Takari blog &mdash; checked, nothing to add.** The Takari blog
-(`takari.io/blog.html`, 2014&ndash;2015, now offline &mdash; read via Wayback)
-was swept. Every post is authored by Jason van Zyl or other Takari/Maven
-contributors; the string "Manfred Moser" appears in none of the ~28 posts, so
-there is nothing to add here. The weekly Maven developer hangouts announced on
-that blog are events, already in the [event log](../event-log/) as the two
-per-year aggregate entries.
-
-## 5. Link the write log from the About page books section
+## 4. Link the write log from the About page books section
 
 The site's About page has a section on the books Manfred has co-authored
 (*Trino: The Definitive Guide* and *Presto: The Definitive Guide*). Add a link
