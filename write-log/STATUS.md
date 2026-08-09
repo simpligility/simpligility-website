@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-07 (moved the completed harvests into the skill; added the Chainguard harvest task)
+Last updated: 2026-08-08 (harvested the mosabuam.com tech posts)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first,
@@ -30,19 +30,14 @@ this harvest far easier and more reliable than sweeping the Unchained blog by
 hand. Check whether the author page is live before starting; only fall back to a
 manual sweep of the blog if it is still not up when this becomes urgent.
 
-## 2. Harvest old technology posts from mosabuam.com
-
-Manfred has older technology-related blog posts on `mosabuam.com`. Go through
-them and add an entry for each.
-
-## 3. Track down other publications
+## 2. Track down other publications
 
 Check for guest posts and articles on other sites and outlets (e.g. DZone,
 InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
 that are found. The simpligility.ca blog harvest surfaced leads for this (e.g.
 the SD Times Honeycomb interview) — see **Sources already swept** in the skill.
 
-## 4. Link the write log from the About page books section
+## 3. Link the write log from the About page books section
 
 The site's About page has a section on the books Manfred has co-authored
 (*Trino: The Definitive Guide* and *Presto: The Definitive Guide*). Add a link

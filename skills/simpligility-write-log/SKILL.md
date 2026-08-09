@@ -70,6 +70,20 @@ watch-for-new check rather than a backlog:
   log, not here.
 - The **Trino and Presto blogs** (`trino.io`, and the Presto-era posts) were
   harvested into the log.
+- The **mosabuam.com** personal blog was harvested from the author archive at
+  <https://www.mosabuam.com/author/manfred> (6 pages, 76 posts, 2001&ndash;2010).
+  **Only the technology posts are in the log** &mdash; 32 of them, in the 2001,
+  2003, 2006, 2007, 2009, and 2010 blocks. The rest of the site is personal
+  writing (travel, paddling, biking, recipes) plus two Twitter digest posts, and
+  is deliberately **excluded** per Manfred. He reviewed the borderline cases one
+  by one and settled them as follows &mdash; do not re-propose either group:
+  - **In:** *The original waterways is still online* (the 1996 hand-coded site,
+    kept for the web-history angle even though its subject is kayaking) and
+    *Mosabuam.com update &ndash; Step 1* (part of the site's build story
+    alongside the Postnuke theme releases).
+  - **Out:** *Back on the internet and in the Java world*, *My new camcorder
+    &ndash; Sharp VL-AX1E*, *Gallery all up and well again*, and *Mailinglists
+    down*.
 - The **Takari blog** (`takari.io/blog.html`, 2014&ndash;2015, now offline
   &mdash; read via Wayback) was swept and holds nothing to add. Every post is
   authored by Jason van Zyl or other Takari/Maven contributors; the string
