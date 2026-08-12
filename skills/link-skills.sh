@@ -23,6 +23,7 @@ SKILLS=(
   simpligility-event-log
   simpligility-write-log
   simpligility-video-log
+  simpligility-manfred-mentors
 )
 
 # Discovery roots to populate (relative to the repo root).
