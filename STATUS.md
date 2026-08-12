@@ -9,7 +9,7 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-08-07 (added the About-page log-linking task)
+Last updated: 2026-08-12 (added the git-repository sweep task)
 
 ---
 
@@ -49,5 +49,26 @@ both simpligility.ca and simpligility.com. The About pages are WordPress pages,
 not managed in this repo, so the edit is made in the WordPress admin.
 
 The write-log-specific facet of this &mdash; linking the write log from the
-books section of the About page &mdash; is tracked in
+books section of the writing page &mdash; is tracked in
 [`write-log/STATUS.md`](write-log/STATUS.md).
+
+## 4. Sweep the GitHub repositories for talk and video material
+
+Go through the repositories in the
+[`mosabua`](https://github.com/mosabua?tab=repositories) and
+[`simpligility`](https://github.com/simpligility?tab=repositories) GitHub
+accounts and look for slide decks, demo projects, workshop material, and other
+artifacts that document a talk, a workshop, or a recorded session. Many of
+these repositories are named after the event or the topic and carry the date in
+the README or the commit history, so they are a good source of entries that are
+missing from the logs.
+
+For each find, decide which log it belongs in &mdash; a conference or meetup
+appearance goes in the [event log](event-log/STATUS.md), a recording goes in the
+[video log](video-log/STATUS.md), and written material goes in the
+[write log](write-log/STATUS.md) &mdash; then add it following that log's skill.
+A repository can feed more than one log when a talk was both delivered and
+recorded. Existing entries can also gain a link to the matching repository as a
+slides or material reference. Do the sweep in a single pass with all three logs
+in mind, and record the accounts as swept in the relevant skills once it is
+done.
