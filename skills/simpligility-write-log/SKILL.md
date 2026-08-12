@@ -84,6 +84,19 @@ watch-for-new check rather than a backlog:
   - **Out:** *Back on the internet and in the Java world*, *My new camcorder
     &ndash; Sharp VL-AX1E*, *Gallery all up and well again*, and *Mailinglists
     down*.
+- The **other publications hunt** is closed. It swept for guest posts,
+  interviews, and articles outside the company blogs, and the only find was the
+  SD Times lead from the simpligility.ca harvest, which resolved to *Developers
+  give their early impressions of the Android Honeycomb OS*, 4 March 2011, and
+  is in the log. Searched and **empty**: InfoQ, The New Stack, DevOps.com,
+  foojay.io, opensource.com, and devm.io together with its JAXenter archive.
+  Manfred settled the remaining outlets named on the
+  [writing page](https://simpligility.ca/writing/): there is nothing to add for
+  **CloudBees**, the **Eclipse Foundation**, or **Telus**; his **Salesforce**
+  writing was never public and is covered under Takari; **DZone** holds only the
+  *npmGate* article already in the log; and **Oracle** is the single Java
+  Magazine article from 2017. Do not re-run this hunt &mdash; only sweep an
+  outlet that is genuinely new.
 - The **Takari blog** (`takari.io/blog.html`, 2014&ndash;2015, now offline
   &mdash; read via Wayback) was swept and holds nothing to add. Every post is
   authored by Jason van Zyl or other Takari/Maven contributors; the string
@@ -101,6 +114,11 @@ Not every URL on a site is a write-log entry. When harvesting:
   intro links visitors to the blog for those. A cross-posted copy hosted here may
   still appear as a secondary `Also at simpligility.ca` link on an external
   entry, but simpligility.ca is never the primary publication of an entry.
+- **No books.** The co-authored books are listed on the
+  [writing page](https://simpligility.ca/writing/), so they are deliberately
+  **not** write-log entries and the page intro links there instead. A blog post
+  announcing a book is still an entry, because the post is the writing. Do not
+  re-propose adding the books themselves.
 - **Skip auto-generated digests.** The old simpligility.ca blog auto-published
   weekly "Twitter Weekly Updates for YYYY-MM-DD" posts (roundups of Manfred's
   tweets). These are not authored articles — **exclude them**. Treat any similar

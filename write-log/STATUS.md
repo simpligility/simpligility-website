@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-08 (harvested the mosabuam.com tech posts)
+Last updated: 2026-08-12 (closed out the other-publications hunt)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first,
@@ -30,20 +30,15 @@ this harvest far easier and more reliable than sweeping the Unchained blog by
 hand. Check whether the author page is live before starting; only fall back to a
 manual sweep of the blog if it is still not up when this becomes urgent.
 
-## 2. Track down other publications
+## 2. Link the write log from the writing page books section
 
-Check for guest posts and articles on other sites and outlets (e.g. DZone,
-InfoQ, devm.io, conference/community blogs, book chapters or forewords). Add any
-that are found. The simpligility.ca blog harvest surfaced leads for this (e.g.
-the SD Times Honeycomb interview) — see **Sources already swept** in the skill.
-
-## 3. Link the write log from the About page books section
-
-The site's About page has a section on the books Manfred has co-authored
-(*Trino: The Definitive Guide* and *Presto: The Definitive Guide*). Add a link
-from there to the write log (root-relative `/write-log/`,
-<https://simpligility.ca/write-log/>) so readers who arrive via the books can
-find the rest of his writing. The About page is a WordPress page, not managed in
-this repo, so the edit is made in the WordPress admin. This is the
+The [writing page](https://simpligility.ca/writing/) has a section on the books
+Manfred has co-authored, and those books are deliberately not write-log entries.
+Add a link from that section to the write log &mdash; root-relative
+`/write-log/` &mdash; so readers who arrive via the books can find the rest of
+his writing. The page already reaches the log through the *Logs* navigation
+menu, but not from the books themselves, which is where the write log now sends
+readers looking for the books. The writing page is a WordPress page, not managed
+in this repo, so the edit is made in the WordPress admin. This is the
 write-log-specific part of the broader About-page log-linking task in the
 [top-level STATUS](../STATUS.md).

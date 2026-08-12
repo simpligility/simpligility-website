@@ -206,6 +206,6 @@ for the `EVENT →`, `VIDEO →`, and other-site items already routed out of it.
 Publications on sites other than simpligility.ca, referenced from the posts
 above, for the [write log](STATUS.md):
 
-- **SD Times interview on Honeycomb development** — March 2011 — referenced from "About delicious honeycomb". Track down the SD Times URL.
+- **SD Times interview on Honeycomb development** — March 2011 — referenced from "About delicious honeycomb". Resolved to *Developers give their early impressions of the Android Honeycomb OS*, 4 March 2011, and added to the write log.
 - TheServerSide interviews (Sept 2011) — already in write log.
 - OSCON 2015 supply-chain slide deck and JavaOne 2015 "Still Rocking it Maven" deck — hosted on GitHub Pages (see 2015 entries) — decks, not articles; belong in the event log entries.
