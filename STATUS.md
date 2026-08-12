@@ -48,9 +48,9 @@ root-relative (`/event-log/`, `/write-log/`, `/video-log/`) so they work under
 both simpligility.ca and simpligility.com. The About pages are WordPress pages,
 not managed in this repo, so the edit is made in the WordPress admin.
 
-The write-log-specific facet of this &mdash; linking the write log from the
-books section of the writing page &mdash; is tracked in
-[`write-log/STATUS.md`](write-log/STATUS.md).
+The writing page is done: its books section and its blog-posts section both
+link to the write log now, so use those two paragraphs as the model for the
+remaining pages.
 
 ## 4. Sweep the GitHub repositories for talk and video material
 
@@ -72,3 +72,19 @@ recorded. Existing entries can also gain a link to the matching repository as a
 slides or material reference. Do the sweep in a single pass with all three logs
 in mind, and record the accounts as swept in the relevant skills once it is
 done.
+
+## 5. Find readable copies of the three Sonatype books
+
+*Repository Management with Nexus*, *Maven: The Complete Reference*, and *Maven
+by Example* are listed on the [writing page](https://simpligility.ca/writing/)
+with source-code links only, so a visitor has no way to actually read them. The
+old `books.sonatype.com` URLs now redirect to Sonatype marketing pages and the
+rendered books are gone.
+
+Dig through the local archives, old machines, and backups for PDF copies. If
+any turn up, upload them to the website and link them from the matching book on
+the writing page, so the entry offers the book itself next to its source. Where
+no PDF survives, check whether the book can be rebuilt from the source
+repositories &mdash; `simpligility/nexus-book`,
+`simpligility/maven-reference-en`, and `simpligility/maven-example-en` &mdash;
+before giving up on it.
