@@ -31,6 +31,7 @@ its process. Invoke the matching one through the Skill tool:
 | `write-log/write-log.html` | `simpligility-write-log` |
 | `video-log/video-log.html` | `simpligility-video-log` |
 | `manfred-mentors/manfred-mentors.html` | `simpligility-manfred-mentors` |
+| `blog/<YYYYMM-slug>/` | `simpligility-blog` |
 
 Where a section skill repeats a rule from here, this file is the source of
 truth. The sections on the fragment skeleton, year navigation, ordering, and
@@ -72,14 +73,16 @@ the page and looking at the wrapper classes.
 
 Only some of the site is managed in this repo:
 
-- **In the repo** are the page fragments, their `STATUS.md` files, and these
-  skills. Page content is authored here as HTML fragments and pasted into the
-  WordPress page code view. Fragments carry no `<html>`, `<head>`, or `<body>`
-  wrapper.
+- **In the repo** are the page fragments, their `STATUS.md` files, the blog post
+  drafts under `blog/`, and these skills. Page content is authored here as HTML
+  fragments and pasted into the WordPress page code view. Fragments carry no
+  `<html>`, `<head>`, or `<body>` wrapper. Blog posts are drafted in Markdown and
+  converted to HTML for pasting, following the `simpligility-blog` skill.
 - **In WordPress only** are the profile pages `/about/`, `/writing/`, `/teach/`,
-  `/community/`, and `/code/`, the parts of `/manfred-mentors/` above the
-  archive, and the blog. Changes to those are made in the WordPress admin, so
-  the deliverable is reviewed copy to paste rather than a commit.
+  `/community/`, and `/code/`, and the parts of `/manfred-mentors/` above the
+  archive. Changes to those are made in the WordPress admin, so the deliverable
+  is reviewed copy to paste rather than a commit. The blog is served from
+  WordPress too, but its posts are drafted in the repo as described preceding.
 - Installed plugins are minimal: SyntaxHighlighter Evolved for code. No Markdown
   plugin is used, so Markdown drafts are converted to simple HTML before they go
   into a page.

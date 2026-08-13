@@ -25,6 +25,7 @@ SKILLS=(
   simpligility-write-log
   simpligility-video-log
   simpligility-manfred-mentors
+  simpligility-blog
 )
 
 # Discovery roots to populate (relative to the repo root).
