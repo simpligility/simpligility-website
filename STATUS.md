@@ -9,7 +9,7 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-08-12 (finished the Manfred mentors page build-out)
+Last updated: 2026-08-12 (added the task to widen the log pages)
 
 ---
 
@@ -72,3 +72,13 @@ no PDF survives, check whether the book can be rebuilt from the source
 repositories &mdash; `simpligility/nexus-book`,
 `simpligility/maven-reference-en`, and `simpligility/maven-example-en` &mdash;
 before giving up on it.
+
+## 5. Widen the log pages to match Manfred mentors
+
+Apply the same page-width override to the event log, write log, and video log
+pages so they are as wide as the Manfred mentors page. For each page, add the
+scoped content-size CSS keyed on its `page-id-<id>` body class in the Site
+Editor under Styles, Additional CSS, using the same value set for the mentors
+page. The recipe, including the block-theme background, is documented in
+[`skills/simpligility-site/SKILL.md`](skills/simpligility-site/SKILL.md). These
+are WordPress changes, not repo changes.
