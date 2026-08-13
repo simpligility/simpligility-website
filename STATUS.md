@@ -18,13 +18,12 @@ Last updated: 2026-08-12 (added the Manfred mentors section)
 The *Manfred mentors* show has a dedicated page at
 <https://simpligility.ca/manfred-mentors/>. The episode archive is now managed
 in this repo as its own section with a matching skill and STATUS file, like the
-three logs, and is seeded with episodes 1 through 12.
+three logs, and holds all 13 episodes.
 
 The remaining work lives in
-[`manfred-mentors/STATUS.md`](manfred-mentors/STATUS.md): add episode 13 and
-later, and refactor the WordPress page so the newest episode stays featured at
-the top with a few more recent ones, followed by the full archive from the
-fragment.
+[`manfred-mentors/STATUS.md`](manfred-mentors/STATUS.md): refactor the WordPress
+page so the newest episode stays featured at the top with a few more recent
+ones, followed by the full archive from the fragment.
 
 ## 2. Establish a regular Manfred mentors cadence
 
