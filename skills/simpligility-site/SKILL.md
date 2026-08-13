@@ -21,13 +21,29 @@ and blog build on this shared context.
 
 ## Page width
 
-Pasted HTML fragments inherit the theme's narrow content column. To make a page
-wider:
+Twenty Twenty-Five constrains page content to a narrow column, 645px by default,
+with 1340px for wide alignment. Pasted HTML fragments inherit the 645px column,
+so a wide archive or list looks cramped.
 
-- Native and update-safe: wrap the content in a Group block and set its
-  alignment to **Wide width**, or **Full width** for edge-to-edge coverage.
-- Alternatively, scope custom CSS to the page by its body class, for example
-  `.page-id-1743`, in the Site Editor under Styles, Additional CSS.
+The reliable way to widen a single page is a scoped CSS override in the Site
+Editor under Styles, Additional CSS. Raise the content size for that page by its
+`page-id-<id>` body class:
+
+```css
+.page-id-1743 {
+  --wp--style--global--content-size: 1100px;
+}
+```
+
+This affects only that page, so the rest of the site keeps its 645px column. The
+Manfred mentors page is `page-id-1743`. Adjust the value up toward 1340px or
+beyond to taste.
+
+The block editor alternative is to wrap the content in a Group and set its
+alignment to Wide width. On its own that widens the group but not the content
+inside it, because the group keeps a constrained inner layout. To make the
+content fill the wide group, also turn off "Inner blocks use content width" in
+the group's Layout panel. The CSS override is more predictable, so prefer it.
 
 ## Publishing model
 
