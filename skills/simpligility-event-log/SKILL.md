@@ -80,6 +80,25 @@ The event log puts an optional location between the title and the date:
 - Omit it for purely virtual or online events, so the date follows the title
   directly.
 
+## Per-entry anchors
+
+Most entries need no anchor, because the year navigation only targets the year
+headings. Add an `id` to an individual `<dt>` only when something links to that
+specific entry, such as a blog post pointing a reader at the recording and
+slides for one talk. Do not add anchors pre-emptively.
+
+```html
+  <dt id="maven-safe-for-production"><strong>Is Maven safe for production?</strong><br> Minneapolis, MN &mdash; 20 May 2026</dt>
+```
+
+- Use a short, descriptive, kebab-case slug derived from the title, and keep it
+  stable once anything links to it.
+- The link that targets it is root-relative, as in
+  `/event-log/#maven-safe-for-production`.
+- **Preserve existing `id` attributes on subsequent edits.** An anchor that is
+  already in place has an inbound link somewhere, so do not strip it when
+  reordering, rewording, or otherwise updating the entry.
+
 ## Link labels and enforced order
 
 Include only the links that apply, and always place them in this order, with the
@@ -168,3 +187,5 @@ Run the shared checklist in the site skill first, then confirm:
 - [ ] A single "read more" page is labelled `Details`, or `Detailed show notes`
       for a Trino Community Broadcast episode.
 - [ ] No separate `Speakers:` line; other names are woven into the description.
+- [ ] Any existing `id` anchor on an entry is preserved, and a new one is added
+      only when something links to that specific entry.

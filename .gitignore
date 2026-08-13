@@ -2,3 +2,6 @@
 # various agent CLIs. Regenerate them with the script rather than committing.
 /.claude/skills/
 /.agents/skills/
+
+# macOS Finder metadata
+.DS_Store

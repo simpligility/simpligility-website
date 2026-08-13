@@ -1,0 +1,118 @@
+<!-- Post body for WordPress, generated from post.md. Edit prose in post.md,
+     not here. Keep every block element on a SINGLE line and never hard-wrap:
+     WordPress turns intra-paragraph newlines into <br>, which is what mangled
+     an earlier wrapped version.
+
+     Recommended paste: in the block editor, open the Options menu (top right)
+     and choose "Code editor", paste this whole file, then switch back to
+     "Visual editor". WordPress converts it into native paragraph, heading, and
+     list blocks with the theme's normal spacing, and the bare YouTube URL on
+     its own line becomes a video embed. A single Custom HTML block also works
+     but renders without the theme typography, so it looks cramped.
+
+     Set the post title field to: Sooo many Maven dependencies!
+     Set the featured image to build-requirements.png.
+     Own-site links are root-relative on purpose; the site serves on both
+     simpligility.ca and simpligility.com. -->
+
+<p>So you know how to read a Maven <code>pom.xml</code> for your Java project and locate the declared <code>&lt;dependencies&gt;</code> and even understand their <code>scope</code>. Maybe you even know that you can use <code>mvn dependency:tree</code> to list all dependencies and all the transitive dependencies. Nice, so you know the dependencies of your project.</p>
+
+<p>Or not, did you ever wonder what dependencies you need to actually build that project? I did, and built a tool that allows you to find out for your project as well. Try it out, I promise you will be surprised.</p>
+
+<!--more-->
+
+<h2>Background motivation</h2>
+
+<p>Working on <a href="https://www.chainguard.dev/libraries">Chainguard Libraries</a> as a Maven committer, Java developer, and community advocate is a wild ride. We have been building libraries from source for well over a year now and <a href="https://www.chainguard.dev/unchained/this-shit-is-hard-java-archeology-at-a-massive-scale">learned a lot</a>. We keep learning new things about old projects, new projects, backporting CVE fixes, and scanning for malware and grayware, and so on. I showed some of that again <a href="https://edu.chainguard.dev/software-security/learning-labs/ll202607/">at the recent learning lab</a>.</p>
+
+<p>Testing projects around the fallback to Maven Central directly and then our filtered subset and completely removing Maven Central access caused me to look at a LOT of download logs for my local builds and wiping my cache in <code>~/.m2/repository</code> regularly.</p>
+
+<p>Knowing that Maven downloads not just the project dependencies but also plugins, plugin dependencies, and a whole lot more from Maven Central got me wondering. How much more? What specifically is downloaded? All along I was thinking that in an ideal world we would rebuild all of that from source. But first we would have to know what artifacts we even need.</p>
+
+<h2>maven-build-requirements</h2>
+
+<p>With that motivation I asked on the Maven developer list about anything existing. Since there was nothing, I wrote the tool. You can find the result in the <a href="https://github.com/simpligility/maven-build-requirements">maven-build-requirements repository</a>.</p>
+
+<p>Excerpt from the readme that clarifies what is analyzed to be needed as a dependency:</p>
+
+<blockquote>
+<p>The scope is everything needed to build the project from source — not just the runtime/compile dependency tree:</p>
+<ul>
+<li>The project's own transitive dependency tree across all reactor modules (the same set mvn dependency:tree would produce).</li>
+<li>Every plugin used by the build — explicitly declared and implicitly bound to a packaging's default lifecycle via Maven core — together with each plugin's parent POM lineage and full transitive dependency tree.</li>
+<li>Build extensions from .mvn/extensions.xml, again with parent POMs and transitive dependencies.</li>
+<li>The project's own parent POM lineage.</li>
+<li>The Maven binary distribution declared by the project's wrapper.</li>
+</ul>
+</blockquote>
+
+<p>And the results are astounding.</p>
+
+<p><code>quickstart-example</code>, as a bare-bones Maven project:</p>
+
+<ul>
+<li>5 project dependencies</li>
+<li>0 project parent POMs</li>
+<li>13 plugins</li>
+<li>17 plugin parent POMs</li>
+<li>138 plugin dependencies</li>
+<li>0 extensions</li>
+<li>0 extension parent POMs</li>
+<li>0 extension dependencies</li>
+<li>1 Maven distribution</li>
+</ul>
+
+<p>That's a total of 174 needed artifacts up from 5 project dependencies!</p>
+
+<p><code>multi-module-example</code>, more real but still super simple:</p>
+
+<ul>
+<li>19 project dependencies</li>
+<li>0 project parent POMs</li>
+<li>10 plugins</li>
+<li>24 plugin parent POMs</li>
+<li>159 plugin dependencies</li>
+<li>0 extensions</li>
+<li>0 extension parent POMs</li>
+<li>0 extension dependencies</li>
+<li>1 Maven distribution</li>
+</ul>
+
+<p>From 19 dependencies to 213 needed artifacts!</p>
+
+<p>And last still a super simple project, this time using Spring Framework in the <code>spring-boot-example</code>:</p>
+
+<ul>
+<li>101 project dependencies</li>
+<li>2 project parent POMs</li>
+<li>30 plugins</li>
+<li>28 plugin parent POMs</li>
+<li>447 plugin dependencies</li>
+<li>1 extension</li>
+<li>2 extension parent POMs</li>
+<li>40 extension dependencies</li>
+<li>1 Maven distribution</li>
+</ul>
+
+<p>Again, significantly up to 652 artifacts from 101 project dependencies.</p>
+
+<h2>Open Source Summit</h2>
+
+<p>My ask on the Maven dev list also caused some interesting side conversations with <a href="https://www.linkedin.com/in/cservenak/">Tamás Cservenák</a> from the great <a href="https://github.com/maveniverse">Maveniverse</a> project and <a href="https://www.linkedin.com/in/adambkaplan/">Adam Kaplan</a> from Red Hat. Adam and I ended up presenting <em>Is Maven safe for production?</em> at the Open Source Summit NA in Minneapolis, in which we touched upon the dependencies a bit, and covered a lot of other interesting aspects of Maven and production builds. <a href="/event-log/#maven-safe-for-production">Watch the recording and check out the slides for more details</a>.</p>
+
+<h2>Manfred mentors 13</h2>
+
+<p>After the conference I did some final tweaks and clean ups on the project, and then recorded my live stream episode 13 for Manfred mentors. In that episode I talk about the project and demo it all.</p>
+
+<!-- The bare URL on its own line below becomes a YouTube embed when pasted via the block editor. -->
+https://www.youtube.com/watch?v=-JuCNsyQXIg
+
+<h2>Conclusion and final notes</h2>
+
+<p>So what can we learn from this insight and the project? Your footprint of dependencies that you need to build a project from source is much larger than you think. And what good is your project, if you can't build it securely from source? It is also much larger than the built-in tools report. Try it on your own project and <a href="https://github.com/simpligility/maven-build-requirements/issues">report any findings and issues</a>.</p>
+
+<p>As a result, any effort to "just build everything from sources" is also on a whole other level of complexity and effort than you would anticipate at first glance. We are working on that for Chainguard Libraries for Java, and you can test it out with my example project.</p>
+
+<p>Beyond the maven-build-requirements project, I continue to work on Trino-related projects, <a href="/manfred-mentors/">Manfred mentors</a> episodes, and <a href="https://github.com/simpligility/contributions">all sorts of other hackery</a>. You can even <a href="/sponsor/">sponsor me</a>.</p>
+
+<p>And one last fun aspect, Adam became a Chainguardian recently, maybe you should join us too?!</p>
