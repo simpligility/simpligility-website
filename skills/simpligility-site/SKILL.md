@@ -49,25 +49,24 @@ Twenty Twenty-Five constrains page content to a narrow column, 645px by default,
 with 1340px for wide alignment. Pasted HTML fragments inherit the 645px column,
 so a wide archive or list looks cramped.
 
-The reliable way to widen a single page is a scoped CSS override in the Site
-Editor under Styles, Additional CSS. Raise the content size for that page by its
-`page-id-<id>` body class:
+**Do this with blocks, not with CSS.** No custom CSS is used on this site, and
+none should be added: nothing goes into the Site Editor under Styles, Additional
+CSS, and no `page-id` overrides are written. The block UI is enough, and a page
+that depends on a hand-written rule somewhere else is a page nobody can fix from
+the editor.
 
-```css
-.page-id-1743 {
-  --wp--style--global--content-size: 1100px;
-}
-```
+The recipe, entirely in the block editor:
 
-This affects only that page, so the rest of the site keeps its 645px column. The
-Manfred mentors page is `page-id-1743`. Adjust the value up toward 1340px or
-beyond to taste.
+1. Wrap the fragment's Custom HTML block in a **Group** block.
+2. Select the Group and set its alignment in the toolbar to **Wide width** or
+   **Full width**.
+3. In the Group's Layout panel, turn off **Inner blocks use content width**.
+   Without this the Group widens but its content stays in the narrow column.
 
-The block editor alternative is to wrap the content in a Group and set its
-alignment to Wide width. On its own that widens the group but not the content
-inside it, because the group keeps a constrained inner layout. To make the
-content fill the wide group, also turn off "Inner blocks use content width" in
-the group's Layout panel. The CSS override is more predictable, so prefer it.
+The alignment shows up in the rendered markup as `alignwide` or `alignfull` on
+the `wp-block-group` wrapper, and step 3 shows up as `is-layout-flow` rather
+than `is-layout-constrained`. That makes the result easy to verify by fetching
+the page and looking at the wrapper classes.
 
 ## Publishing model
 
@@ -89,6 +88,28 @@ The profile pages cross-link the logs, so a change to what a page covers can
 leave a profile page wrong. When the scope of a log changes, check whether
 `/writing/`, `/teach/`, `/community/`, or `/code/` needs its wording updated
 too.
+
+### A fragment must live in a Custom HTML block
+
+Paste each fragment into a single **Custom HTML** block, reached in the block
+editor by adding a block and choosing Custom HTML or by typing `/html`. That
+block is the only place WordPress leaves the markup alone.
+
+Anywhere else, `wpautop` rewrites the content: it wraps chunks in `<p>` and
+inserts a `<br />` after **every line**, including the lines inside `<style>`
+and `<script>`. A literal `<br />` in JavaScript is a syntax error, so the
+sticky year navigation silently stops appearing, and the CSS breaks the same
+way. This has already happened once to the write log, when the page was re-saved
+through the editor to change its layout.
+
+Two things follow:
+
+- **Change the page width by wrapping the block, never by re-flowing the
+  fragment.** Put a Group around the Custom HTML block as described under *Page
+  width*. Do not let the fragment itself be converted into paragraph content.
+- **Verify after any WordPress-side page edit.** Fetch the live page and confirm
+  there is no `<br />` inside the `<style>` or `<script>`. If there is, re-paste
+  the fragment into a fresh Custom HTML block.
 
 ## Voice
 

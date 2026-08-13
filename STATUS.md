@@ -9,7 +9,7 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-08-12 (added the task to widen the log pages)
+Last updated: 2026-08-12 (closed the About-page links and reframed the width task)
 
 ---
 
@@ -21,22 +21,7 @@ than streaming ad hoc. Decide the interval, announce the schedule on the
 dedicated page and the streaming platforms (YouTube, LinkedIn, Twitch), and then
 run with it consistently.
 
-## 2. Link the log pages better from the About pages
-
-The event, write, and video logs
-(<https://simpligility.ca/event-log/>, <https://simpligility.ca/write-log/>,
-<https://simpligility.ca/video-log/>) are not well surfaced from the site's
-About page(s). Add clear links to all three logs there so visitors reading
-Manfred's background can find his talks, writing, and videos. Keep the links
-root-relative (`/event-log/`, `/write-log/`, `/video-log/`) so they work under
-both simpligility.ca and simpligility.com. The About pages are WordPress pages,
-not managed in this repo, so the edit is made in the WordPress admin.
-
-The writing page is done: its books section and its blog-posts section both
-link to the write log now, so use those two paragraphs as the model for the
-remaining pages.
-
-## 3. Sweep the GitHub repositories for talk and video material
+## 2. Sweep the GitHub repositories for talk and video material
 
 Go through the repositories in the
 [`mosabua`](https://github.com/mosabua?tab=repositories) and
@@ -57,7 +42,7 @@ slides or material reference. Do the sweep in a single pass with all three logs
 in mind, and record the accounts as swept in the relevant skills once it is
 done.
 
-## 4. Find readable copies of the three Sonatype books
+## 3. Find readable copies of the three Sonatype books
 
 *Repository Management with Nexus*, *Maven: The Complete Reference*, and *Maven
 by Example* are listed on the [writing page](https://simpligility.ca/writing/)
@@ -73,12 +58,35 @@ repositories &mdash; `simpligility/nexus-book`,
 `simpligility/maven-reference-en`, and `simpligility/maven-example-en` &mdash;
 before giving up on it.
 
-## 5. Widen the log pages to match Manfred mentors
+## 4. Make the page widths consistent and wider, using blocks only
 
-Apply the same page-width override to the event log, write log, and video log
-pages so they are as wide as the Manfred mentors page. For each page, add the
-scoped content-size CSS keyed on its `page-id-<id>` body class in the Site
-Editor under Styles, Additional CSS, using the same value set for the mentors
-page. The recipe, including the block-theme background, is documented in
-[`skills/simpligility-site/SKILL.md`](skills/simpligility-site/SKILL.md). These
-are WordPress changes, not repo changes.
+The four fragment pages are each wrapped differently, so they render at
+different widths:
+
+| Page | Wrapper today | Result |
+|------|---------------|--------|
+| `/manfred-mentors/` | Group, `alignfull`, constrained inner layout | wide |
+| `/write-log/` | Group, `alignwide`, flow inner layout | wide |
+| `/event-log/` | Group, no alignment | narrow |
+| `/video-log/` | no Group at all | narrow |
+
+Work through all four in the block editor and settle on one treatment, then
+apply it everywhere so the logs and the mentors archive match. Wider is the
+goal: the entries are dense two-line records and the default 645px column
+cramps them.
+
+**No custom CSS.** Nothing goes into the Site Editor under Styles, Additional
+CSS, and no `page-id` overrides are written. The block UI can do this on its
+own, and a page that depends on a rule hidden somewhere else cannot be fixed
+from the editor later. The block recipe is in
+[`skills/simpligility-site/SKILL.md`](skills/simpligility-site/SKILL.md) under
+*Page width*.
+
+Take care not to disturb the fragments while rearranging blocks. Each one has to
+stay inside a single Custom HTML block, because anywhere else WordPress inserts
+a `<br />` after every line of the inline style and script, which silently kills
+the sticky year navigation. That has already happened once to the write log.
+After each page, fetch it and confirm the wrapper carries the intended alignment
+class and that no `<br />` appears inside the `<style>` or `<script>`.
+
+These are WordPress changes, not repo changes.
