@@ -9,81 +9,63 @@ description: >-
 # Write log maintenance
 
 This skill keeps `write-log/write-log.html` consistent when adding or editing
-entries. The write log is the companion to the [event log](../../event-log/):
-the event log tracks public events, the write log tracks written blog posts and
-articles across the various sites Manfred has written for. The two share their
-structure and conventions, and the source research overlaps.
+entries. It covers only what is specific to the write log.
 
-The file is published as an HTML fragment at <https://simpligility.ca/write-log/>
-— it is embedded in a WordPress page, so it has **no** `<html>`, `<head>`, or
-`<body>` wrapper. Never add one.
+**Read [`simpligility-site`](../simpligility-site/SKILL.md) first.** It holds
+the conventions the event, write, and video logs share: the WordPress fragment
+skeleton, the year navigation and its sticky counterpart, the ordering rules,
+the `<dt>` and `<dd>` entry format, the root-relative link rule, the HTML entity
+list, the broken-link rules, the `STATUS.md` conventions, and how to commit.
+Where this file repeats something from there, that file wins.
 
 ## Target file
 
-- **Path (from repo root):** `write-log/write-log.html`
-- It is a standalone fragment: a lead comment, a repo-management comment, a
-  `<!-- Last updated -->` comment, an intro `<p>`, a one-line "Check out specific
-  years" navigation `<p>`, then one `<h2>` + `<dl>` block per year.
+- **Path from the repo root:** `write-log/write-log.html`
+- The `<dt>` shape is `<strong>Title</strong><br> Publication &mdash; Date`.
+
+## Which posts to include
+
+Not every URL on a site is a write-log entry. When harvesting:
+
+- **External writing only.** The write log lists writing published on **other**
+  sites such as Chainguard, Trino, Sonatype, DZone, and Java Magazine. Do
+  **not** add simpligility.ca's own self-hosted blog posts as entries, because
+  the page intro links visitors to the blog for those. A cross-posted copy
+  hosted here may still appear as a secondary `Also at simpligility.ca` link on
+  an external entry, but simpligility.ca is never the primary publication.
+- **No books.** The co-authored books are listed on the
+  [writing page](https://simpligility.ca/writing/), so they are deliberately
+  **not** write-log entries and the page intro links there instead. A blog post
+  announcing a book is still an entry, because the post is the writing. Do not
+  re-propose adding the books themselves.
+- **Skip auto-generated digests.** The old simpligility.ca blog auto-published
+  weekly "Twitter Weekly Updates for YYYY-MM-DD" roundups. These are not
+  authored articles, so exclude them, and treat any similar auto-posted content
+  the same way.
+- **One entry per post**, including short release or version-announcement posts
+  such as "Android Maven Plugin 4.4.2 Released". Do not consolidate several
+  releases of one project into a single entry.
+- **Dedupe double-publishes.** WordPress sometimes produced duplicate slug pairs
+  such as `.../slug/` and `.../slug-2/` for the same post. Add the post once,
+  using the canonical non-`-2` URL.
 
 ## Deferred work: `write-log/STATUS.md`
 
-`write-log/STATUS.md` is a tracked, living to-do list of deferred work and next
-steps for the write log (chiefly the harvesting of posts from each site). It is
-**not** a historical log: when a task is finished, **remove it** from the file
-rather than marking it done. Check it at the start of a session, keep it current,
-and bump its "Last updated" date when you edit it.
-
-## Committing changes
-
-The write log, this skill, and `STATUS.md` live in the `simpligility-website`
-git repo. Commit each completed change as its own focused commit and push it to
-`main`. Fold any `STATUS.md` update into the same commit as the work it covers.
+`write-log/STATUS.md` tracks deferred work and next steps for this page, chiefly
+the harvesting of posts from each site, under the STATUS conventions in the site
+skill.
 
 ## Sources already swept
 
 These sources have been harvested and are complete, so treat finding more as a
 watch-for-new check rather than a backlog:
 
-- The **simpligility.ca blog** (2010&ndash;2025) is fully inventoried in
+- The **simpligility.ca blog** from 2010 to 2025 is fully inventoried in
   [`../../write-log/simpligility-harvest.md`](../../write-log/simpligility-harvest.md).
-  Its own self-hosted posts are not write-log entries (see *Which posts to
-  include* below), so the harvest is kept as a reference rather than a backlog:
-  the `EVENT →` items in it were added to the event log, the `VIDEO →` items
-  were routed to the video log, and the other-site writing it surfaced (e.g. the
-  SD Times Honeycomb interview) feeds the *Track down other publications* task
-  in `write-log/STATUS.md`.
-- The **Starburst blogs** were harvested in full &mdash; both the main
-  `starburst.io` blog and the separate developer blog archive. The events they
-  surfaced went to the event log (see that skill's *Sources already swept*).
-- The **Sonatype author archive** was harvested for 2013&ndash;2016. The live
-  site (`www.sonatype.com/blog/author/manfred-moser`) is a JS-rendered SPA the
-  tooling here cannot read, so the listing was recovered from Wayback snapshots
-  of the old `blog.sonatype.com/author/manfred-moser` pages. **No 2015 posts
-  exist** &mdash; the archive runs from December 2014 straight to February 2016,
-  so there is no 2015 block and none is expected. Author-archive **page 3** (the
-  oldest posts, 2011&ndash;2012) could not be re-fetched from Wayback (snapshots
-  504/absent), but all known posts from that era are already in the log (three
-  2012 Nexus/Insight/Maven posts and the Nov 2011 community spotlight), so it is
-  treated as complete &mdash; add more only if Manfred recalls them. Posts by
-  others that merely reference him (e.g. Mark Miller&#39;s *TheNexus: A
-  community project*) are correctly excluded. Nexus Live is handled in the event
-  log, not here.
-- The **Trino and Presto blogs** (`trino.io`, and the Presto-era posts) were
-  harvested into the log.
-- The **mosabuam.com** personal blog was harvested from the author archive at
-  <https://www.mosabuam.com/author/manfred> (6 pages, 76 posts, 2001&ndash;2010).
-  **Only the technology posts are in the log** &mdash; 32 of them, in the 2001,
-  2003, 2006, 2007, 2009, and 2010 blocks. The rest of the site is personal
-  writing (travel, paddling, biking, recipes) plus two Twitter digest posts, and
-  is deliberately **excluded** per Manfred. He reviewed the borderline cases one
-  by one and settled them as follows &mdash; do not re-propose either group:
-  - **In:** *The original waterways is still online* (the 1996 hand-coded site,
-    kept for the web-history angle even though its subject is kayaking) and
-    *Mosabuam.com update &ndash; Step 1* (part of the site's build story
-    alongside the Postnuke theme releases).
-  - **Out:** *Back on the internet and in the Java world*, *My new camcorder
-    &ndash; Sharp VL-AX1E*, *Gallery all up and well again*, and *Mailinglists
-    down*.
+  Its own self-hosted posts are not write-log entries, so the harvest is kept as
+  a reference rather than a backlog: the `EVENT →` items went to the event log,
+  the `VIDEO →` items to the video log, and the other-site writing it surfaced
+  fed the other-publications hunt.
 - The **other publications hunt** is closed. It swept for guest posts,
   interviews, and articles outside the company blogs, and the only find was the
   SD Times lead from the simpligility.ca harvest, which resolved to *Developers
@@ -97,244 +79,99 @@ watch-for-new check rather than a backlog:
   *npmGate* article already in the log; and **Oracle** is the single Java
   Magazine article from 2017. Do not re-run this hunt &mdash; only sweep an
   outlet that is genuinely new.
-- The **Takari blog** (`takari.io/blog.html`, 2014&ndash;2015, now offline
-  &mdash; read via Wayback) was swept and holds nothing to add. Every post is
-  authored by Jason van Zyl or other Takari/Maven contributors; the string
-  "Manfred Moser" appears in none of the ~28 posts. The weekly Maven developer
-  hangouts announced there are events, already in the event log as the two
-  per-year aggregate entries.
+- The **Starburst blogs** were harvested in full, both the main `starburst.io`
+  blog and the separate developer blog archive. The events they surfaced went to
+  the event log.
+- The **Sonatype author archive** was harvested for 2013 to 2016. The live site
+  at `www.sonatype.com/blog/author/manfred-moser` is a JS-rendered SPA the
+  tooling here cannot read, so the listing was recovered from Wayback snapshots
+  of the old `blog.sonatype.com/author/manfred-moser` pages. **No 2015 posts
+  exist** &mdash; the archive runs from December 2014 straight to February 2016,
+  so there is no 2015 block and none is expected. Author-archive **page 3**, the
+  oldest posts from 2011 and 2012, could not be re-fetched from Wayback because
+  the snapshots 504 or are absent, but all known posts from that era are already
+  in the log, three 2012 Nexus, Insight, and Maven posts plus the November 2011
+  community spotlight, so it is treated as complete. Add more only if Manfred
+  recalls them. Posts by others that merely reference him, such as Mark
+  Miller&#39;s *TheNexus: A community project*, are correctly excluded. Nexus
+  Live is handled in the event log, not here.
+- The **Trino and Presto blogs** on `trino.io` and the Presto-era posts were
+  harvested into the log.
+- The **mosabuam.com** personal blog was harvested from the author archive at
+  <https://www.mosabuam.com/author/manfred>, 6 pages and 76 posts from 2001 to
+  2010. **Only the technology posts are in the log**, 32 of them, in the 2001,
+  2003, 2006, 2007, 2009, and 2010 blocks. The rest of the site is personal
+  writing about travel, paddling, biking, and recipes, plus two Twitter digest
+  posts, and is deliberately **excluded** per Manfred. He reviewed the
+  borderline cases one by one and settled them as follows, so do not re-propose
+  either group:
+  - **In:** *The original waterways is still online*, the 1996 hand-coded site
+    kept for the web-history angle even though its subject is kayaking, and
+    *Mosabuam.com update &ndash; Step 1*, part of the site's build story
+    alongside the Postnuke theme releases.
+  - **Out:** *Back on the internet and in the Java world*, *My new camcorder
+    &ndash; Sharp VL-AX1E*, *Gallery all up and well again*, and *Mailinglists
+    down*.
+- The **Takari blog** at `takari.io/blog.html` from 2014 to 2015, now offline
+  and read via Wayback, was swept and holds nothing to add. Every post is
+  authored by Jason van Zyl or other Takari and Maven contributors, and the
+  string "Manfred Moser" appears in none of the roughly 28 posts. The weekly
+  Maven developer hangouts announced there are events, already in the event log
+  as the two per-year aggregate entries.
 
-## Which posts to include
+## The publication slot
 
-Not every URL on a site is a write-log entry. When harvesting:
-
-- **External writing only.** The write log lists writing published on **other**
-  sites (Chainguard, Trino, Sonatype, DZone, Java Magazine, books, and so on). Do
-  **not** add simpligility.ca's own self-hosted blog posts as entries — the page
-  intro links visitors to the blog for those. A cross-posted copy hosted here may
-  still appear as a secondary `Also at simpligility.ca` link on an external
-  entry, but simpligility.ca is never the primary publication of an entry.
-- **No books.** The co-authored books are listed on the
-  [writing page](https://simpligility.ca/writing/), so they are deliberately
-  **not** write-log entries and the page intro links there instead. A blog post
-  announcing a book is still an entry, because the post is the writing. Do not
-  re-propose adding the books themselves.
-- **Skip auto-generated digests.** The old simpligility.ca blog auto-published
-  weekly "Twitter Weekly Updates for YYYY-MM-DD" posts (roundups of Manfred's
-  tweets). These are not authored articles — **exclude them**. Treat any similar
-  auto-posted content the same way.
-- **One entry per post.** Each substantive post gets its **own** entry, including
-  short release or version-announcement posts (e.g. "Android Maven Plugin 4.4.2
-  Released"). Do **not** consolidate several releases of one project into a single
-  entry.
-- **Dedupe double-publishes.** WordPress sometimes produced duplicate slug pairs
-  (`.../slug/` and `.../slug-2/`) for the same post. Add the post once, using the
-  canonical (non-`-2`) URL.
-
-## File structure
-
-```html
-<!-- Write Log for simpligility.ca/write-log/ -->
-<!-- Managed in the simpligility-website repo; edit there, then copy this into the WordPress page code view -->
-<!-- Last updated: YYYY-MM-DD -->
-
-<p>Over the years I have written many blog posts and articles ...</p>
-
-Check out specific years:
-<p><a href="#2026">2026</a>, <a href="#2025">2025</a>, ...</p>
-
-<h2 id="2026">2026</h2>
-
-<dl>
-
-  <dt><strong>Post title</strong><br> Publication &mdash; Date</dt>
-  <dd>
-    Description sentence(s).
-    <a href="...">Read on example.com</a> &bull; <a href="...">Video</a>
-    <br><br>
-  </dd>
-
-</dl>
-<h2 id="2025">2025</h2>
-
-<dl>
-  ...
-</dl>
-```
-
-### Year navigation
-
-Each `<h2>` year heading carries `id="YYYY"` (e.g. `<h2 id="2025">2025</h2>`),
-and the "Check out specific years" navigation `<p>` below the intro is a single
-line of comma-separated `<a href="#YYYY">` links (kept on one line to save
-vertical space). **When you add a new year block, you must also (1) give its
-`<h2>` the matching `id` and (2) add a comma-separated `<a href="#YYYY">` link
-for it in that navigation line**, in the same newest-first order. The first
-entry you add to the empty scaffold creates the first year block and the first
-navigation link.
-
-## Ordering rules
-
-- **Years descending**: newest year first (`2026`, then `2025`, ...).
-- **Within a year, reverse chronological**: newest post at the top of the `<dl>`,
-  oldest at the bottom.
-- When adding a post, insert it at the correct position by date — do not just
-  append. If the year has no `<h2>`/`<dl>` block yet, create one in the right
-  spot relative to the other years.
-
-## Entry format
-
-Each entry is a `<dt>`/`<dd>` pair, indented two spaces, with a blank line
-between entries.
-
-### The `<dt>` (title, publication, and date line)
+The write log puts the publication between the title and the date:
 
 ```html
-  <dt><strong>Post title</strong><br> Publication &mdash; Date</dt>
+  <dt><strong>Post title</strong><br> Chainguard blog &mdash; 5 June 2025</dt>
 ```
 
-- Title is wrapped in `<strong>`.
-- **Title uses sentence case**: capitalise only the first word and any proper
-  nouns (product, project, company, place, and personal names such as Trino,
-  Maven, Java, Python, JavaScript, DevOps, Chainguard, Starburst, Sonatype,
-  Kubernetes, Android, AWS). Do **not** title-case every word. Preserve the
-  established casing of proper nouns and acronyms. Use the post's real title;
-  only adjust casing to fit this scheme.
-- **A colon starts a new sentence**: capitalise the first word after a `:` in a
-  title.
-- After the closing `</strong>`, separate the title from what follows with
-  `<br> ` (a line break and a space), so the publication/date drop to their own
-  line under the title. Between the publication and the date the separator is
-  ` &mdash; ` (em dash with a space on each side).
-- **Publication** is where the post appeared — the blog or site name, in the
-  position the event log uses for location. Use a clean, human name for the
-  site, not a bare URL: `Chainguard blog`, `Sonatype blog`, `Trino blog`,
-  `simpligility.ca`, `DZone`, `InfoQ`. The full URL goes in the link below, not
-  here.
-- **Date** is the last segment. Use the most precise form known:
-  - Full date: `5 June 2025` (day month year, no comma, no ordinal suffix).
-  - Month only: `April 2026`.
-  - Approximate: `Late 2025`, `April/May 2025`.
+Use a clean human name for the site rather than a bare URL: `Chainguard blog`,
+`Sonatype blog`, `Trino blog`, `DZone`, `InfoQ`. The full URL belongs in the
+link.
 
-### The `<dd>` (description and links)
-
-```html
-  <dd>
-    One or two sentences describing what the post covered.
-    <a href="...">Read on example.com</a> &bull; <a href="...">Video</a>
-    <br><br>
-  </dd>
-```
-
-- Content indented four spaces.
-- Start with a short description: what the post was about and, when relevant,
-  who it was co-written with or what it tied to.
-- Public co-authors, partners, and interviewees may be named; do not name
-  customers or prospects, and do not name Manfred as the author (he is the
-  author of every entry).
-- **Links line**: one or more `<a>` links joined by ` &bull; ` (spaced bullet),
-  all on a **single line** with **no leading `<br>`** — the links flow directly
-  after the description. Follow the last link with `<br><br>` on its own line for
-  visual separation from the next entry. Keep the whole links list on one line.
-
-### Link labels and enforced order
+## Link labels and enforced order
 
 The post itself always leads, since the page is a list of posts. Include only
-the links that apply, in this canonical order:
+the links that apply, in this order:
 
-1. **The post** — the canonical link to read it. Label it `Read on <site>` using
-   the host the link points at (e.g. `Read on chainguard.dev`,
-   `Read on trino.io`, `Read on simpligility.ca`). This keeps the label
-   distinct from the human publication name in the `<dt>` and tells the reader
-   where the link goes.
-2. `Also at <site>` — a republished/cross-posted copy elsewhere, if any. Use the
-   other host in the label so the two read-links never share the same text.
-3. `Video` — a companion recording for the post, if one exists.
-4. `Details` — a related page (the event it accompanied, a project page, a
-   follow-up). Use a specific label instead if there is more than one, so no two
-   links in an entry ever share the same link text.
-
-Do **not** add internal tracking issue links — they point at private GitHub
-issues and do not belong on the public page.
-
-## Internal links must be root-relative
-
-The site is served under **both** `simpligility.ca` and `simpligility.com`, so
-links to the site's own content must be **root-relative** — start them with `/`
-and never hard-code a domain.
-
-- Correct: `<a href="/2014/05/some-old-post/">Read on simpligility.ca</a>`
-- Wrong: `<a href="https://simpligility.ca/2014/05/some-old-post/">`
-  (breaks/forces one domain when viewed on the other)
-
-External links (Chainguard, Sonatype, Trino, DZone, YouTube, etc.) keep their
-full `https://` URLs.
-
-## Broken and dead links
-
-Many entries are old posts whose links rot over time — for example the imported
-`blog.sonatype.com` URLs. The standing rules:
-
-- **Never delete an entry, and never silently strip its link, just because a URL
-  no longer resolves.** The post still happened; the record stays. A dead link
-  is a per-entry decision for Manfred, not a cleanup to make automatically.
-- When you notice or suspect a broken link, **try to find a better URL first**:
-  the post at the site's current location, a republished copy, or an archived
-  snapshot (e.g. the Wayback Machine, `web.archive.org`). Prefer a live link;
-  fall back to an archive link when that is all that survives.
-- If no working URL can be found, **flag the entry for Manfred and leave it as
-  is** — do not remove the link or the entry on your own. Surface it and let him
-  decide how to proceed for that specific entry.
-- We may later formalize a convention for an entry whose link is unrecoverable
-  (e.g. dropping the broken `href` but keeping the title, publication, date, and
-  a note of where it used to point, so the entry stays on the page). Until that
-  convention is written here, do not invent one — ask.
-
-See write-log STATUS item on finding better URLs for the tracked follow-up work.
-
-## HTML entity conventions
-
-Use named entities, matching the event log:
-
-- `&mdash;` — em dash separator between publication and date in the `<dt>` line.
-- `&ndash;` — en dash for ranges.
-- `&bull;` — bullet separator between links.
-- `&amp;` — ampersand in text (e.g. `Q&amp;A`).
-- `&#39;` — apostrophe inside attribute-adjacent text where needed
-  (e.g. `Trino&#39;s`).
-- `<em>...</em>` — for titles quoted inside a description.
+1. **The post** — the canonical link to read it, labelled `Read on <site>` using
+   the host the link points at, such as `Read on chainguard.dev` or `Read on
+   trino.io`. This keeps the label distinct from the human publication name in
+   the `<dt>` and tells the reader where the link goes.
+2. `Also at <site>` — a republished or cross-posted copy, using the other host
+   in the label so the two read-links never share the same text.
+3. `Video` — a companion recording for the post.
+4. `Details` — a related page such as the event it accompanied, a project page,
+   or a follow-up. Use a specific label instead when there is more than one.
 
 ## Process for adding a new entry
 
 1. **Gather the facts from the source.** Fetch the post and pull out:
-   - the **title** (the post's real headline),
-   - the **publication** (the site/blog it appeared on),
-   - the **date** published (most precise form available),
+   - the **title**, its real headline,
+   - the **publication** it appeared on,
+   - the **date** published, in the most precise form available,
    - a **one or two sentence description** of what it covered,
-   - the **canonical link** to read it, plus any cross-post, companion video, or
-     related page.
+   - the **canonical link**, plus any cross-post, companion video, or related
+     page.
 
    If you cannot find a reliable link for an artifact the user mentions, **ask
-   for the URL** rather than guessing — never invent a link.
+   for the URL** rather than guessing. Never invent a link.
 2. Read `write-log/write-log.html`.
-3. Determine the year and date; find the matching `<h2>`/`<dl>` block (or create
-   one in the correct descending-year position — and when creating a new year,
-   give its `<h2>` an `id="YYYY"` and add a matching comma-separated
-   `<a href="#YYYY">` link to the navigation line).
-4. Build the `<dt>`/`<dd>` pair: title in `<strong>` sentence case, publication
-   and date in the `<dt>`, description then the links line with the post leading
-   in the canonical order.
+3. Find the matching year block, or create one in the correct descending-year
+   position with its `id` and navigation link.
+4. Build the `<dt>` and `<dd>` pair: sentence-case title, publication and date in
+   the `<dt>`, description, then the links line with the post leading.
 5. Insert it at the correct reverse-chronological position within the year, with
-   a blank line separating it from neighbours.
-6. Update the `<!-- Last updated: YYYY-MM-DD -->` comment to today's date.
-7. Sanity-check: tags balanced, entities used, indentation consistent (two
-   spaces for `<dt>`/`<dd>`, four for `<dd>` content).
+   a blank line separating it from its neighbours.
+6. Bump the `<!-- Last updated -->` comment.
+7. Run the checklist in the site skill, plus the write-log points that follow.
 
 ### Worked example
 
 Source: the blog post *Fork yeah: We're bringing kaniko back* on the Chainguard
-blog (`chainguard.dev/unchained/...`), published 5 June 2025, with a companion
-video. Placed in the `2025` block:
+blog, published 5 June 2025, with a companion video. Placed in the `2025` block:
 
 ```html
   <dt><strong>Fork yeah: We&#39;re bringing kaniko back</strong><br> Chainguard blog &mdash; 5 June 2025</dt>
@@ -345,24 +182,12 @@ video. Placed in the `2025` block:
   </dd>
 ```
 
-## Checklist before finishing
+## Checklist for the write log
 
-- [ ] Entry is in the right year block and reverse-chronological position.
-- [ ] `<dt>` uses `<strong>` title, `<br> ` after the closing `</strong>`,
-      ` &mdash; ` between publication and date, correct date form.
-- [ ] Publication is a clean human site name in the `<dt>`; the full URL is in
-      the link, not the `<dt>`.
-- [ ] Links use the spaced ` &bull; ` separator, the post leads with a
-      `Read on <site>` label, and no two links share the same link text.
-- [ ] The links list is on a single line with no leading `<br>`, followed by
-      `<br><br>` on its own line; Manfred is not named as the author.
-- [ ] No internal tracking issue links added.
-- [ ] HTML entities (`&mdash;`, `&ndash;`, `&bull;`, `&amp;`) used, not raw
-      characters.
-- [ ] Own-site links are root-relative (start with `/`), not full
-      `simpligility.ca`/`simpligility.com` URLs.
-- [ ] Indentation and blank-line spacing match the established entries.
-- [ ] `<!-- Last updated -->` date bumped.
-- [ ] If a new year block was created, its `<h2>` has `id="YYYY"` and the "Check
-      out specific years" navigation line has a matching `<a href="#YYYY">` link.
-- [ ] No `<html>`/`<head>`/`<body>` wrapper introduced.
+Run the shared checklist in the site skill first, then confirm:
+
+- [ ] The post was published on another site, not self-hosted here, and is not a
+      book or an auto-generated digest.
+- [ ] Publication is a clean human name in the `<dt>`.
+- [ ] The post leads with a `Read on <site>` label, and a cross-post uses `Also
+      at <site>` with a different host.
