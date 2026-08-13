@@ -9,23 +9,11 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-08-12 (added the Manfred mentors section)
+Last updated: 2026-08-12 (finished the Manfred mentors page build-out)
 
 ---
 
-## 1. Build out the Manfred mentors page
-
-The *Manfred mentors* show has a dedicated page at
-<https://simpligility.ca/manfred-mentors/>. The episode archive is now managed
-in this repo as its own section with a matching skill and STATUS file, like the
-three logs, and holds all 13 episodes.
-
-The remaining work lives in
-[`manfred-mentors/STATUS.md`](manfred-mentors/STATUS.md): refactor the WordPress
-page so the newest episode stays featured at the top with a few more recent
-ones, followed by the full archive from the fragment.
-
-## 2. Establish a regular Manfred mentors cadence
+## 1. Establish a regular Manfred mentors cadence
 
 Set a regular, predictable streaming cadence for *Manfred mentors* &mdash; for
 example a fixed weekly or biweekly day and time &mdash; and commit to it rather
@@ -33,7 +21,7 @@ than streaming ad hoc. Decide the interval, announce the schedule on the
 dedicated page and the streaming platforms (YouTube, LinkedIn, Twitch), and then
 run with it consistently.
 
-## 3. Link the log pages better from the About pages
+## 2. Link the log pages better from the About pages
 
 The event, write, and video logs
 (<https://simpligility.ca/event-log/>, <https://simpligility.ca/write-log/>,
@@ -48,7 +36,7 @@ The writing page is done: its books section and its blog-posts section both
 link to the write log now, so use those two paragraphs as the model for the
 remaining pages.
 
-## 4. Sweep the GitHub repositories for talk and video material
+## 3. Sweep the GitHub repositories for talk and video material
 
 Go through the repositories in the
 [`mosabua`](https://github.com/mosabua?tab=repositories) and
@@ -69,7 +57,7 @@ slides or material reference. Do the sweep in a single pass with all three logs
 in mind, and record the accounts as swept in the relevant skills once it is
 done.
 
-## 5. Find readable copies of the three Sonatype books
+## 4. Find readable copies of the three Sonatype books
 
 *Repository Management with Nexus*, *Maven: The Complete Reference*, and *Maven
 by Example* are listed on the [writing page](https://simpligility.ca/writing/)
