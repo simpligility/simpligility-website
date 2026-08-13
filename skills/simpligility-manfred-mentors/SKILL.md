@@ -14,19 +14,28 @@ or editing episodes. Manfred mentors is an ongoing live streaming show of
 unedited, real-time work on open source projects, with a home at
 <https://simpligility.ca/manfred-mentors/>.
 
+**Read [`simpligility-site`](../simpligility-site/SKILL.md) first.** It holds
+the conventions every page on the site shares: the Custom HTML block
+requirement, page width, the root-relative link rule, the HTML entity list, the
+no-duplicate-link-text and dead-link rules, the `STATUS.md` conventions, and how
+to commit. This file covers only what is specific to the archive. Where it
+repeats a rule from there, that file wins.
+
+The archive differs from the three logs in one structural way: it has **no year
+headings and no year navigation**, so the shared fragment skeleton, ordering,
+and `<dt>` middle-slot rules in the site skill do not apply. The episode format
+below replaces them.
+
 The episodes are listed here, not in the [video log](../../video-log/). The
 video log points to this page instead, the same way the write log points to the
 blog for self-hosted posts. Never add Manfred mentors episodes to the video log.
-
-The archive is published as an HTML fragment embedded in a WordPress page, so it
-has **no** `<html>`, `<head>`, or `<body>` wrapper. Never add one.
 
 ## Target file
 
 - **Path from the repo root:** `manfred-mentors/manfred-mentors.html`
 - It is a standalone fragment: a lead comment, a repo-management comment, a
-  `<!-- Last updated: YYYY-MM-DD -->` comment, a short intro `<p>`, then a single
-  `<dl>` holding one `<dt>`/`<dd>` pair per episode, newest first.
+  `<!-- Last updated: YYYY-MM-DD -->` comment, a short intro `<p>`, then a
+  single `<dl>` holding one `<dt>` and `<dd>` pair per episode, newest first.
 
 ## Page structure
 
@@ -42,7 +51,7 @@ The WordPress page has three parts, and only the last is maintained here:
 
 ## Episode entry format
 
-Each episode is a `<dt>`/`<dd>` pair, indented two spaces, with a blank line
+Each episode is a `<dt>` and `<dd>` pair, indented two spaces, with a blank line
 between entries.
 
 ```html
@@ -55,15 +64,12 @@ between entries.
 ```
 
 - The title is wrapped in `<strong>` and starts with `Episode N:` followed by
-  the episode's own title.
-- **The title uses sentence case:** capitalize only the first word, the first
-  word after a colon, and proper nouns such as Trino, Maven, Java, Gemini,
-  Blender, and Chainguard. Preserve the established casing of proper nouns and
-  acronyms. Use the episode's real title and only adjust casing to fit.
-- After the closing `</strong>`, use `<br> ` and then the date. The show name is
-  not repeated, because the whole page is Manfred mentors.
-- **Date** is the day the episode streamed, as `1 February 2026`: day, month,
-  year, with no comma and no ordinal suffix.
+  the episode's own title, in the sentence case the site skill describes.
+- After the closing `</strong>` comes `<br> ` and then the date. There is no
+  middle slot, because the whole page is Manfred mentors and repeating the show
+  name adds nothing.
+- **Date** is the day the episode streamed, as `1 February 2026`.
+- The watch link is labelled `Watch on YouTube`.
 
 ## Writing the summary
 
@@ -75,10 +81,10 @@ its own.
 - Base it on the episode itself: its title and YouTube description, and the
   video when the description is thin. Do **not** invent what happened in an
   episode.
-- Do not name Manfred as the presenter, since he presents every episode. Public
-  co-hosts and guests may be named; never name customers or prospects.
-- Match the voice of the existing summaries: plain, direct, present the work
-  rather than sell it.
+- Match the voice of the existing summaries: plain and direct, presenting the
+  work rather than selling it.
+- The site skill's rule against naming Manfred applies here too, since he
+  presents every episode. Public co-hosts and guests may be named.
 
 If you cannot confirm an episode's title, date, or link, **ask for it** rather
 than guessing. Never invent a title, a date, or a URL.
@@ -93,51 +99,20 @@ episodes are numbered and released in order. Keep the numbering continuous.
 1. Gather the facts: the episode number, the title, the stream date, a one or
    two sentence summary, and the YouTube watch link.
 2. Read `manfred-mentors/manfred-mentors.html`.
-3. Build the `<dt>`/`<dd>` pair following the format, with the title in
+3. Build the `<dt>` and `<dd>` pair following the format, with the title in
    `<strong>` sentence case and the `Watch on YouTube` link after the summary.
 4. Insert it at the top of the `<dl>`, above the current newest episode, with a
    blank line separating it from the next entry.
-5. Update the `<!-- Last updated: YYYY-MM-DD -->` comment to today's date.
-6. Sanity-check: tags balanced, entities used, indentation consistent, two
-   spaces for `<dt>`/`<dd>` and four for `<dd>` content.
+5. Bump the `<!-- Last updated -->` comment.
+6. Run the checklist in the site skill, plus the episode points that follow.
 
-## Shared conventions
-
-The Manfred mentors archive follows the same house style as the logs. See
-[`../simpligility-video-log/SKILL.md`](../simpligility-video-log/SKILL.md) for
-the full detail. In short:
-
-- **HTML entities:** `&mdash;` for em dashes, `&ndash;` for en dashes and
-  ranges, `&bull;` between links, `&amp;` for an ampersand in text, and
-  `<em>...</em>` for a title quoted inside a summary.
-- **Links:** the watch link is labeled `Watch on YouTube`. When an episode has a
-  second link, join links with ` &bull; ` on one line with no leading `<br>`,
-  and never repeat a link label within an entry.
-- **Internal links are root-relative:** start own-site links with `/` and never
-  hard-code a domain, because the site is served under both simpligility.ca and
-  simpligility.com. External links keep their full `https://` URLs.
-- **Dead links:** never delete an episode or silently strip a link because a URL
-  stopped resolving. Look for a better or archived URL first, and otherwise flag
-  it for Manfred.
-
-## Committing changes
-
-The archive, this skill, and `STATUS.md` live in the `simpligility-website` git
-repo. Commit each completed change as its own focused commit. Fold any
-`STATUS.md` update into the same commit as the work it covers.
-
-## Checklist before finishing
+## Checklist for the archive
 
 - [ ] The entry belongs here: it is a Manfred mentors episode, not a video for
       the video log or a recording of another event.
-- [ ] The `<dt>` uses a `<strong>` `Episode N:` title in sentence case, `<br> `
-      before the date, and the correct date form.
-- [ ] The summary is one or two sentences, factual, and does not name Manfred as
-      the presenter.
+- [ ] The `<dt>` carries an `Episode N:` title in sentence case, with `<br> `
+      before the date and no middle slot.
+- [ ] The summary is one or two sentences and factual.
 - [ ] The `Watch on YouTube` link is present and resolves.
 - [ ] The entry is at the correct newest-first position with the numbering
       continuous.
-- [ ] HTML entities are used, not raw characters, and own-site links are
-      root-relative.
-- [ ] The `<!-- Last updated -->` date is bumped.
-- [ ] No `<html>`, `<head>`, or `<body>` wrapper was introduced.
