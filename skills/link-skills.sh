@@ -20,6 +20,7 @@ cd "$REPO_ROOT"
 
 # Skills to link (directory names under skills/).
 SKILLS=(
+  simpligility-site
   simpligility-event-log
   simpligility-write-log
   simpligility-video-log
