@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-17 (added the Chainguard Libraries virtual workshop item)
+Last updated: 2026-08-17 (confirmed the Chainguard Libraries workshop title)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -58,18 +58,19 @@ remediation time and malware risk. Registration microsite:
 
 Virtual, so the entry carries no location.
 
+**Title, confirmed by Manfred:** the microsite headline, written in sentence case
+as *Your library CVE and malware problem is overwhelming your engineers*.
+
 Still to confirm with Manfred before adding an entry:
 
-- the **title** to use. The microsite headline is *Your library CVE and malware
-  problem is overwhelming your engineers*, but the page calls the session only a
-  "virtual developer workshop", so check whether the headline is the real title.
 - the **partner** running the event. The microsite is hosted on
   `theyounionlive.in` and the time is quoted in IST, so this appears to be a
   partner-run event for an India audience. Name the partner in the description
   if that is right, but only if it is public.
 - whether the microsite is the right **Registration** link, or whether the
   "Register Here" button points somewhere better.
-- afterwards, whether a recording or deck can be linked.
+- the **slide deck**, which Manfred is reworking for this session, once it is
+  publicly hosted, plus any recording afterwards.
 
 ---
 
