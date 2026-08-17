@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-17 (added the KubeCon North America demo session item)
+Last updated: 2026-08-17 (added the Chainguard Libraries virtual workshop item)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -46,6 +46,30 @@ Still to confirm with Manfred before adding an entry:
   full conference range, and
 - the links that apply beyond the event page: the session page in the schedule,
   a slide deck, and any recording.
+
+### Chainguard Libraries virtual workshop &mdash; entry to be written
+
+A virtual developer workshop on Chainguard Libraries, 3 September 2026,
+11:30&ndash;12:30 IST, with Manfred as the speaker. It covers how AI-driven
+threats are reshaping software security and how drop-in replacement Java,
+Python, and JavaScript dependencies with signed SBOMs and provenance cut CVE
+remediation time and malware risk. Registration microsite:
+<https://theyounionlive.in/chainguard/cve/microsite/index.html>.
+
+Virtual, so the entry carries no location.
+
+Still to confirm with Manfred before adding an entry:
+
+- the **title** to use. The microsite headline is *Your library CVE and malware
+  problem is overwhelming your engineers*, but the page calls the session only a
+  "virtual developer workshop", so check whether the headline is the real title.
+- the **partner** running the event. The microsite is hosted on
+  `theyounionlive.in` and the time is quoted in IST, so this appears to be a
+  partner-run event for an India audience. Name the partner in the description
+  if that is right, but only if it is public.
+- whether the microsite is the right **Registration** link, or whether the
+  "Register Here" button points somewhere better.
+- afterwards, whether a recording or deck can be linked.
 
 ---
 
