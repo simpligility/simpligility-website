@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-17 (confirmed the WeAreDevelopers name, dates, and event page)
+Last updated: 2026-08-17 (settled the San Jos&eacute; spelling into the skill)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -32,9 +32,6 @@ Still to confirm with Manfred before adding an entry:
 
 Booth duty alone is a judgement call rather than a talk, so check whether it
 should be logged at all before writing the entry.
-
-The event brands the city as San Jos&eacute;; the existing AnDevCon entries use
-the unaccented `San Jose, CA`. Confirm which spelling the entry should use.
 
 ---
 

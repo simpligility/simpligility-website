@@ -66,6 +66,9 @@ re-litigating them:
   of that deck.
 - **AnDevCon locations** are San Jose, CA per Manfred. The source posts did not
   state a venue, so do not "correct" these from the posts.
+- **San Jos&eacute; is written with the accent**, as `San Jos&eacute;, CA` in the
+  fragment, per Manfred. The older AnDevCon entries still carry the unaccented
+  form; leave them alone unless Manfred asks for them to be normalized.
 
 ## The location slot
 
