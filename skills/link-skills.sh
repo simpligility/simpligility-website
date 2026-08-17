@@ -60,24 +60,10 @@ for root in "${TARGET_ROOTS[@]}"; do
     echo "linked ${link} -> ${target}"
   done
 
-  # Drop symlinks for skills that no longer exist, so a renamed or deleted skill
-  # does not linger as a dangling link the CLIs still try to read. Only symlinks
-  # are removed; anything else in the root is left alone.
-  for link in "$root"/*; do
-    [[ -L "$link" ]] || continue
-    name="$(basename "$link")"
-    stale=1
-    for skill in "${SKILLS[@]}"; do
-      if [[ "$skill" == "$name" ]]; then
-        stale=0
-        break
-      fi
-    done
-    if [[ $stale -eq 1 ]]; then
-      rm "$link"
-      echo "removed stale ${link}"
-    fi
-  done
+  # Nothing is removed from the discovery roots. Skills installed there by
+  # another tool or another repo are just as valid as these, and there is no way
+  # to tell a link this script owns from one it does not. Delete a link by hand
+  # when a skill here is renamed or dropped.
 done
 
 echo "Done. Linked ${#SKILLS[@]} skills into: ${TARGET_ROOTS[*]}"
