@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-17 (added the WeAreDevelopers San Jose item)
+Last updated: 2026-08-17 (confirmed the WeAreDevelopers name, dates, and event page)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -13,23 +13,28 @@ The conventions for this file are documented in
 
 ## Open items
 
-### WeAreDevelopers, San Jose, CA &mdash; details to be determined
+### WeAreDevelopers World Congress North America &mdash; talks to be determined
 
-An upcoming appearance at WeAreDevelopers in San Jose. The current plan is booth
-duty only, so there may be nothing to log as a talk. Two possibilities are still
-open and unconfirmed:
+An upcoming appearance at **WeAreDevelopers World Congress North America**, San
+Jos&eacute;, CA, 23&ndash;25 September 2026. Event page:
+<https://www.wearedevelopers.com/world-congress-north-america>.
+
+The current plan is booth duty only, so there may be nothing to log as a talk.
+Two possibilities are still open and unconfirmed:
 
 - a conference presentation, and
 - a presentation at the booth.
 
-Before adding an entry, confirm with Manfred:
+Still to confirm with Manfred before adding an entry:
 
-- the **exact event name** and its **date or date range**,
 - whether either presentation is happening, and if so its **title**, and
-- the links that apply: event page, registration, slide deck, and any recording.
+- the links that apply beyond the event page: slide deck and any recording.
 
 Booth duty alone is a judgement call rather than a talk, so check whether it
 should be logged at all before writing the entry.
+
+The event brands the city as San Jos&eacute;; the existing AnDevCon entries use
+the unaccented `San Jose, CA`. Confirm which spelling the entry should use.
 
 ---
 
