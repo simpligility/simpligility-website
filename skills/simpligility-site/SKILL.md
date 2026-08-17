@@ -310,6 +310,8 @@ Use named entities in every fragment:
 - `&bull;` for the separator between links.
 - `&amp;` for an ampersand in text, as in `Q&amp;A`.
 - `&#39;` for an apostrophe in attribute-adjacent text, as in `Trino&#39;s`.
+- `&eacute;` and the matching entities for other accented letters, as in
+  `San Jos&eacute;, CA`.
 - `<em>...</em>` for a title quoted inside a description.
 
 ## STATUS files

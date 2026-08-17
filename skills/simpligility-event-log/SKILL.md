@@ -64,11 +64,12 @@ re-litigating them:
   `simpligility.github.io/...` rather than an upstream URL. Keep both repos: the
   original `takari/javaone2015` is gone, so the fork is the only surviving copy
   of that deck.
-- **AnDevCon locations** are San Jose, CA per Manfred. The source posts did not
-  state a venue, so do not "correct" these from the posts.
-- **San Jos&eacute; is written with the accent**, as `San Jos&eacute;, CA` in the
-  fragment, per Manfred. The older AnDevCon entries still carry the unaccented
-  form; leave them alone unless Manfred asks for them to be normalized.
+- **AnDevCon locations** are San Jos&eacute;, CA per Manfred. The source posts
+  did not state a venue, so do not "correct" these from the posts.
+- **San Jos&eacute; is always written with the accent**, as `San Jos&eacute;, CA`
+  in the fragment. That is the city's own official spelling, adopted by its
+  council in 1979, and Manfred wants it used consistently. Every entry on the
+  page uses it, so do not reintroduce the unaccented `San Jose`.
 
 ## The location slot
 
