@@ -11,6 +11,10 @@
 #
 # Run from anywhere; it resolves the repo root from its own location. Idempotent
 # (re-run safely after adding a skill or on a freshly cloned machine).
+#
+# The skill list is discovered from the filesystem rather than hardcoded, so a
+# new skill needs no edit here. A hand-maintained list went stale once already
+# and left two skills invisible to every agent CLI.
 
 set -euo pipefail
 
@@ -18,15 +22,19 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
 
-# Skills to link (directory names under skills/).
-SKILLS=(
-  simpligility-site
-  simpligility-event-log
-  simpligility-write-log
-  simpligility-video-log
-  simpligility-manfred-mentors
-  simpligility-blog
-)
+# Skills to link: every directory under skills/ that holds a SKILL.md. The glob
+# expands in sorted order, so the output is stable, and a directory without a
+# SKILL.md is skipped rather than linked as a broken skill.
+SKILLS=()
+for skill_file in skills/*/SKILL.md; do
+  [[ -f "$skill_file" ]] || continue
+  SKILLS+=("$(basename "$(dirname "$skill_file")")")
+done
+
+if [[ ${#SKILLS[@]} -eq 0 ]]; then
+  echo "No skills found under skills/*/SKILL.md — nothing to link." >&2
+  exit 1
+fi
 
 # Discovery roots to populate (relative to the repo root).
 TARGET_ROOTS=(
@@ -51,6 +59,25 @@ for root in "${TARGET_ROOTS[@]}"; do
     ln -sfn "$target" "$link"
     echo "linked ${link} -> ${target}"
   done
+
+  # Drop symlinks for skills that no longer exist, so a renamed or deleted skill
+  # does not linger as a dangling link the CLIs still try to read. Only symlinks
+  # are removed; anything else in the root is left alone.
+  for link in "$root"/*; do
+    [[ -L "$link" ]] || continue
+    name="$(basename "$link")"
+    stale=1
+    for skill in "${SKILLS[@]}"; do
+      if [[ "$skill" == "$name" ]]; then
+        stale=0
+        break
+      fi
+    done
+    if [[ $stale -eq 1 ]]; then
+      rm "$link"
+      echo "removed stale ${link}"
+    fi
+  done
 done
 
-echo "Done. Skills linked into: ${TARGET_ROOTS[*]}"
+echo "Done. Linked ${#SKILLS[@]} skills into: ${TARGET_ROOTS[*]}"
