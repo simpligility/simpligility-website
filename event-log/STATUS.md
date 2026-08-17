@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-17 (normalized every entry to the official San Jos&eacute; spelling)
+Last updated: 2026-08-17 (added the KubeCon North America demo session item)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -32,6 +32,20 @@ Still to confirm with Manfred before adding an entry:
 
 Booth duty alone is a judgement call rather than a talk, so check whether it
 should be logged at all before writing the entry.
+
+### KubeCon + CloudNativeCon North America &mdash; demo session details to come
+
+Speaking slot confirmed: a **20 minute demo session** at **KubeCon +
+CloudNativeCon North America**, Salt Lake City, UT, 9&ndash;12 November 2026.
+Event page: <https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/>.
+
+Still to confirm with Manfred before adding an entry:
+
+- the **session title** and what it covers,
+- the **day** of the session, so the entry can use a single date rather than the
+  full conference range, and
+- the links that apply beyond the event page: the session page in the schedule,
+  a slide deck, and any recording.
 
 ---
 
