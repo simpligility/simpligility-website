@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-17 (confirmed the Chainguard Libraries workshop title)
+Last updated: 2026-08-17 (confirmed the India audience; partner naming pending)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -63,10 +63,10 @@ as *Your library CVE and malware problem is overwhelming your engineers*.
 
 Still to confirm with Manfred before adding an entry:
 
-- the **partner** running the event. The microsite is hosted on
-  `theyounionlive.in` and the time is quoted in IST, so this appears to be a
-  partner-run event for an India audience. Name the partner in the description
-  if that is right, but only if it is public.
+- whether the **partner** running the event can be named. Manfred confirmed it
+  is a partner-run event for an India audience, which the description should
+  say, and he is checking whether the partner itself may be mentioned. Leave the
+  partner out until he confirms.
 - whether the microsite is the right **Registration** link, or whether the
   "Register Here" button points somewhere better.
 - the **slide deck**, which Manfred is reworking for this session, once it is
