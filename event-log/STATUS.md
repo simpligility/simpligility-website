@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-17 (confirmed the India audience; partner naming pending)
+Last updated: 2026-08-18 (WeAreDevelopers talk approved and logged; day and links pending)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -13,25 +13,24 @@ The conventions for this file are documented in
 
 ## Open items
 
-### WeAreDevelopers World Congress North America &mdash; talks to be determined
+### WeAreDevelopers World Congress North America &mdash; talk logged, details to firm up
 
-An upcoming appearance at **WeAreDevelopers World Congress North America**, San
+An appearance at **WeAreDevelopers World Congress North America**, San
 Jos&eacute;, CA, 23&ndash;25 September 2026. Event page:
 <https://www.wearedevelopers.com/world-congress-north-america>.
 
-The current plan is booth duty only, so there may be nothing to log as a talk.
-Two possibilities are still open and unconfirmed:
+The conference presentation is approved and logged, titled *AI vs. AI:
+Defending the open source supply chain with agentic workflows*. The entry
+currently uses the full conference date range because the specific session day
+is not yet known.
 
-- a conference presentation, and
-- a presentation at the booth.
+Still to firm up:
 
-Still to confirm with Manfred before adding an entry:
-
-- whether either presentation is happening, and if so its **title**, and
-- the links that apply beyond the event page: slide deck and any recording.
-
-Booth duty alone is a judgement call rather than a talk, so check whether it
-should be logged at all before writing the entry.
+- the **specific session day**, so the entry can use a single date rather than
+  the 23&ndash;25 September range,
+- the **slide deck** and any **recording** once available, and
+- whether a separate **booth presentation** also happens, which would be its own
+  judgement call on whether to log.
 
 ### KubeCon + CloudNativeCon North America &mdash; demo session details to come
 
