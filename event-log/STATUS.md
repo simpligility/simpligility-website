@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-18 (WeAreDevelopers talk approved and logged; day and links pending)
+Last updated: 2026-09-03 (Chainguard Libraries India workshop logged with slide deck; recording and partner naming pending)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -46,30 +46,21 @@ Still to confirm with Manfred before adding an entry:
 - the links that apply beyond the event page: the session page in the schedule,
   a slide deck, and any recording.
 
-### Chainguard Libraries virtual workshop &mdash; entry to be written
+### Chainguard Libraries virtual workshop &mdash; entry logged, follow-ups open
 
-A virtual developer workshop on Chainguard Libraries, 3 September 2026,
-11:30&ndash;12:30 IST, with Manfred as the speaker. It covers how AI-driven
-threats are reshaping software security and how drop-in replacement Java,
-Python, and JavaScript dependencies with signed SBOMs and provenance cut CVE
-remediation time and malware risk. Registration microsite:
-<https://theyounionlive.in/chainguard/cve/microsite/index.html>.
+The virtual developer workshop on Chainguard Libraries for an India audience,
+3 September 2026, 11:30&ndash;12:30 IST, is logged under the title *Your library
+CVE and malware problem is overwhelming your engineers* with the slide deck at
+`/wp-content/uploads/2026/09/202609-chainguard-libraries-india.pdf`. Registration
+microsite: <https://theyounionlive.in/chainguard/cve/microsite/index.html>.
 
-Virtual, so the entry carries no location.
-
-**Title, confirmed by Manfred:** the microsite headline, written in sentence case
-as *Your library CVE and malware problem is overwhelming your engineers*.
-
-Still to confirm with Manfred before adding an entry:
+Still to firm up:
 
 - whether the **partner** running the event can be named. Manfred confirmed it
-  is a partner-run event for an India audience, which the description should
-  say, and he is checking whether the partner itself may be mentioned. Leave the
-  partner out until he confirms.
-- whether the microsite is the right **Registration** link, or whether the
-  "Register Here" button points somewhere better.
-- the **slide deck**, which Manfred is reworking for this session, once it is
-  publicly hosted, plus any recording afterwards.
+  is a partner-run event for an India audience, which the description already
+  says, and he was checking whether the partner itself may be mentioned. Add it
+  to the description once he confirms.
+- any **recording**, to be added as a leading `Video` link once available.
 
 ---
 
