@@ -4,7 +4,7 @@ Working notes for building out and maintaining `video-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-12 (added the year-block breakup task)
+Last updated: 2026-09-22 (added the Azure Chainguard AKS showcase video)
 
 The conventions for this file are documented in
 [`../skills/simpligility-video-log/SKILL.md`](../skills/simpligility-video-log/SKILL.md).
