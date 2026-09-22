@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-09-03 (Chainguard Libraries India workshop logged with slide deck; recording and partner naming pending)
+Last updated: 2026-09-22 (WeAreDevelopers panel to add; talk already logged)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -24,11 +24,18 @@ Defending the open source supply chain with agentic workflows*. The entry
 currently uses the full conference date range because the specific session day
 is not yet known.
 
+Manfred is also **hosting a panel** at the conference (25 September 2026). This
+still needs an event-log entry &mdash; add it following the skill, deciding
+whether it is its own entry or folded into the conference appearance. Get the
+panel **title**, **topic/participants**, and any **session page** link before
+adding it.
+
 Still to firm up:
 
-- the **specific session day**, so the entry can use a single date rather than
-  the 23&ndash;25 September range,
-- the **slide deck** and any **recording** once available, and
+- the **specific session day** for the talk, so the entry can use a single date
+  rather than the 23&ndash;25 September range,
+- the **slide deck** and any **recording** once available,
+- the **panel** entry described above, and
 - whether a separate **booth presentation** also happens, which would be its own
   judgement call on whether to log.
 
