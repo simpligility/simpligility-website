@@ -28,7 +28,7 @@ page. Event page: <https://www.wearedevelopers.com/world-congress-north-america>
 Still to firm up:
 
 - the **slide deck** for the talk and any **recording** of either session, to be
-  added once available, and
+  added once available. The panel has no slide deck, so none is expected there.
 - whether a separate **booth presentation** also happens, which would be its own
   judgement call on whether to log.
 
