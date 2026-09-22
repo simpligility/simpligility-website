@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-09-22 (WeAreDevelopers panel to add; talk already logged)
+Last updated: 2026-09-22 (WeAreDevelopers talk and panel both logged with firm dates; slides/recordings pending)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -13,29 +13,22 @@ The conventions for this file are documented in
 
 ## Open items
 
-### WeAreDevelopers World Congress North America &mdash; talk logged, details to firm up
+### WeAreDevelopers World Congress North America &mdash; both sessions logged, follow-ups open
 
-An appearance at **WeAreDevelopers World Congress North America**, San
-Jos&eacute;, CA, 23&ndash;25 September 2026. Event page:
-<https://www.wearedevelopers.com/world-congress-north-america>.
+Two appearances at **WeAreDevelopers World Congress North America**, San
+Jos&eacute;, CA, are logged, each as its own entry with a firm date and session
+page. Event page: <https://www.wearedevelopers.com/world-congress-north-america>.
 
-The conference presentation is approved and logged, titled *AI vs. AI:
-Defending the open source supply chain with agentic workflows*. The entry
-currently uses the full conference date range because the specific session day
-is not yet known.
-
-Manfred is also **hosting a panel** at the conference (25 September 2026). This
-still needs an event-log entry &mdash; add it following the skill, deciding
-whether it is its own entry or folded into the conference appearance. Get the
-panel **title**, **topic/participants**, and any **session page** link before
-adding it.
+- The talk *AI vs. AI: Defending the open source supply chain with agentic
+  workflows*, Thursday 24 September 2026, Stage 6.
+- The panel *Defending at machine speed*, Friday 25 September 2026, Tech Leaders
+  Stage, hosted with panelists Brian Fox (Sonatype) and Eli-Shaoul Khedouri
+  (Intuition Machines).
 
 Still to firm up:
 
-- the **specific session day** for the talk, so the entry can use a single date
-  rather than the 23&ndash;25 September range,
-- the **slide deck** and any **recording** once available,
-- the **panel** entry described above, and
+- the **slide deck** for the talk and any **recording** of either session, to be
+  added once available, and
 - whether a separate **booth presentation** also happens, which would be its own
   judgement call on whether to log.
 
