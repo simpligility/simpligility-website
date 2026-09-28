@@ -9,7 +9,7 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-08-12 (closed the About-page links and reframed the width task)
+Last updated: 2026-09-28 (folded the store-block-wrappers-in-repo decision into the width task)
 
 ---
 
@@ -89,4 +89,36 @@ the sticky year navigation. That has already happened once to the write log.
 After each page, fetch it and confirm the wrapper carries the intended alignment
 class and that no `<br />` appears inside the `<style>` or `<script>`.
 
-These are WordPress changes, not repo changes.
+### Also settle: store the block wrappers in the repo for whole-page paste
+
+Manfred wants the repo fragments to hold the full WordPress block markup &mdash;
+the `wp:group` / `wp:html` delimiters around the fragment &mdash; not just the
+bare fragment, so the entire page content can be copied from the repo and pasted
+into the WordPress page **code editor** in one shot instead of into a single
+Custom HTML block. He started this by pasting the event log's live markup into
+`event-log/event-log.html`, which is why that file now begins with
+`<!-- wp:group {"layout":{"type":"default"}} -->` and ends with
+`<!-- /wp:html --></div> <!-- /wp:group -->`. That is the **narrow** form, so it
+is not the target to keep.
+
+Decide together with the width standardization above, then apply in one pass:
+
+- Pick the one canonical wrapper recipe (the site skill's is wide/full alignment
+  + inner content width off / flow layout; `/write-log/` already matches it).
+- Capture the **exact** serialized `wp:group` markup from the chosen live page
+  &mdash; the precise `align`/`layout` JSON and the `wp-block-group` classes
+  &mdash; rather than hand-writing it, since the repo has never stored it and the
+  exact strings are easy to get wrong.
+- Wrap all four repo fragments identically with that markup, in one commit.
+- Update `skills/simpligility-site/SKILL.md`: the fragment-skeleton and
+  publishing-model sections currently say fragments carry no wrapper and are
+  pasted into a Custom HTML block; change them to describe the block-wrapped
+  form and the page-code-editor paste. Keep the wpautop warning &mdash; pasting
+  the block markup into the **code editor** is what makes it round-trip safely.
+
+Until this is settled, `event-log/event-log.html` is the only fragment carrying
+wrappers, and it carries the wrong (narrow) one, so the repo is temporarily
+inconsistent.
+
+The width changes are WordPress-side; the wrapper-in-repo change is a repo change
+plus a skill change.
