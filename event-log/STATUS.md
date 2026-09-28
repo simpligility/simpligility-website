@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-09-22 (WeAreDevelopers talk and panel both logged with firm dates; slides/recordings pending)
+Last updated: 2026-09-28 (WeAreDevelopers talk slide deck added; recordings still pending)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -27,8 +27,10 @@ page. Event page: <https://www.wearedevelopers.com/world-congress-north-america>
 
 Still to firm up:
 
-- the **slide deck** for the talk and any **recording** of either session, to be
-  added once available. The panel has no slide deck, so none is expected there.
+- any **recording** of either session, to be added once available. The talk's
+  slide deck is now added at
+  `/wp-content/uploads/2026/09/202609-aivsai-wearedevelopers.pdf`. The panel has
+  no slide deck, so none is expected there.
 - whether a separate **booth presentation** also happens, which would be its own
   judgement call on whether to log.
 
