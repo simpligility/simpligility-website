@@ -4,7 +4,7 @@ Working notes for building out and maintaining `write-log.html`. This captures
 what has been **deferred** and the **next steps**, so the work can be resumed
 later with Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-08-12 (closed out the other-publications hunt and the writing page links)
+Last updated: 2026-09-29 (closed out the Chainguard harvest; author page is live but incomplete)
 
 The conventions for this file are documented in
 [`../skills/simpligility-write-log/SKILL.md`](../skills/simpligility-write-log/SKILL.md). Read that first,
@@ -18,14 +18,8 @@ pass through a site feeds both.
 
 ---
 
-## 1. Harvest Chainguard blog posts
-
-The log holds eight Chainguard posts from the initial harvest, all on the
-Unchained blog (`chainguard.dev/unchained/...`), but the set is **not complete**
-— more of Manfred's posts are unlisted, and new ones keep appearing.
-
-**Consider waiting.** Chainguard is building an author page that is expected to
-go live soon. Once it does, it collects Manfred's posts in one place and makes
-this harvest far easier and more reliable than sweeping the Unchained blog by
-hand. Check whether the author page is live before starting; only fall back to a
-manual sweep of the blog if it is still not up when this becomes urgent.
+No outstanding harvest work. The Chainguard sweep is closed and recorded in the
+skill under **Sources already swept**: the author page went live but lists only a
+recent subset, so the log is kept ahead of it by adding each new Unchained post
+as it publishes. Add new entries from any site as they appear, following the
+skill.

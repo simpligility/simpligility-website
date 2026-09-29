@@ -60,6 +60,14 @@ skill.
 These sources have been harvested and are complete, so treat finding more as a
 watch-for-new check rather than a backlog:
 
+- The **Chainguard Unchained blog** is harvested and the log is kept ahead of
+  it. The Chainguard **author page** at
+  `www.chainguard.dev/unchained/author/manfred-moser` is now live but is **not a
+  complete or reliable listing** &mdash; it shows only a recent subset (five
+  posts, no pagination), fewer than the log already holds. Do not treat it as the
+  authoritative source it was once hoped to be; use it only as a cross-check.
+  Chainguard is Manfred&#39;s current employer, so new Unchained posts keep
+  appearing: add each one as it publishes rather than re-running a bulk harvest.
 - The **simpligility.ca blog** from 2010 to 2025 is fully inventoried in
   [`../../write-log/simpligility-harvest.md`](../../write-log/simpligility-harvest.md).
   Its own self-hosted posts are not write-log entries, so the harvest is kept as
