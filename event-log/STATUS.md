@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-09-28 (WeAreDevelopers talk slide deck added; recordings still pending)
+Last updated: 2026-09-29 (Chainguard Libraries India item closed; partner Younion named, no recording)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -47,24 +47,6 @@ Still to confirm with Manfred before adding an entry:
   full conference range, and
 - the links that apply beyond the event page: the session page in the schedule,
   a slide deck, and any recording.
-
-### Chainguard Libraries virtual workshop &mdash; entry logged, follow-ups open
-
-The virtual developer workshop on Chainguard Libraries for an India audience,
-3 September 2026, 11:30&ndash;12:30 IST, is logged under the title *Your library
-CVE and malware problem is overwhelming your engineers* with the slide deck at
-`/wp-content/uploads/2026/09/202609-chainguard-libraries-india.pdf`. Registration
-microsite: <https://theyounionlive.in/chainguard/cve/microsite/index.html>.
-
-Still to firm up:
-
-- whether the **partner** running the event can be named. Manfred confirmed it
-  is a partner-run event for an India audience, which the description already
-  says, and he was checking whether the partner itself may be mentioned. Add it
-  to the description once he confirms.
-- any **recording**, to be added as a leading `Video` link once available.
-
----
 
 The known event sources have been swept and the blog-discovery follow-ups are
 resolved. What was checked lives in the skill under **Sources already swept**,
