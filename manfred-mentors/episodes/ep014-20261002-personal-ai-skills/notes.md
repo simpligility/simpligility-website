@@ -75,9 +75,9 @@ a README and commit it, in a throwaway repo. One task exercises both
 `manfred-writing` and `manfred-git`, and a dice roller for board games and
 RPGs is a fun, easy-to-follow thing to build on camera.
 
-Setup, done live at the start of the demo: a local, unpushed repo in
-`~/training/`, such as `~/training/mm014-demo`, holding only an initial commit,
-and two branches `cold` and `warm` from it.
+Setup, done live at the start of the demo: two empty, unpushed repos side by
+side, `~/training/mm014-cold` and `~/training/mm014-warm`, each created with
+`git init`.
 
 The prompt, identical both times and with no style hints:
 
@@ -85,18 +85,20 @@ The prompt, identical both times and with no style hints:
 > tabletop RPGs, including six, twelve, and twenty-sided dice, with a README.md
 > that explains how to use it. Then commit it.
 
-1. On `cold`, start a fresh session without invoking `/manfred` and run the
-   prompt. The gated children cannot load without the base skill, so this also
-   shows the gating. Let the result be wrong in the ordinary ways.
+1. In `mm014-cold`, start a fresh session without invoking `/manfred` and run
+   the prompt. The gated children cannot load without the base skill, so this
+   also shows the gating. Let the result be wrong in the ordinary ways.
 2. Open the `getting-stuff-done` repo and walk the `skills/` directory. Show one
    `SKILL.md` in full so viewers see there is no magic in the format.
 3. Run `install-skills.sh` and show the symlinks it creates across tool
    directories. Point out that editing happens only in the repo.
-4. On `warm`, start a fresh session, invoke `/manfred`, and show the skill
+4. In `mm014-warm`, start a fresh session, invoke `/manfred`, and show the skill
    index table routing to a child.
-5. Run the same prompt, then compare with `git log -1` on each branch and
-   `git diff cold warm -- README.md`. The generated code differs between any
-   two runs, so a full diff is noise. Compare the commit and the README only.
+5. Run the same prompt, then compare from `~/training` with
+   `git -C mm014-cold log -1`, `git -C mm014-warm log -1`, and
+   `diff mm014-cold/README.md mm014-warm/README.md`. The generated code differs
+   between any two runs, so comparing it is noise. Compare the commit and the
+   README only.
 6. Wrap up with how to copy the pattern.
 
 What to point at in the comparison:
