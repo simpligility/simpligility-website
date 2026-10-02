@@ -115,9 +115,9 @@ episodes are numbered and released in order. Keep the numbering continuous.
 
 ## YouTube description
 
-After the stream, the YouTube description is replaced with the archive summary
-followed by a fixed footer. Hand Manfred the text to paste: the summary as plain
-text with the HTML entities resolved, a blank line, then this footer verbatim.
+The YouTube description is the episode teaser from the `## Announcement` section
+of the episode notes, followed by a fixed footer. Hand Manfred the text to
+paste: the teaser, a blank line, then this footer verbatim.
 
 ```text
 More info also at https://simpligility.ca/ and https://www.linkedin.com/in/manfredmoser/
