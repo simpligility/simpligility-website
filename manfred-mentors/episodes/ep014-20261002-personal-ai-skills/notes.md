@@ -70,17 +70,19 @@ Teaser description for StreamYard, used on YouTube, LinkedIn, and Twitch.
 
 ## Demo outline
 
-The cold-start task is a README plus a commit in a throwaway repo, so one task
-exercises both `manfred-writing` and `manfred-git`.
+The cold-start task asks the agent to build a small dice roller in Python with
+a README and commit it, in a throwaway repo. One task exercises both
+`manfred-writing` and `manfred-git`, and a dice roller for board games and
+RPGs is a fun, easy-to-follow thing to build on camera.
 
 Setup before the stream: a local, unpushed repo such as `~/demo/mm014-demo`
-with one small script, and two branches `cold` and `warm` from the same base
-commit.
+holding only an initial commit, and two branches `cold` and `warm` from it.
 
 The prompt, identical both times and with no style hints:
 
-> Add a README.md that explains what this script does and how to run it, then
-> commit it.
+> Create a small Python command-line script that rolls dice for board games and
+> tabletop RPGs, including six, twelve, and twenty-sided dice, with a README.md
+> that explains how to use it. Then commit it.
 
 1. On `cold`, start a fresh session without invoking `/manfred` and run the
    prompt. The gated children cannot load without the base skill, so this also
@@ -92,7 +94,8 @@ The prompt, identical both times and with no style hints:
 4. On `warm`, start a fresh session, invoke `/manfred`, and show the skill
    index table routing to a child.
 5. Run the same prompt, then compare with `git log -1` on each branch and
-   `git diff cold warm`.
+   `git diff cold warm -- README.md`. The generated code differs between any
+   two runs, so a full diff is noise. Compare the commit and the README only.
 6. Wrap up with how to copy the pattern.
 
 What to point at in the comparison:
