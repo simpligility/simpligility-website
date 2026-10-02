@@ -20,6 +20,11 @@ match the topic, once the stream is scheduled.
 * The `trinodb-*` family as a third scope: project facts that are useful to
   anyone working on Trino, not just to one person. Likely its own episode.
   Carried over from episode 14.
+* The simpligility-website repo itself and how it improves managing the
+  WordPress site. Page content such as the event, write, and video logs and
+  this archive lives in git as HTML fragments, maintained with AI tools and
+  per-section skills, then pasted into WordPress. Fits naturally with the
+  project scope idea.
 
 
 ## Status and open items
