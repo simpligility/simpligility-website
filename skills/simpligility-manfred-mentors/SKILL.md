@@ -69,7 +69,12 @@ between entries.
   middle slot, because the whole page is Manfred mentors and repeating the show
   name adds nothing.
 - **Date** is the day the episode streamed, as `1 February 2026`.
-- The watch link is labelled `Watch on YouTube`.
+- The watch links are `Watch on YouTube` first and, when the stream has a
+  LinkedIn post, `Watch on LinkedIn` after it, joined by ` &bull; ` on one line.
+  Link the full `linkedin.com/posts/...` URL, not the `lnkd.in` short link.
+- Never link Twitch. Twitch VODs expire, so a Twitch link would rot.
+- Episodes before 14 have only the YouTube link. Do not backfill LinkedIn links
+  unless Manfred asks.
 
 ## Writing the summary
 
@@ -97,10 +102,11 @@ episodes are numbered and released in order. Keep the numbering continuous.
 ## Adding a new episode
 
 1. Gather the facts: the episode number, the title, the stream date, a one or
-   two sentence summary, and the YouTube watch link.
+   two sentence summary, the YouTube watch link, and the LinkedIn post link
+   if there is one.
 2. Read `manfred-mentors/manfred-mentors.html`.
 3. Build the `<dt>` and `<dd>` pair following the format, with the title in
-   `<strong>` sentence case and the `Watch on YouTube` link after the summary.
+   `<strong>` sentence case and the watch links after the summary.
 4. Insert it at the top of the `<dl>`, above the current newest episode, with a
    blank line separating it from the next entry.
 5. Bump the `<!-- Last updated -->` comment.
@@ -130,6 +136,7 @@ When reviewing a thumbnail, check the layout:
 - [ ] The `<dt>` carries an `Episode N:` title in sentence case, with `<br> `
       before the date and no middle slot.
 - [ ] The summary is one or two sentences and factual.
-- [ ] The `Watch on YouTube` link is present and resolves.
+- [ ] The `Watch on YouTube` link is present and resolves, the LinkedIn link
+      follows it when there is one, and there is no Twitch link.
 - [ ] The entry is at the correct newest-first position with the numbering
       continuous.
