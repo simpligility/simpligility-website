@@ -21,22 +21,16 @@ skills for AI preferences".
 
 ## Announcement
 
-Teaser description for StreamYard, used on YouTube, LinkedIn, and Twitch.
+Teaser description for StreamYard, used on YouTube, LinkedIn, and Twitch. Each
+paragraph is on a single line so it pastes without hard line breaks.
 
-> Skills are meant to teach an AI agent how to do a task. I've been abusing
-> them for something else: a personal config system that teaches every AI tool
-> I use how I work. That covers my commit conventions, my writing style, and
-> who I am.
->
-> In this live session I walk through my own skill family. It lives in one git
-> repository, is linked into Claude Code, Codex CLI, Copilot, and others, and
-> has a base skill that routes to topic-specific child skills. It's optional
-> and flexible: it only kicks in when I want it, and it grows one skill at a
-> time. We'll watch an agent get things wrong without the skills, then right
-> with them, and look at how you can adapt the pattern for your own preferences
-> and projects.
->
-> Unedited, real-time work, as always. Bring your questions.
+```text
+Skills are meant to teach an AI agent how to do a task. I've been abusing them for something else: a personal config system that teaches every AI tool I use how I work. That covers my commit conventions, my writing style, and who I am.
+
+In this live session I walk through my own skill family. It lives in one git repository, is linked into Claude Code, Codex CLI, Copilot, and others, and has a base skill that routes to topic-specific child skills. It's optional and flexible: it only kicks in when I want it, and it grows one skill at a time. We'll watch an agent get things wrong without the skills, then right with them, and look at how you can adapt the pattern for your own preferences and projects.
+
+Unedited, real-time work, as always. Bring your questions.
+```
 
 
 ## Ideas
