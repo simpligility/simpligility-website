@@ -111,6 +111,21 @@ episodes are numbered and released in order. Keep the numbering continuous.
    blank line separating it from the next entry.
 5. Bump the `<!-- Last updated -->` comment.
 6. Run the checklist in the site skill, plus the episode points that follow.
+7. Offer the YouTube description text, as described in the next section.
+
+## YouTube description
+
+After the stream, the YouTube description is replaced with the archive summary
+followed by a fixed footer. Hand Manfred the text to paste: the summary as plain
+text with the HTML entities resolved, a blank line, then this footer verbatim.
+
+```text
+More info also at https://simpligility.ca/ and https://www.linkedin.com/in/manfredmoser/
+
+Sponsor at https://github.com/sponsors/mosabua and follow the contributions progress https://github.com/simpligility/contributions
+```
+
+Keep each paragraph on a single line so it pastes without hard line breaks.
 
 ## Episode thumbnail
 
