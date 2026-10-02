@@ -16,7 +16,7 @@ into a personal config system*, on using skills to carry personal preferences
 into AI tools, with the `manfred-*` family as the example. Prep material is in
 [`episodes/ep014-20261002-personal-ai-skills/`](episodes/ep014-20261002-personal-ai-skills/).
 
-- [ ] Create the demo repo and rehearse the cold and warm runs
+- [ ] Rehearse the cold and warm demo runs once
 - [ ] Add the episode to `manfred-mentors.html` after streaming
 
 ## Episode 15 preparation

@@ -75,8 +75,9 @@ a README and commit it, in a throwaway repo. One task exercises both
 `manfred-writing` and `manfred-git`, and a dice roller for board games and
 RPGs is a fun, easy-to-follow thing to build on camera.
 
-Setup before the stream: a local, unpushed repo such as `~/demo/mm014-demo`
-holding only an initial commit, and two branches `cold` and `warm` from it.
+Setup, done live at the start of the demo: a local, unpushed repo in
+`~/training/`, such as `~/training/mm014-demo`, holding only an initial commit,
+and two branches `cold` and `warm` from it.
 
 The prompt, identical both times and with no style hints:
 
@@ -113,8 +114,7 @@ rehearsal, and note which differences actually show up.
 
 ## Status and open items
 
-- [ ] Create the demo repo with the `cold` and `warm` branches
-- [ ] Rehearse the cold and warm runs once
+- [ ] Rehearse the cold and warm runs once in a scratch repo
 - [ ] Check whether the repo is public and ready to show on stream
 - [ ] After streaming, add the episode to `../../manfred-mentors.html` following
       the `simpligility-manfred-mentors` skill
