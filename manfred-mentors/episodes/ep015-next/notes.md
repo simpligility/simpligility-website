@@ -19,7 +19,8 @@ match the topic, once the stream is scheduled.
   versus project context. Carried over from episode 14.
 * The `trinodb-*` family as a third scope: project facts that are useful to
   anyone working on Trino, not just to one person. Likely its own episode.
-  Carried over from episode 14.
+  Carried over from episode 14. Show how it is modular on use cases and
+  dynamic on invocation, following up on that benefit from episode 14.
 * The simpligility-website repo itself and how it improves managing the
   WordPress site. Page content such as the event, write, and video logs and
   this archive lives in git as HTML fragments, maintained with AI tools and

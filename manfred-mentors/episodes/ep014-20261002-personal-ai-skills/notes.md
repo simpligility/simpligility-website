@@ -68,6 +68,23 @@ Teaser description for StreamYard, used on YouTube, LinkedIn, and Twitch.
   specifics.
 
 
+## Benefits
+
+The points to land as the takeaway, whether in the wrap-up or along the way:
+
+* **Across harnesses.** The same skills work in Claude Code, opencode, Codex
+  CLI, GitHub Copilot, Antigravity, and any other tool that reads `SKILL.md`.
+* **Across models.** The skills are plain markdown, so they carry over
+  unchanged when switching models within a tool or between vendors.
+* **Across computers.** The skills live in a git repo. On a new machine, clone
+  or pull the repo, run the install scripts, and every tool is set up.
+* **Yours to copy.** Anyone can copy the skills, rename them, and replace the
+  contents to make the setup their own. The structure is the valuable part.
+* **Modular and dynamic.** Each skill covers one use case, and a skill loads
+  only when it is invoked, so the context stays small and relevant. The
+  `trinodb-*` family shows the same property in a later episode.
+
+
 ## Demo outline
 
 The cold-start task asks the agent to build a small dice roller in Python with
