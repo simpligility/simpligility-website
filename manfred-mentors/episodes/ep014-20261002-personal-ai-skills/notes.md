@@ -3,23 +3,19 @@
 Working file for this episode. Collect ideas, shape an outline, and track open
 items here.
 
-Planned stream: Thursday, 1 October 2026, afternoon Pacific.
+Planned stream: Friday, 2 October 2026, 12pm Pacific (3pm Eastern, 9pm CEST).
 
 Topic: using skills to teach AI tools a set of personal preferences, with the
 `manfred-*` skill family as the worked example.
 
 
-## Title suggestions
+## Title
 
-* Teaching AI your preferences with skills
-* Building a skill family for AI preferences
-* Skills that make AI work the way you do
-* One skill family, every AI tool
-* From memory to skills: preferences that persist
+Final title: **Hacking AI "skills" into a personal config system**
 
-Working title from the topic idea was "Using dynamic skills for AI
-preferences". Two wobbles worth fixing before it ships: "dynamics" is a typo
-for "dynamic", and "preference" reads better plural.
+The quotes around "skills" signal that the term is being stretched beyond its
+usual meaning of teaching an agent a task. The working title was "Using dynamic
+skills for AI preferences".
 
 
 ## Ideas
@@ -79,8 +75,6 @@ Rough shape, to be firmed up before the stream.
 
 ## Status and open items
 
-- [ ] Pick the final title from the suggestions
-- [ ] Confirm the stream time and update this file
 - [ ] Decide the cold-start task for step 1 so the contrast is obvious on camera
 - [ ] Check whether the repo is public and ready to show on stream
 - [ ] Write the YouTube title and description

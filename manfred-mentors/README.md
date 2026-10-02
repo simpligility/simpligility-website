@@ -19,7 +19,7 @@ Preparation material for each episode lives in one folder per episode under
 episode number, zero-padded to three digits so folders sort in episode order.
 The date is the stream date, and the slug is a short identifying kebab-case name
 that survives a title change. For example,
-`ep014-20261001-dynamic-skills-ai-preferences`.
+`ep014-20261002-personal-ai-skills`.
 
 Each folder holds:
 

@@ -106,6 +106,23 @@ episodes are numbered and released in order. Keep the numbering continuous.
 5. Bump the `<!-- Last updated -->` comment.
 6. Run the checklist in the site skill, plus the episode points that follow.
 
+## Episode thumbnail
+
+Each episode gets a 1920×1080 PNG thumbnail rendered from the Blender intro
+project. Save it in the episode's `assets/` folder as `mmNNN-thumbnail.png`,
+with the same zero-padded number as the folder, for example
+`mm014-thumbnail.png`.
+
+When reviewing a thumbnail, check the layout:
+
+- Keep a consistent margin on all sides. A text line that runs close to the
+  frame edge looks cramped next to the rest, so scale the text down rather
+  than letting the longest line set the width.
+- Keep the line spacing even across the whole title, so it reads as one block
+  and not as separate text objects.
+- Keep the bottom-right corner clear, since YouTube overlays the video duration
+  there.
+
 ## Checklist for the archive
 
 - [ ] The entry belongs here: it is a Manfred mentors episode, not a video for
