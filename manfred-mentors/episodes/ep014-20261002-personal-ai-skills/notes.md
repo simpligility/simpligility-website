@@ -92,9 +92,12 @@ side, `~/training/mm014-cold` and `~/training/mm014-warm`, each created with
 
 The prompt, identical both times and with no style hints:
 
-> Create a small Python command-line script that rolls dice for board games and
-> tabletop RPGs, including six, twelve, and twenty-sided dice, with a README.md
-> that explains how to use it. Then commit it.
+```
+Create a small command-line script that rolls dice for board games and tabletop
+RPGs with a README.md that explains how to use it. Each invocation should do one
+roll of each dice by default. There should be options to set number of dice and
+type of dice. The supported dice type should be d4, d6, d8, d10, d12, and d20.
+```
 
 1. In `mm014-cold`, start a fresh session without invoking `/manfred` and run
    the prompt. The gated children cannot load without the base skill, so this
@@ -129,5 +132,5 @@ rehearsal, and note which differences actually show up.
 
 - [ ] Rehearse the cold and warm runs once in a scratch repo
 - [ ] Check whether the repo is public and ready to show on stream
-- [ ] After streaming, add the episode to `../../manfred-mentors.html` following
+- [x] After streaming, add the episode to `../../manfred-mentors.html` following
       the `simpligility-manfred-mentors` skill

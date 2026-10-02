@@ -5,19 +5,9 @@ Manfred mentors page. This is a living to-do list: delete items as they are
 done, and bump the "Last updated" date on edits. The conventions are in
 [`../skills/simpligility-manfred-mentors/SKILL.md`](../skills/simpligility-manfred-mentors/SKILL.md).
 
-Last updated: 2026-10-01 (episode 14 title and stream time set)
+Last updated: 2026-10-02 (episode 14 added to the archive)
 
 ---
-
-## Episode 14 preparation
-
-Planned for Friday, 2 October 2026, at 12pm Pacific, as *Hacking AI "skills"
-into a personal config system*, on using skills to carry personal preferences
-into AI tools, with the `manfred-*` family as the example. Prep material is in
-[`episodes/ep014-20261002-personal-ai-skills/`](episodes/ep014-20261002-personal-ai-skills/).
-
-- [ ] Rehearse the cold and warm demo runs once
-- [ ] Add the episode to `manfred-mentors.html` after streaming
 
 ## Episode 15 preparation
 
