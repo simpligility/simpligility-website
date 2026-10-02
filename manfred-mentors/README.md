@@ -21,6 +21,11 @@ The date is the stream date, and the slug is a short identifying kebab-case name
 that survives a title change. For example,
 `ep014-20261002-personal-ai-skills`.
 
+The folder for the next unscheduled episode has no date yet, for example
+`ep015-next`. It doubles as the idea backlog. Once the episode is scheduled,
+add the date, rename the slug to match the topic, and roll any unused ideas
+forward into a new folder for the episode after it.
+
 Each folder holds:
 
 - `notes.md` — a working file for ideas, title suggestions, a demo outline, and

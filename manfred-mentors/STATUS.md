@@ -19,6 +19,11 @@ into AI tools, with the `manfred-*` family as the example. Prep material is in
 - [ ] Settle the cold-start demo task so the before-and-after contrast lands
 - [ ] Add the episode to `manfred-mentors.html` after streaming
 
+## Episode 15 preparation
+
+Not scheduled yet. Ideas carried over from episode 14 are in
+[`episodes/ep015-next/`](episodes/ep015-next/).
+
 ## Deferred
 
 - [ ] Move the Blender video intro project into the episode folders and

@@ -6,7 +6,8 @@ items here.
 Planned stream: Friday, 2 October 2026, 12pm Pacific (3pm Eastern, 9pm CEST).
 
 Topic: using skills to teach AI tools a set of personal preferences, with the
-`manfred-*` skill family as the worked example.
+`manfred-*` skill family as the worked example. Other skill families and the
+memory question are parked in the episode 15 notes.
 
 
 ## Title
@@ -18,15 +19,32 @@ usual meaning of teaching an agent a task. The working title was "Using dynamic
 skills for AI preferences".
 
 
+## Announcement
+
+Teaser description for StreamYard, used on YouTube, LinkedIn, and Twitch.
+
+> Skills are meant to teach an AI agent how to do a task. I've been abusing
+> them for something else: a personal config system that teaches every AI tool
+> I use how I work. That covers my commit conventions, my writing style, and
+> who I am.
+>
+> In this live session I walk through my own skill family. It lives in one git
+> repository, is linked into Claude Code, Codex CLI, Copilot, and others, and
+> has a base skill that routes to topic-specific child skills. It's optional
+> and flexible: it only kicks in when I want it, and it grows one skill at a
+> time. We'll watch an agent get things wrong without the skills, then right
+> with them, and look at how you can adapt the pattern for your own preferences
+> and projects.
+>
+> Unedited, real-time work, as always. Bring your questions.
+
+
 ## Ideas
 
 * The problem first, before any skill file appears on screen. An agent that
   does not know the conventions writes the wrong commit trailer, wraps markdown
   at the wrong width, and reaches for "e.g." in prose. Every session starts by
   re-explaining the same things.
-* Built-in cross-session memory is switched off on purpose. Show that choice and
-  say why: a skill file is reviewable, diffable, and version controlled, while a
-  memory store is none of those.
 * The open `SKILL.md` format works across every major AI coding tool, so the
   same file feeds Claude Code, opencode, Codex CLI, GitHub Copilot, and
   Antigravity.
@@ -45,12 +63,6 @@ skills for AI preferences".
 * `manfred-git` is a hard precondition rather than a topic match: no commit, no
   push, no PR until it is loaded. That is what keeps the `Assisted-by:` trailer
   correct instead of a tool's default `Co-authored-by:`.
-* Second layer worth showing live: this website repo carries its own
-  project-scoped `skills/` directory with `simpligility-site` as the base and a
-  child per page section. Same pattern, different scope — personal context
-  versus project context.
-* Compare against the `trinodb-*` family for a third scope: project facts that
-  are useful to anyone working on Trino, not just to one person.
 * Close on reuse. Copy the `manfred-*` skills, rename them to another prefix,
   and replace the contents. The structure is the reusable part, not the
   specifics.
@@ -69,14 +81,12 @@ Rough shape, to be firmed up before the stream.
 4. Invoke the `manfred` base skill and show the skill index table doing the
    routing to a child.
 5. Redo the task from step 1 with the skills active and diff the two results.
-6. Show the same pattern at project scope in the website repo.
-7. Wrap up with how to copy the pattern.
+6. Wrap up with how to copy the pattern.
 
 
 ## Status and open items
 
 - [ ] Decide the cold-start task for step 1 so the contrast is obvious on camera
 - [ ] Check whether the repo is public and ready to show on stream
-- [ ] Write the YouTube title and description
 - [ ] After streaming, add the episode to `../../manfred-mentors.html` following
       the `simpligility-manfred-mentors` skill
