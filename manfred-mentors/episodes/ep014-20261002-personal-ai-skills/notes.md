@@ -70,23 +70,48 @@ Teaser description for StreamYard, used on YouTube, LinkedIn, and Twitch.
 
 ## Demo outline
 
-Rough shape, to be firmed up before the stream.
+The cold-start task is a README plus a commit in a throwaway repo, so one task
+exercises both `manfred-writing` and `manfred-git`.
 
-1. Start with a small writing or git task and let the agent do it cold, with no
-   skills loaded. Let the result be wrong in the ordinary ways.
+Setup before the stream: a local, unpushed repo such as `~/demo/mm014-demo`
+with one small script, and two branches `cold` and `warm` from the same base
+commit.
+
+The prompt, identical both times and with no style hints:
+
+> Add a README.md that explains what this script does and how to run it, then
+> commit it.
+
+1. On `cold`, start a fresh session without invoking `/manfred` and run the
+   prompt. The gated children cannot load without the base skill, so this also
+   shows the gating. Let the result be wrong in the ordinary ways.
 2. Open the `getting-stuff-done` repo and walk the `skills/` directory. Show one
    `SKILL.md` in full so viewers see there is no magic in the format.
 3. Run `install-skills.sh` and show the symlinks it creates across tool
    directories. Point out that editing happens only in the repo.
-4. Invoke the `manfred` base skill and show the skill index table doing the
-   routing to a child.
-5. Redo the task from step 1 with the skills active and diff the two results.
+4. On `warm`, start a fresh session, invoke `/manfred`, and show the skill
+   index table routing to a child.
+5. Run the same prompt, then compare with `git log -1` on each branch and
+   `git diff cold warm`.
 6. Wrap up with how to copy the pattern.
 
+What to point at in the comparison:
+
+* Guaranteed: the commit trailer. The tool default `Co-Authored-By:` becomes
+  `Assisted-by:`. Lead with this one.
+* Likely: Title Case headings, markdown not wrapped at 80, and a commit subject
+  outside the Chris Beams rules.
+* Possible: "e.g.", parentheses, and ampersands. Do not promise these on
+  camera.
+
+The `manfred` skill was refactored to load only on an explicit request, never
+on identity cues, so it should stay out of the cold run. Confirm that in a
+rehearsal, and note which differences actually show up.
 
 ## Status and open items
 
-- [ ] Decide the cold-start task for step 1 so the contrast is obvious on camera
+- [ ] Create the demo repo with the `cold` and `warm` branches
+- [ ] Rehearse the cold and warm runs once
 - [ ] Check whether the repo is public and ready to show on stream
 - [ ] After streaming, add the episode to `../../manfred-mentors.html` following
       the `simpligility-manfred-mentors` skill
