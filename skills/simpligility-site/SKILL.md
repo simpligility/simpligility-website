@@ -69,6 +69,35 @@ the `wp-block-group` wrapper, and step 3 shows up as `is-layout-flow` rather
 than `is-layout-constrained`. That makes the result easy to verify by fetching
 the page and looking at the wrapper classes.
 
+### The same recipe in the Code editor
+
+The block UI makes it hard to tell which block is selected, so the reliable
+route is the Code editor, under the editor's **⋮** menu. The wide-width Group
+around the fragment must look exactly like this:
+
+```html
+<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:html -->
+<!-- Event Log for simpligility.ca/event-log/ -->
+...the whole fragment...
+<!-- /wp:html --></div>
+<!-- /wp:group -->
+```
+
+- `"align":"wide"` in the comment and `alignwide` on the `<div>` go together;
+  setting only one leaves the page narrow or invalid.
+- `"layout":{"type":"default"}` is **Inner blocks use content width** turned
+  off. `"constrained"` turns it back on.
+- The `<div>` carries exactly `class="wp-block-group alignwide"` and nothing
+  else, and the fragment sits inside its own `wp:html` block within it.
+
+If the Visual editor then reports **Block contains unexpected or invalid
+content**, the saved markup does not match what the editor would generate,
+typically a missing `<div>` or a fragment not wrapped in `wp:html`. Fix it in
+the Code editor. Do **not** click *Attempt block recovery* or *Convert to
+Classic block*, because either can rewrite the fragment, and the Classic block
+runs `wpautop`, which breaks the sticky year navigation.
+
 ## Publishing model
 
 Only some of the site is managed in this repo:
