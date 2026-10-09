@@ -9,7 +9,7 @@ more than one of them, or the site as a whole. It is a living to-do list, not a
 historical log: when a task is finished, **remove it** rather than marking it
 done, and bump the "Last updated" date when you edit it.
 
-Last updated: 2026-09-28 (folded the store-block-wrappers-in-repo decision into the width task)
+Last updated: 2026-10-09 (added the header image task, trimmed the width task to its open points)
 
 ---
 
@@ -58,67 +58,55 @@ repositories &mdash; `simpligility/nexus-book`,
 `simpligility/maven-reference-en`, and `simpligility/maven-example-en` &mdash;
 before giving up on it.
 
-## 4. Make the page widths consistent and wider, using blocks only
+## 4. Finish the page width work and settle block wrappers in the repo
 
-The four fragment pages are each wrapped differently, so they render at
-different widths:
+The event, write, and video logs now all render the same way: the fragment's
+Custom HTML block sits in a Group with wide alignment and flow layout, which is
+the recipe in [`skills/simpligility-site/SKILL.md`](skills/simpligility-site/SKILL.md)
+under *Page width*. Two points are still open.
 
-| Page | Wrapper today | Result |
-|------|---------------|--------|
-| `/manfred-mentors/` | Group, `alignfull`, constrained inner layout | wide |
-| `/write-log/` | Group, `alignwide`, flow inner layout | wide |
-| `/event-log/` | Group, no alignment | narrow |
-| `/video-log/` | no Group at all | narrow |
+### Bring the Manfred mentors page in line
 
-Work through all four in the block editor and settle on one treatment, then
-apply it everywhere so the logs and the mentors archive match. Wider is the
-goal: the entries are dense two-line records and the default 645px column
-cramps them.
+`/manfred-mentors/` still wraps its archive in a Group with full alignment and a
+constrained inner layout, unlike the logs. Decide whether it should match them,
+given that the page has its own content above the archive, and if so apply the
+same wide, flow-layout Group. Use blocks only, with no custom CSS, and afterwards
+fetch the page to confirm the wrapper classes and that no `<br />` appears inside
+the `<style>` or `<script>`.
 
-**No custom CSS.** Nothing goes into the Site Editor under Styles, Additional
-CSS, and no `page-id` overrides are written. The block UI can do this on its
-own, and a page that depends on a rule hidden somewhere else cannot be fixed
-from the editor later. The block recipe is in
-[`skills/simpligility-site/SKILL.md`](skills/simpligility-site/SKILL.md) under
-*Page width*.
+### Decide whether to store the block wrappers in the repo
 
-Take care not to disturb the fragments while rearranging blocks. Each one has to
-stay inside a single Custom HTML block, because anywhere else WordPress inserts
-a `<br />` after every line of the inline style and script, which silently kills
-the sticky year navigation. That has already happened once to the write log.
-After each page, fetch it and confirm the wrapper carries the intended alignment
-class and that no `<br />` appears inside the `<style>` or `<script>`.
+Manfred is considering having the repo fragments hold the full WordPress block
+markup, meaning the `wp:group` and `wp:html` delimiters around the fragment, so
+the whole page content can be pasted into the page **Code editor** in one go
+rather than into a single Custom HTML block. Today no fragment in the repo
+carries a wrapper.
 
-### Also settle: store the block wrappers in the repo for whole-page paste
+If adopted, apply it in one pass:
 
-Manfred wants the repo fragments to hold the full WordPress block markup &mdash;
-the `wp:group` / `wp:html` delimiters around the fragment &mdash; not just the
-bare fragment, so the entire page content can be copied from the repo and pasted
-into the WordPress page **code editor** in one shot instead of into a single
-Custom HTML block. He started this by pasting the event log's live markup into
-`event-log/event-log.html`, which is why that file now begins with
-`<!-- wp:group {"layout":{"type":"default"}} -->` and ends with
-`<!-- /wp:html --></div> <!-- /wp:group -->`. That is the **narrow** form, so it
-is not the target to keep.
+- Copy the exact serialized `wp:group` markup from a live log page rather than
+  writing it by hand. The skill shows the expected form.
+- Wrap all repo fragments identically, in one commit.
+- Update the fragment skeleton and publishing model sections of the site skill,
+  which currently say fragments carry no wrapper and go into a Custom HTML
+  block. Keep the `wpautop` warning.
 
-Decide together with the width standardization above, then apply in one pass:
+## 5. Add a header image to the log pages
 
-- Pick the one canonical wrapper recipe (the site skill's is wide/full alignment
-  + inner content width off / flow layout; `/write-log/` already matches it).
-- Capture the **exact** serialized `wp:group` markup from the chosen live page
-  &mdash; the precise `align`/`layout` JSON and the `wp-block-group` classes
-  &mdash; rather than hand-writing it, since the repo has never stored it and the
-  exact strings are easy to get wrong.
-- Wrap all four repo fragments identically with that markup, in one commit.
-- Update `skills/simpligility-site/SKILL.md`: the fragment-skeleton and
-  publishing-model sections currently say fragments carry no wrapper and are
-  pasted into a Custom HTML block; change them to describe the block-wrapped
-  form and the page-code-editor paste. Keep the wpautop warning &mdash; pasting
-  the block markup into the **code editor** is what makes it round-trip safely.
+The event, write, and video log pages are walls of text and look dull. Give each
+one an image, or a similar visual element, near the page title so a visitor gets
+some visual entry point before the list starts.
 
-Until this is settled, `event-log/event-log.html` is the only fragment carrying
-wrappers, and it carries the wrong (narrow) one, so the repo is temporarily
-inconsistent.
+This is WordPress-side only. Add the image as its own block in the page,
+between the title and the Group that wraps the fragment, and leave the Custom
+HTML block and the repo fragments untouched.
 
-The width changes are WordPress-side; the wrapper-in-repo change is a repo change
-plus a skill change.
+- Pick one consistent treatment for all three, such as an Image or Cover block,
+  and use blocks only, with no custom CSS, as for the page width.
+- Choose or create images that fit each log: talks and events, writing, and
+  video.
+- WordPress writes media URLs with a full domain, which conflicts with the
+  root-relative link rule for the two domains. Check the stored `src` in the
+  Code editor and make it root-relative, starting with `/wp-content/uploads/`.
+- After each page, fetch it and confirm the fragment Group is unchanged and no
+  `<br />` appears inside the `<style>` or `<script>`.
