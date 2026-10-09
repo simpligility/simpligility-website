@@ -98,6 +98,30 @@ the Code editor. Do **not** click *Attempt block recovery* or *Convert to
 Classic block*, because either can rewrite the fragment, and the Classic block
 runs `wpautop`, which breaks the sticky year navigation.
 
+### Blog width
+
+The blog is not a fragment page, so its width is set in the **Blog Home** and
+**Single Posts** templates in the Site Editor rather than per post. Running
+prose reads badly at the 1340px wide size, so the blog uses a content width of
+**880px**, which is a maximum and leaves phones unaffected.
+
+- The column is capped by the **full-width Group that wraps each post's title,
+  meta, and content**, not by the Post Content block alone. Changing only Post
+  Content leaves the text at 645px, because that Group still applies the theme
+  default. Set the Group's layout to
+  `"layout":{"type":"constrained","contentSize":"880px"}`.
+- In **Blog Home**, Post Content has flow layout and fills the Group. In
+  **Single Posts**, it keeps its full-width constrained layout with its own
+  `"contentSize":"880px"`, so wide images in a post can reach 880px as well.
+- **Font size:** the body text uses the theme's **Large** preset. Twenty
+  Twenty-Five ships Blog Home with `"fontSize":"medium"` on Post Content,
+  which is a step smaller, so the bare `<!-- wp:post-content /-->` makes the
+  home page match single posts.
+- To verify, fetch the home page and a single post and check for
+  `max-width:880px` in the `wp-container-core-group-is-layout-…` or
+  `wp-container-core-post-content-is-layout-…` rules that apply to the post
+  wrapper. Site Editor changes need the editor's own **Save**.
+
 ## Publishing model
 
 Only some of the site is managed in this repo:
