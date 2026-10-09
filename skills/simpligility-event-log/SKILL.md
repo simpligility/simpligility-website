@@ -174,7 +174,7 @@ and 14 May entries:
   <dt><strong>Fork yeah: We&#39;re bringing kaniko back</strong><br> 5 June 2025</dt>
   <dd>
     Blog post and video on Chainguard forking the kaniko container build tool after Google archived it, committing to maintain it as open source.
-    <a href="https://www.youtube.com/watch?v=NPOC2n-anAU">Video</a> &bull; <a href="https://www.chainguard.dev/unchained/fork-yeah-were-bringing-kaniko-back">Details</a>
+    <br><a href="https://www.youtube.com/watch?v=NPOC2n-anAU">Video</a> &bull; <a href="https://www.chainguard.dev/unchained/fork-yeah-were-bringing-kaniko-back">Details</a>
     <br><br>
   </dd>
 ```

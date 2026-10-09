@@ -58,7 +58,7 @@ between entries.
   <dt><strong>Episode 12: Finally, Trino Gateway 17</strong><br> 1 February 2026</dt>
   <dd>
     Live work on getting the Trino Gateway 17 release out the door.
-    <a href="https://www.youtube.com/watch?v=FFYYn5wwTBI">Watch on YouTube</a>
+    <br><a href="https://www.youtube.com/watch?v=FFYYn5wwTBI">Watch on YouTube</a>
     <br><br>
   </dd>
 ```

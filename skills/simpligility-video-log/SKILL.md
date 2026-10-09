@@ -210,7 +210,7 @@ playlist on YouTube in January 2017. One entry, linking the playlist:
   <dt><strong>OneOps user training: Level 1 &mdash; beginner</strong><br> OneOps &mdash; January 2017</dt>
   <dd>
     A recorded beginner training class for OneOps, the open source cloud application lifecycle management platform from Walmart, released as an open video series on the Walmart Labs Community YouTube channel.
-    <a href="https://www.youtube.com/playlist?list=PLjDnb0653uBDMBpTBoLVkVtGIDO-P8e3U">Watch on YouTube</a> &bull; <a href="https://oneops.github.io/oneops-training/">Details</a>
+    <br><a href="https://www.youtube.com/playlist?list=PLjDnb0653uBDMBpTBoLVkVtGIDO-P8e3U">Watch on YouTube</a> &bull; <a href="https://oneops.github.io/oneops-training/">Details</a>
     <br><br>
   </dd>
 ```

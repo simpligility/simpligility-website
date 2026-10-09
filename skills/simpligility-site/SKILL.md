@@ -167,7 +167,7 @@ Check out specific years:
   <dt><strong>Title</strong><br> Middle slot &mdash; Date</dt>
   <dd>
     Description sentence or two.
-    <a href="...">Leading link</a> &bull; <a href="...">Other link</a>
+    <br><a href="...">Leading link</a> &bull; <a href="...">Other link</a>
     <br><br>
   </dd>
 
@@ -249,7 +249,7 @@ between entries.
 ```html
   <dd>
     One or two sentences describing it.
-    <a href="...">Leading link</a> &bull; <a href="...">Other link</a>
+    <br><a href="...">Leading link</a> &bull; <a href="...">Other link</a>
     <br><br>
   </dd>
 ```
@@ -264,10 +264,11 @@ between entries.
   attendance numbers. Those are internal metrics and do not belong on a public
   page.
 - **Links line**: one or more `<a>` links joined by ` &bull; `, all on a
-  **single line** with **no leading `<br>`**, so they flow directly after the
-  description. Follow the last link with `<br><br>` on its own line. Keep the
-  whole list on one line, because a break around a separator wraps awkwardly in
-  the rendered `<dd>`.
+  **single line** that **starts with `<br>`**, so the links render on their own
+  line under the description rather than flowing on from its last sentence.
+  Follow the last link with `<br><br>` on its own line. Keep the whole list on
+  one line, because a break around a separator wraps awkwardly in the rendered
+  `<dd>`.
 
 ### Link rules
 
@@ -344,7 +345,7 @@ as the work it covers. Commit message conventions come from `manfred-git`.
 - [ ] The middle slot is a clean human name, and the full URL is in the link.
 - [ ] Links use the spaced ` &bull; ` separator, the artifact leads, and no two
       links share the same link text.
-- [ ] The links list is on a single line with no leading `<br>`, followed by
+- [ ] The links list is on a single line that starts with `<br>`, followed by
       `<br><br>` on its own line.
 - [ ] Manfred is not named, no customers or prospects are named, and no
       attendance numbers appear.

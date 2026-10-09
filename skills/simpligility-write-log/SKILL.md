@@ -185,7 +185,7 @@ blog, published 5 June 2025, with a companion video. Placed in the `2025` block:
   <dt><strong>Fork yeah: We&#39;re bringing kaniko back</strong><br> Chainguard blog &mdash; 5 June 2025</dt>
   <dd>
     On Chainguard forking the kaniko container build tool after Google archived it, and committing to maintain it as open source.
-    <a href="https://www.chainguard.dev/unchained/fork-yeah-were-bringing-kaniko-back">Read on chainguard.dev</a> &bull; <a href="https://www.youtube.com/watch?v=NPOC2n-anAU">Video</a>
+    <br><a href="https://www.chainguard.dev/unchained/fork-yeah-were-bringing-kaniko-back">Read on chainguard.dev</a> &bull; <a href="https://www.youtube.com/watch?v=NPOC2n-anAU">Video</a>
     <br><br>
   </dd>
 ```
