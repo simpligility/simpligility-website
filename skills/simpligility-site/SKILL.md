@@ -332,8 +332,11 @@ and the video in the video log. Across all of them:
 - **No two links in one entry may share the same link text.** When a second
   supporting page appears, drop the generic `Details` label and give each a
   short specific label instead.
-- **Never link something a visitor cannot open.** A deck behind a login or a
-  private video is not a link, whatever it is labelled.
+- **Only link a page that gives the visitor something useful without a wall.** A
+  private video or a deck behind an internal or account login nobody outside can
+  get into is not a link, whatever it is labelled. A page that is itself readable
+  — even if one asset on it, such as a video, needs a free sign-up — is fine to
+  link, and needs no special warning.
 - **Never add internal tracking issue links.** They point at private GitHub
   issues. Older entries still carry some; they are being removed over time, so
   do not add new ones, and confirm with Manfred before removing an existing one.
