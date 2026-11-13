@@ -4,7 +4,7 @@ Working notes for ongoing maintenance of `event-log.html`. This captures what ha
 been **deferred** and the **next steps**, so the work can be resumed later with
 Claude Code or any other tool. Delete items as they are completed.
 
-Last updated: 2026-09-29 (Chainguard Libraries India item closed; partner Younion named, no recording)
+Last updated: 2026-11-13 (KubeCon NA Salt Lake City talk logged; recording to be determined)
 
 The conventions for this file are documented in
 [`../skills/simpligility-event-log/SKILL.md`](../skills/simpligility-event-log/SKILL.md). Read that first.
@@ -12,6 +12,12 @@ The conventions for this file are documented in
 ---
 
 ## Open items
+
+### KubeCon NA Salt Lake City &mdash; recording to be determined
+
+The demo theater session *AI already found your Java vulnerabilities. Has your
+scanner?* on 11 November 2026 is logged with its slide deck, demo, and session
+page. Find out whether a recording exists, and add a `Video` link if one does.
 
 ### WeAreDevelopers World Congress North America &mdash; both sessions logged, follow-ups open
 
